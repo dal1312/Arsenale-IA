@@ -17,15 +17,15 @@ Legenda: **Disponibile** = procedura presente; **Pianificata** = codice riservat
 
 ## Sistemi e sviluppo
 
-- ARI-0101 — Revisione Python — Pianificata
+- **ARI-0101 — Revisione Python** — Disponibile
 - ARI-0201 — Revisione C# — Pianificata
 - ARI-0301 — Revisione C++ — Pianificata
 - ARI-0401 — Revisione JavaScript e TypeScript — Pianificata
 - ARI-0501 — Revisione database — Pianificata
-- ARI-0601 — Revisione Git — Pianificata
-- ARI-0701 — Revisione Docker — Pianificata
-- ARI-0801 — Diagnostica Windows — Pianificata
-- ARI-0901 — Diagnostica Linux — Pianificata
+- **ARI-0601 — Revisione Git** — Disponibile
+- **ARI-0701 — Revisione Docker** — Disponibile
+- **ARI-0801 — Diagnostica Windows** — Disponibile
+- **ARI-0901 — Diagnostica Linux** — Disponibile
 
 ## Intelligenza artificiale
 
