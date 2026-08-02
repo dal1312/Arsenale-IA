@@ -9,11 +9,11 @@ Legenda: **Disponibile** = procedura presente; **Pianificata** = codice riservat
 - **ARI-0003 — Diagnosi errori** — Disponibile
 - **ARI-0004 — Pianificazione tecnica** — Disponibile
 - **ARI-0005 — Implementazione controllata** — Disponibile
-- ARI-0006 — Refactoring — Pianificata
-- ARI-0007 — Analisi prestazioni — Pianificata
-- ARI-0008 — Analisi sicurezza — Pianificata
-- ARI-0009 — Verifica test — Pianificata
-- ARI-0010 — Preparazione rilascio — Pianificata
+- **ARI-0006 — Refactoring controllato** — Disponibile
+- **ARI-0007 — Analisi prestazioni** — Disponibile
+- **ARI-0008 — Analisi sicurezza** — Disponibile
+- **ARI-0009 — Verifica test** — Disponibile
+- **ARI-0010 — Preparazione rilascio** — Disponibile
 
 ## Sistemi e sviluppo
 
