@@ -14,11 +14,15 @@
 - modelli di rapporto;
 - liste di controllo riutilizzabili.
 
-## Versione 0.3 — Compatibilità
+## Versione 0.3 — Compatibilità — Completata
 
-- adattatori `SKILL.md`;
-- esempi per Codex, Claude Code e altri agenti;
-- utilizzo locale senza GitHub.
+- [x] adattatori `SKILL.md` per tutte le procedure disponibili;
+- [x] esempi per Codex, Claude Code e altri agenti compatibili;
+- [x] installazione e utilizzo locale senza dipendenza da GitHub;
+- [x] verifica automatica della coerenza degli adattatori;
+- [x] aggiornamento di `STANDARD.md` e `CATALOGO.md`.
+
+La procedura canonica resta indipendente dal client. Gli adattatori e gli strumenti locali sono descritti in `COMPATIBILITA.md`.
 
 ## Versione 1.0
 
