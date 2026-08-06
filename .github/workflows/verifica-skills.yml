@@ -1,0 +1,50 @@
+name: Verifica compatibilità skills
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verifica:
+    name: Verifica ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configura Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verifica adattatori
+        run: python Strumenti/verifica_skills.py
+
+      - name: Prova installatore POSIX
+        if: runner.os != 'Windows'
+        shell: bash
+        run: |
+          dest="$RUNNER_TEMP/arsenale-skills"
+          sh Strumenti/installa-skills.sh custom "$dest"
+          count=$(find "$dest" -mindepth 1 -maxdepth 1 -type d | wc -l)
+          test "$count" -eq 19
+
+      - name: Prova installatore PowerShell
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $dest = Join-Path $env:RUNNER_TEMP "arsenale-skills"
+          New-Item -ItemType Directory -Path $dest -Force | Out-Null
+          .\Strumenti\Installa-Skills.ps1 -Destinazione Personalizzato -Percorso $dest -Forza
+          $count = (Get-ChildItem -LiteralPath $dest -Directory).Count
+          if ($count -ne 19) {
+              throw "Attese 19 skill installate, trovate $count"
+          }
