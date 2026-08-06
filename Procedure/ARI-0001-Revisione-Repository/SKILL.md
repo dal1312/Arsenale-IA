@@ -1,7 +1,6 @@
 ---
 name: revisione-repository
-description: Analizza un repository esistente e produce un piano di miglioramento prioritizzato senza modificare subito il codice.
-user-invocable: true
+description: Revisiona un repository esistente per comprenderne stato reale, rischi e priorità prima di applicare modifiche. Usa quando serve una valutazione complessiva con piano di miglioramento basato su evidenze.
 ---
 
 # Revisione repository

@@ -43,4 +43,18 @@ Legenda: **Disponibile** = procedura presente; **Pianificata** = codice riservat
 - ARI-1901 — Revisione visione artificiale — Pianificata
 - ARI-2001 — Revisione software di stampa 3D — Pianificata
 
+## Compatibilità agenti
+
+Stato della compatibilità v0.3:
+
+- procedure disponibili: **19**;
+- procedure disponibili con adattatore `SKILL.md`: **19/19**;
+- fonte canonica: `PROCEDURA.md`;
+- formato adattatori: Agent Skills;
+- utilizzo locale: supportato senza dipendenza runtime da GitHub.
+
+Le procedure pianificate ricevono il relativo `SKILL.md` quando passano allo stato **Disponibile**.
+
+Per installazione locale, percorsi ed esempi vedere `COMPATIBILITA.md`.
+
 I codici assegnati sono permanenti. Il catalogo viene aggiornato quando una procedura passa da pianificata a disponibile.
