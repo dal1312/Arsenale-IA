@@ -64,7 +64,7 @@ Legenda: **Disponibile** = procedura presente; **Pianificata** = codice riservat
 | ARI-0006 — Refactoring controllato | Da verificare | 0 | No |
 | ARI-0007 — Analisi prestazioni | Da verificare | 0 | No |
 | ARI-0008 — Analisi sicurezza | Da verificare | 0 | No |
-| ARI-0009 — Verifica test | Da verificare | 0 | No |
+| ARI-0009 — Verifica test | **Verificata** | 2 | Sì |
 | ARI-0010 — Preparazione rilascio | Da verificare | 0 | No |
 
 Le evidenze sono archiviate in `Verifiche/` e seguono `VERIFICA.md`. Lo stato **Verificata** non è assegnato dalla sola conformità automatica.
