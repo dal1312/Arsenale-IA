@@ -1,16 +1,49 @@
 # ARI-0005 — Implementazione controllata
 
+- **Categoria:** Nucleo
+- **Livello:** L4 Professionale
+- **Stato:** Bozza verificabile
+- **Versione:** 0.2.0
+- **Utilizzo offline:** Sì
+
 ## Scopo
-Realizzare una modifica tecnica in modo incrementale, verificabile e coerente con la specifica approvata.
+
+Realizzare una modifica tecnica in modo incrementale, verificabile e coerente con una specifica o un piano approvato.
+
+## Campo di applicazione
+
+Implementazioni di funzionalità, correzioni, migrazioni e modifiche tecniche per le quali esistono criteri di accettazione verificabili.
+
+## Quando usarla
+
+- esiste un requisito o piano approvato
+- i criteri di accettazione sono sufficientemente chiari
+- l'ambiente permette di verificare gli incrementi
+
+## Quando non usarla
+
+- manca ancora la diagnosi del problema
+- il repository non è stato compreso abbastanza per stimare l'impatto
+- l'obiettivo reale è un refactoring senza variazione funzionale: usare ARI-0006
 
 ## Prerequisiti
-- requisito o piano approvato;
-- criteri di accettazione;
-- ambiente funzionante;
-- test iniziali noti.
 
-## Procedura
-1. Confermare l'ambito e il punto di partenza.
+- requisito o piano approvato
+- criteri di accettazione
+- ambiente funzionante
+- baseline dei test pertinenti nota
+
+## Materiale necessario
+
+- piano o specifica
+- codice sorgente
+- suite di test
+- comandi di lint, type check, build e avvio pertinenti
+- documentazione da aggiornare
+
+## Procedura operativa
+
+1. Confermare ambito e punto di partenza.
 2. Eseguire i test pertinenti prima delle modifiche.
 3. Scegliere il più piccolo incremento funzionante.
 4. Aggiungere o aggiornare il test che descrive il comportamento.
@@ -21,14 +54,36 @@ Realizzare una modifica tecnica in modo incrementale, verificabile e coerente co
 9. Eseguire controlli statici, suite completa e build.
 10. Verificare manualmente il flusso principale quando necessario.
 11. Aggiornare documentazione e registro delle modifiche.
-12. Produrre un riepilogo con file modificati, test ed eventuali limiti.
 
-## Regole
-- non ampliare l'ambito senza motivazione;
-- non nascondere test falliti;
-- non rimuovere controlli per ottenere un esito positivo;
-- non introdurre astrazioni senza un confine reale;
-- mantenere commit e modifiche comprensibili.
+## Controlli
+
+- nessun ampliamento di ambito non motivato
+- i test iniziali e finali sono registrati
+- test falliti non vengono nascosti o rimossi per ottenere esito positivo
+- ogni incremento soddisfa un criterio di accettazione
+- documentazione e configurazione restano coerenti
+
+## Errori frequenti
+
+- implementare più requisiti insieme senza separazione
+- aggiungere astrazioni premature
+- rimuovere controlli per far passare i test
+- saltare la baseline iniziale
+- dichiarare completato senza build o verifica equivalente
+
+## Rapporto finale
+
+Riepilogare requisito, incrementi eseguiti, file modificati, test aggiunti o aggiornati, comandi di verifica, esito build, criteri di accettazione soddisfatti, rischi residui e limiti.
 
 ## Condizioni di uscita
-Criteri di accettazione soddisfatti, test pertinenti superati, build verificata, documentazione aggiornata e rischi residui dichiarati.
+
+- criteri di accettazione soddisfatti
+- test pertinenti superati
+- build verificata quando prevista
+- documentazione aggiornata
+- rischi residui dichiarati
+
+## Cronologia delle versioni
+
+- **0.2.0** — Struttura uniformata a `STANDARD.md`; requisiti, controlli, rapporto e condizioni di uscita resi espliciti.
+- **0.1.0** — Prima versione operativa.

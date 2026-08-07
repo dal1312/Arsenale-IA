@@ -1,4 +1,4 @@
-name: Verifica compatibilità skills
+name: Verifica Arsenale IA
 
 on:
   push:
@@ -24,6 +24,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Verifica procedure canoniche
+        run: python Strumenti/verifica_procedure.py
 
       - name: Verifica adattatori
         run: python Strumenti/verifica_skills.py

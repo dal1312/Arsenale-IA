@@ -14,21 +14,34 @@ Questo documento definisce le regole comuni per tutte le Procedure Arsenale IA.
 
 ## Struttura obbligatoria di una procedura
 
-Ogni procedura deve contenere:
+Ogni `PROCEDURA.md` disponibile deve iniziare con un titolo H1 nel formato:
 
-- codice e titolo;
-- scopo;
-- campo di applicazione;
-- quando usarla;
-- quando non usarla;
-- prerequisiti;
-- materiale necessario;
-- procedura operativa;
-- controlli;
-- errori frequenti;
-- rapporto finale;
-- condizioni di uscita;
-- cronologia delle versioni.
+`# ARI-0001 — Titolo`
+
+Subito dopo il titolo deve dichiarare almeno:
+
+- **Categoria**;
+- **Livello**;
+- **Stato**;
+- **Versione** in formato semantico `X.Y.Z`;
+- **Utilizzo offline**.
+
+Le sezioni canoniche obbligatorie, in questo ordine, sono:
+
+1. `## Scopo`
+2. `## Campo di applicazione`
+3. `## Quando usarla`
+4. `## Quando non usarla`
+5. `## Prerequisiti`
+6. `## Materiale necessario`
+7. `## Procedura operativa`
+8. `## Controlli`
+9. `## Errori frequenti`
+10. `## Rapporto finale`
+11. `## Condizioni di uscita`
+12. `## Cronologia delle versioni`
+
+Ogni sezione deve contenere informazioni concrete. Sono ammesse sottosezioni aggiuntive, ma non devono sostituire le sezioni canoniche né modificarne il significato.
 
 ## Codifica
 
@@ -36,7 +49,15 @@ Formato ufficiale:
 
 `ARI-0001`
 
-Il codice resta permanente anche quando cambia il titolo.
+Il codice resta permanente anche quando cambia il titolo. Il codice nel titolo deve coincidere con il prefisso della cartella della procedura.
+
+## Versionamento delle procedure
+
+- `PATCH` — correzioni editoriali senza variazioni operative;
+- `MINOR` — miglioramenti compatibili del metodo, nuovi controlli o maggiore precisione;
+- `MAJOR` — modifica incompatibile del metodo o delle condizioni operative.
+
+La versione corrente deve essere registrata anche nella cronologia del documento.
 
 ## Livelli
 
@@ -49,10 +70,13 @@ Il codice resta permanente anche quando cambia il titolo.
 ## Stati
 
 - Bozza
+- Bozza verificabile
 - In revisione
 - Verificata
 - Pubblicata
 - Obsoleta
+
+Lo stato **Verificata** richiede evidenze di applicazione operativa; la sola conformità strutturale non è sufficiente.
 
 ## Compatibilità con agenti
 
@@ -80,6 +104,19 @@ La cartella sorgente conserva il codice `ARI-xxxx` per catalogazione e manutenzi
 - Eventuali accessi a rete, build, test o strumenti esterni dipendono dalla singola procedura, non dal formato Arsenale IA.
 - Percorsi e comandi specifici dei client sono documentati in `COMPATIBILITA.md`, non duplicati nelle procedure canoniche.
 - Gli adattatori devono poter essere installati o esportati con gli strumenti locali presenti in `Strumenti/`.
+
+## Validazione automatica
+
+Prima di integrare modifiche alle procedure eseguire:
+
+```text
+py Strumenti/verifica_procedure.py
+py Strumenti/verifica_skills.py
+```
+
+Su Linux/macOS usare `python3` al posto di `py`.
+
+Il controllo automatico non sostituisce la verifica operativa su progetti reali.
 
 ## Regola fondamentale
 
