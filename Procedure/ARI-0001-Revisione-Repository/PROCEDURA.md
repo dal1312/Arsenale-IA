@@ -2,8 +2,8 @@
 
 - **Categoria:** Nucleo
 - **Livello:** L4 Professionale
-- **Stato:** Bozza verificabile
-- **Versione:** 0.2.0
+- **Stato:** Verificata
+- **Versione:** 0.2.1
 - **Utilizzo offline:** Sì
 
 ## Scopo
@@ -119,5 +119,6 @@ Per ogni problema indicare:
 
 ## Cronologia delle versioni
 
+- **0.2.1** — Procedura promossa a **Verificata** dopo due prove operative documentate, inclusa una prova indipendente su un repository software reale. Nessuna modifica al metodo operativo.
 - **0.2.0** — Struttura uniformata a `STANDARD.md` preservando classificazione P0-P4, scheda problema e verdetti.
 - **0.1.0** — Prima versione operativa.

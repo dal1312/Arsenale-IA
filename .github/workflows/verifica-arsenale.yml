@@ -31,6 +31,9 @@ jobs:
       - name: Verifica adattatori
         run: python Strumenti/verifica_skills.py
 
+      - name: Verifica evidenze operative
+        run: python Strumenti/verifica_evidenze.py
+
       - name: Prova installatore POSIX
         if: runner.os != 'Windows'
         shell: bash

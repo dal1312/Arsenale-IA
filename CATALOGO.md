@@ -52,10 +52,27 @@ Legenda: **Disponibile** = procedura presente; **Pianificata** = codice riservat
 - formato adattatori: Agent Skills;
 - utilizzo locale: supportato senza dipendenza runtime da GitHub.
 
-La conformità strutturale viene verificata da `Strumenti/verifica_procedure.py`; la compatibilità agente da `Strumenti/verifica_skills.py`.
+## Verifica operativa
+
+| Procedura | Stato | Evidenze valide | Prova indipendente |
+| --- | --- | ---: | --- |
+| ARI-0001 — Revisione repository | **Verificata** | 2 | Sì |
+| ARI-0002 — Revisione codice | Da verificare | 0 | No |
+| ARI-0003 — Diagnosi errori | Da verificare | 0 | No |
+| ARI-0004 — Pianificazione tecnica | Da verificare | 0 | No |
+| ARI-0005 — Implementazione controllata | Da verificare | 0 | No |
+| ARI-0006 — Refactoring controllato | Da verificare | 0 | No |
+| ARI-0007 — Analisi prestazioni | Da verificare | 0 | No |
+| ARI-0008 — Analisi sicurezza | Da verificare | 0 | No |
+| ARI-0009 — Verifica test | Da verificare | 0 | No |
+| ARI-0010 — Preparazione rilascio | Da verificare | 0 | No |
+
+Le evidenze sono archiviate in `Verifiche/` e seguono `VERIFICA.md`. Lo stato **Verificata** non è assegnato dalla sola conformità automatica.
+
+La conformità strutturale viene verificata da `Strumenti/verifica_procedure.py`; la compatibilità agente da `Strumenti/verifica_skills.py`; i rapporti operativi da `Strumenti/verifica_evidenze.py`.
 
 Le procedure pianificate ricevono `PROCEDURA.md` e `SKILL.md` conformi prima di passare allo stato **Disponibile**.
 
 Per installazione locale, percorsi ed esempi vedere `COMPATIBILITA.md`.
 
-I codici assegnati sono permanenti. Il catalogo viene aggiornato quando una procedura passa da pianificata a disponibile.
+I codici assegnati sono permanenti. Il catalogo viene aggiornato quando una procedura passa da pianificata a disponibile o cambia stato di verifica.
