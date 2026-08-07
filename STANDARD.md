@@ -53,7 +53,7 @@ Il codice resta permanente anche quando cambia il titolo. Il codice nel titolo d
 
 ## Versionamento delle procedure
 
-- `PATCH` — correzioni editoriali senza variazioni operative;
+- `PATCH` — correzioni editoriali, cambi di stato o registrazione di evidenze senza variazioni operative;
 - `MINOR` — miglioramenti compatibili del metodo, nuovi controlli o maggiore precisione;
 - `MAJOR` — modifica incompatibile del metodo o delle condizioni operative.
 
@@ -76,7 +76,7 @@ La versione corrente deve essere registrata anche nella cronologia del documento
 - Pubblicata
 - Obsoleta
 
-Lo stato **Verificata** richiede evidenze di applicazione operativa; la sola conformità strutturale non è sufficiente.
+Lo stato **Verificata** richiede evidenze di applicazione operativa; la sola conformità strutturale non è sufficiente. I criteri, il formato dei rapporti e la soglia minima sono definiti in `VERIFICA.md`.
 
 ## Compatibilità con agenti
 
@@ -107,16 +107,17 @@ La cartella sorgente conserva il codice `ARI-xxxx` per catalogazione e manutenzi
 
 ## Validazione automatica
 
-Prima di integrare modifiche alle procedure eseguire:
+Prima di integrare modifiche eseguire:
 
 ```text
 py Strumenti/verifica_procedure.py
 py Strumenti/verifica_skills.py
+py Strumenti/verifica_evidenze.py
 ```
 
 Su Linux/macOS usare `python3` al posto di `py`.
 
-Il controllo automatico non sostituisce la verifica operativa su progetti reali.
+I controlli automatici verificano struttura e coerenza minima. Non sostituiscono le prove operative su progetti reali descritte in `VERIFICA.md`.
 
 ## Regola fondamentale
 

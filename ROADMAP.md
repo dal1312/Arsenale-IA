@@ -22,8 +22,6 @@
 - [x] verifica automatica della coerenza degli adattatori;
 - [x] aggiornamento di `STANDARD.md` e `CATALOGO.md`.
 
-La procedura canonica resta indipendente dal client. Gli adattatori e gli strumenti locali sono descritti in `COMPATIBILITA.md`.
-
 ## Versione 0.4 — Standardizzazione — Completata
 
 - [x] struttura canonica uniforme per tutte le procedure disponibili;
@@ -32,16 +30,18 @@ La procedura canonica resta indipendente dal client. Gli adattatori e gli strume
 - [x] modello riutilizzabile per nuove procedure;
 - [x] CI multipiattaforma per procedure, skill e installatori locali.
 
-La conformità strutturale non cambia automaticamente lo stato di una procedura in **Verificata**.
+## Versione 0.5 — Verifica operativa — In corso
 
-## Versione 0.5 — Verifica operativa
-
-- matrice delle evidenze per procedura;
-- applicazione delle procedure del nucleo a progetti reali;
-- registrazione di input, ambiente, output e limiti delle prove;
-- promozione a **Verificata** solo delle procedure con evidenze sufficienti;
-- modelli di rapporto e checklist riutilizzabili collegati alle procedure.
+- [x] standard delle evidenze operative in `VERIFICA.md`;
+- [x] modello riutilizzabile di rapporto di verifica;
+- [x] validatore automatico dei rapporti;
+- [x] prima prova interna di ARI-0001 su Arsenale IA;
+- [x] prima prova indipendente di ARI-0001 su un repository software reale;
+- [x] promozione di ARI-0001 a **Verificata** sulla base di due evidenze valide;
+- [ ] verifica operativa di ARI-0002 — ARI-0010;
+- [ ] checklist e modelli di rapporto specifici dove necessari;
+- [ ] revisione incrociata della matrice delle evidenze del nucleo.
 
 ## Versione 1.0
 
-La versione 1.0 sarà dichiarata solo quando le procedure del nucleo saranno complete, verificate su progetti reali e coerenti con `STANDARD.md`.
+La versione 1.0 sarà dichiarata solo quando le procedure del nucleo saranno complete, verificate su progetti reali e coerenti con `STANDARD.md` e `VERIFICA.md`.
