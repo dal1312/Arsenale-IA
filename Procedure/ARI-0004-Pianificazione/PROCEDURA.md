@@ -2,8 +2,8 @@
 
 - **Categoria:** Nucleo
 - **Livello:** L4 Professionale
-- **Stato:** Bozza verificabile
-- **Versione:** 0.2.0
+- **Stato:** Verificata
+- **Versione:** 0.2.1
 - **Utilizzo offline:** Sì
 
 ## Scopo
@@ -83,5 +83,6 @@ Produrre un piano con sintesi, ambito, fuori ambito, ipotesi, rischi, dipendenze
 
 ## Cronologia delle versioni
 
+- **0.2.1** — Procedura promossa a **Verificata** dopo due pianificazioni operative documentate, inclusa una prova indipendente sull'issue #22 di Omega FL Pilot. Nessuna modifica al metodo operativo.
 - **0.2.0** — Struttura uniformata a `STANDARD.md`; requisiti, controlli, rapporto e condizioni di uscita resi espliciti.
 - **0.1.0** — Prima versione operativa.

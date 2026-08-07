@@ -17,7 +17,8 @@ Arsenale IA raccoglie procedure tecniche in italiano, riutilizzabili da persone,
 - verifica operativa v0.5 in corso;
 - 19 procedure disponibili;
 - 19/19 procedure con `PROCEDURA.md` conforme e `SKILL.md`;
-- ARI-0001, ARI-0002 e ARI-0003 verificate con due prove operative ciascuna, inclusa una prova indipendente;
+- ARI-0001…ARI-0004 verificate con due prove operative ciascuna, inclusa una prova indipendente;
+- piano operativo v0.5 disponibile in `Piani/VERIFICA-OPERATIVA-V0.5.md`;
 - utilizzo locale senza dipendenza runtime da GitHub;
 - CI Windows/Linux per procedure, adattatori, evidenze, test dei validatori e installatori.
 
@@ -28,6 +29,7 @@ Procedure/
   ARI-xxxx-Nome/
     PROCEDURA.md
     SKILL.md
+Piani/
 Verifiche/
   ARI-xxxx/
     VER-ARI-xxxx-AAAAMMGG-NN.md
