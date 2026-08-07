@@ -1,54 +1,89 @@
 # ARI-0008 — Analisi della sicurezza
 
+- **Categoria:** Nucleo
+- **Livello:** L5 Audit
+- **Stato:** Bozza verificabile
+- **Versione:** 0.2.0
+- **Utilizzo offline:** Sì
+
 ## Scopo
-Valutare i rischi di sicurezza di un progetto e produrre interventi prioritizzati senza confondere ipotesi e vulnerabilità confermate.
 
-## Input
-- codice e configurazioni;
-- modello di utilizzo;
-- dati trattati;
-- superfici esposte;
-- dipendenze e infrastruttura.
+Valutare i rischi di sicurezza di un progetto e produrre interventi prioritizzati distinguendo vulnerabilità confermate, ipotesi e miglioramenti difensivi.
 
-## Output
-- mappa delle superfici d'attacco;
-- problemi classificati;
-- evidenze riproducibili;
-- piano di mitigazione;
-- test di sicurezza richiesti.
+## Campo di applicazione
 
-## Procedura
+Codice, configurazioni, dipendenze, autenticazione, autorizzazione, dati sensibili, file, rete, distribuzione e superfici esposte di applicazioni e servizi.
+
+## Quando usarla
+
+- si prepara un hardening o rilascio
+- cambiano superfici esposte, autenticazione o trattamento dati
+- serve una revisione mirata dei controlli di sicurezza
+
+## Quando non usarla
+
+- si vuole eseguire una prova offensiva non autorizzata
+- mancano accesso e contesto sufficienti per distinguere configurazione reale e ipotesi
+- il problema è un singolo bug funzionale senza implicazioni di sicurezza
+
+## Prerequisiti
+
+- ambito e autorizzazioni definiti
+- codice e configurazioni accessibili
+- modello di utilizzo e dati trattati descritti
+- ambienti e dipendenze principali identificati
+
+## Materiale necessario
+
+- codice e configurazioni
+- diagrammi o descrizione dei flussi
+- inventario dipendenze e immagini
+- configurazioni di autenticazione e autorizzazione
+- log e risultati di scanner solo come evidenze complementari
+
+## Procedura operativa
+
 1. Identificare beni, utenti, confini di fiducia e dati sensibili.
 2. Elencare punti di ingresso, servizi, file, rete e dipendenze.
 3. Verificare autenticazione, autorizzazione e separazione dei ruoli.
-4. Controllare validazione degli input e codifica degli output.
+4. Controllare validazione input e codifica output.
 5. Cercare segreti, credenziali, token e dati sensibili esposti.
-6. Analizzare gestione sessioni, errori, log e configurazioni predefinite.
-7. Verificare rischi di injection, traversal, esecuzione comandi, caricamento file e deserializzazione.
-8. Controllare crittografia, firme, nonce, timestamp e protezione dai replay quando pertinenti.
+6. Analizzare sessioni, errori, log e configurazioni predefinite.
+7. Valutare injection, traversal, esecuzione comandi, upload e deserializzazione quando pertinenti.
+8. Controllare crittografia, firme, nonce, timestamp e replay quando pertinenti.
 9. Valutare dipendenze e immagini di distribuzione.
-10. Classificare gravità, probabilità, impatto e costo di correzione.
+10. Classificare evidenze, impatto, probabilità e mitigazioni.
 
-## Classificazione
-- confermata;
-- altamente probabile;
-- da verificare;
-- miglioramento difensivo.
+## Controlli
+
+- superfici d'attacco identificate
+- evidenze raccolte senza riportare segreti in chiaro
+- classificazione tra confermata, altamente probabile, da verificare e miglioramento difensivo
+- mitigazioni collegate a test di verifica
+- rischi residui documentati
 
 ## Errori frequenti
-- dichiarare vulnerabilità senza prova;
-- affidarsi solo a uno scanner automatico;
-- ignorare configurazione e distribuzione;
-- correggere il sintomo senza eliminare la causa;
-- pubblicare dettagli sensibili nel rapporto.
 
-## Condizioni di uscita
-- [ ] superfici d'attacco identificate;
-- [ ] evidenze raccolte in modo sicuro;
-- [ ] priorità assegnate;
-- [ ] mitigazioni e test definiti;
-- [ ] nessun segreto riportato in chiaro;
-- [ ] rischi residui documentati.
+- dichiarare vulnerabilità senza prova
+- affidarsi solo a scanner automatici
+- ignorare configurazione e distribuzione
+- correggere il sintomo senza eliminare la causa
+- pubblicare dettagli sensibili nel rapporto
 
 ## Rapporto finale
-Per ogni elemento indicare: identificativo, categoria, evidenza, scenario di rischio, impatto, probabilità, priorità, mitigazione, verifica e rischio residuo.
+
+Per ogni elemento indicare identificativo, categoria, stato dell'evidenza, scenario di rischio, impatto, probabilità, priorità, mitigazione, verifica e rischio residuo. Separare chiaramente informazioni sensibili da quelle pubblicabili.
+
+## Condizioni di uscita
+
+- superfici identificate
+- evidenze classificate
+- priorità assegnate
+- mitigazioni e test definiti
+- nessun segreto esposto nel rapporto
+- rischi residui documentati
+
+## Cronologia delle versioni
+
+- **0.2.0** — Struttura uniformata a `STANDARD.md`; requisiti, controlli, rapporto e condizioni di uscita resi espliciti.
+- **0.1.0** — Prima versione operativa.

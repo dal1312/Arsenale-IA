@@ -12,32 +12,42 @@ Arsenale IA raccoglie procedure tecniche in italiano, riutilizzabili da persone,
 
 ## Stato
 
-La roadmap **v0.3 — Compatibilità** è completata:
-
+- compatibilità Agent Skills v0.3 completata;
+- standardizzazione v0.4 completata;
 - 19 procedure disponibili;
-- 19 adattatori `SKILL.md`;
-- supporto a Codex, Claude Code e client compatibili con Agent Skills;
-- utilizzo locale senza dipendenza runtime da GitHub.
+- 19/19 procedure con `PROCEDURA.md` conforme e `SKILL.md`;
+- utilizzo locale senza dipendenza runtime da GitHub;
+- CI Windows/Linux per procedure, adattatori e installatori.
+
+La fase successiva è la verifica operativa v0.5 su progetti reali prima della promozione delle procedure allo stato **Verificata**.
 
 ## Struttura
 
-Ogni procedura disponibile vive in `Procedure/ARI-xxxx-.../` e contiene:
+```text
+Procedure/
+  ARI-xxxx-Nome/
+    PROCEDURA.md
+    SKILL.md
+Modelli/
+Strumenti/
+```
 
-- `PROCEDURA.md` — metodo canonico e completo;
-- `SKILL.md` — adattatore sintetico per agenti.
+`PROCEDURA.md` è la fonte canonica. `SKILL.md` è l'adattatore per gli agenti compatibili.
 
-La cartella sorgente usa il codice ARI. Gli strumenti in `Strumenti/` installano ogni skill nella cartella runtime con il nome previsto dal relativo front matter.
+## Verifica locale
 
-## Uso locale
+Windows:
 
-Le procedure possono essere lette e applicate direttamente dal filesystem: GitHub serve per distribuzione e versionamento, non è necessario durante l'esecuzione locale.
+```powershell
+py Strumenti/verifica_procedure.py
+py Strumenti/verifica_skills.py
+```
 
-Per Codex, Claude Code, altri agenti e installazione offline vedere [`COMPATIBILITA.md`](COMPATIBILITA.md).
+Linux/macOS:
 
-## Documenti principali
+```bash
+python3 Strumenti/verifica_procedure.py
+python3 Strumenti/verifica_skills.py
+```
 
-- [`STANDARD.md`](STANDARD.md) — regole comuni;
-- [`CATALOGO.md`](CATALOGO.md) — procedure disponibili e pianificate;
-- [`ROADMAP.md`](ROADMAP.md) — stato dello sviluppo;
-- [`COMPATIBILITA.md`](COMPATIBILITA.md) — installazione e uso con gli agenti;
-- [`CONTRIBUIRE.md`](CONTRIBUIRE.md) — regole per i contributi.
+Per installazione ed esempi con Codex, Claude Code e altri agenti vedere `COMPATIBILITA.md`.

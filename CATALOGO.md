@@ -43,17 +43,18 @@ Legenda: **Disponibile** = procedura presente; **Pianificata** = codice riservat
 - ARI-1901 — Revisione visione artificiale — Pianificata
 - ARI-2001 — Revisione software di stampa 3D — Pianificata
 
-## Compatibilità agenti
-
-Stato della compatibilità v0.3:
+## Stato di conformità
 
 - procedure disponibili: **19**;
+- conformi alla struttura canonica di `STANDARD.md`: **19/19**;
 - procedure disponibili con adattatore `SKILL.md`: **19/19**;
 - fonte canonica: `PROCEDURA.md`;
 - formato adattatori: Agent Skills;
 - utilizzo locale: supportato senza dipendenza runtime da GitHub.
 
-Le procedure pianificate ricevono il relativo `SKILL.md` quando passano allo stato **Disponibile**.
+La conformità strutturale viene verificata da `Strumenti/verifica_procedure.py`; la compatibilità agente da `Strumenti/verifica_skills.py`.
+
+Le procedure pianificate ricevono `PROCEDURA.md` e `SKILL.md` conformi prima di passare allo stato **Disponibile**.
 
 Per installazione locale, percorsi ed esempi vedere `COMPATIBILITA.md`.
 
