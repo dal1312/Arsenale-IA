@@ -34,6 +34,9 @@ jobs:
       - name: Verifica evidenze operative
         run: python Strumenti/verifica_evidenze.py
 
+      - name: Test validatore evidenze
+        run: python -m unittest Strumenti.test_verifica_evidenze
+
       - name: Prova installatore POSIX
         if: runner.os != 'Windows'
         shell: bash

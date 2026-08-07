@@ -35,10 +35,10 @@
 - [x] standard delle evidenze operative in `VERIFICA.md`;
 - [x] modello riutilizzabile di rapporto di verifica;
 - [x] validatore automatico dei rapporti;
-- [x] prima prova interna di ARI-0001 su Arsenale IA;
-- [x] prima prova indipendente di ARI-0001 su un repository software reale;
-- [x] promozione di ARI-0001 a **Verificata** sulla base di due evidenze valide;
-- [ ] verifica operativa di ARI-0002 — ARI-0010;
+- [x] verifica operativa e promozione di ARI-0001 — Revisione repository;
+- [x] verifica operativa e promozione di ARI-0002 — Revisione codice;
+- [x] rafforzamento del validatore: versione evidenza collegata alla cronologia della procedura;
+- [ ] verifica operativa di ARI-0003 — ARI-0010;
 - [ ] checklist e modelli di rapporto specifici dove necessari;
 - [ ] revisione incrociata della matrice delle evidenze del nucleo.
 

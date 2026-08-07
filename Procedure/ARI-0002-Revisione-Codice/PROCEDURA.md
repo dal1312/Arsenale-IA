@@ -2,8 +2,8 @@
 
 - **Categoria:** Nucleo
 - **Livello:** L4 Professionale
-- **Stato:** Bozza verificabile
-- **Versione:** 0.2.0
+- **Stato:** Verificata
+- **Versione:** 0.2.1
 - **Utilizzo offline:** Sì
 
 ## Scopo
@@ -89,5 +89,6 @@ Per ogni rilievo indicare identificativo, titolo, gravità, file e funzione, evi
 
 ## Cronologia delle versioni
 
+- **0.2.1** — Procedura promossa a **Verificata** dopo due code review operative documentate, inclusa una prova indipendente su Omega FL. Nessuna modifica al metodo operativo.
 - **0.2.0** — Struttura uniformata a `STANDARD.md` preservando la classificazione dei rilievi.
 - **0.1.0** — Prima versione operativa.
