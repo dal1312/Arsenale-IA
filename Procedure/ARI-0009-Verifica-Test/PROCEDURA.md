@@ -2,8 +2,8 @@
 
 - **Categoria:** Nucleo
 - **Livello:** L4 Professionale
-- **Stato:** Bozza verificabile
-- **Versione:** 0.2.0
+- **Stato:** Verificata
+- **Versione:** 0.2.1
 - **Utilizzo offline:** Sì
 
 ## Scopo
@@ -45,22 +45,22 @@ Suite unitarie, integrazione, end-to-end, test di contratto, test di regressione
 
 1. Individuare tutti i livelli di test presenti.
 2. Eseguire la suite in ambiente pulito.
-3. Registrare passati, falliti, saltati, durata e avvisi.
+3. Registrare test superati, falliti, saltati, durata e avvisi.
 4. Ripetere i test sospetti per individuare instabilità.
 5. Collegare i test ai comportamenti e ai rischi reali.
-6. Controllare qualità delle asserzioni e casi negativi.
+6. Controllare qualità delle asserzioni e gestione dei casi negativi.
 7. Verificare dipendenze da rete, tempo, ordine, file e stato globale.
-8. Analizzare mock e sostituzioni.
+8. Analizzare uso di mock e sostituzioni.
 9. Controllare casi limite, errori, concorrenza e regressioni note.
-10. Proporre nuovi test indicando input, risultato atteso e motivo.
+10. Proporre nuovi test specificando input, risultato atteso e motivo.
 
 ## Controlli
 
 - conteggi reali della suite registrati
 - test saltati o disabilitati esplicitati
-- aree critiche collegate a test reali
-- instabilità ripetuta e misurata
-- coverage usata solo come indicatore complementare
+- aree critiche collegate ai test
+- instabilità analizzate o limite della mancata ripetizione dichiarato
+- coverage usata solo come indicatore complementare quando disponibile
 
 ### Categorie di valutazione
 
@@ -75,23 +75,24 @@ Suite unitarie, integrazione, end-to-end, test di contratto, test di regressione
 
 - usare la percentuale di copertura come unica misura
 - aggiungere test che ripetono l'implementazione
-- ignorare test saltati
-- correggere un test fallito senza capire il requisito
-- considerare affidabile una suite dipendente dall'ordine
+- ignorare test saltati o disabilitati
+- correggere un test fallito senza capire se il difetto è nel codice
+- considerare affidabile una suite che dipende dall'ordine
 
 ## Rapporto finale
 
-Riportare comandi, ambiente, risultati, durata, test problematici, lacune, aree critiche scoperte, priorità e criteri di accettazione dei nuovi test.
+Riportare comandi, ambiente, risultati, durata, test problematici, lacune, priorità e criteri di accettazione dei nuovi test.
 
 ## Condizioni di uscita
 
 - suite eseguita e conteggi registrati
-- aree critiche mappate
-- instabilità analizzate
+- aree critiche collegate ai test
+- instabilità analizzate o limite dichiarato
 - test mancanti descritti concretamente
 - piano di miglioramento prodotto
 
 ## Cronologia delle versioni
 
+- **0.2.1** — Procedura promossa a **Verificata** dopo due verifiche operative di suite, inclusa una prova indipendente su Omega FL. Nessuna modifica sostanziale al metodo; chiarita la gestione esplicita dei limiti quando la ripetizione per flakiness non è disponibile.
 - **0.2.0** — Struttura uniformata a `STANDARD.md` preservando le categorie di valutazione dei test.
 - **0.1.0** — Prima versione operativa.

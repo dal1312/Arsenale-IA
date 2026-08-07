@@ -40,10 +40,11 @@
 - [x] verifica operativa e promozione di ARI-0003 — Diagnosi errori;
 - [x] verifica operativa e promozione di ARI-0004 — Pianificazione tecnica;
 - [x] verifica operativa e promozione di ARI-0005 — Implementazione controllata;
+- [x] verifica operativa e promozione di ARI-0009 — Verifica test;
 - [x] piano operativo per completare ARI-0005 — ARI-0010;
 - [x] rafforzamento del validatore: versione evidenza collegata alla cronologia della procedura;
 - [x] controllo automatico della soglia conteggiabile di promozione;
-- [ ] verifica operativa di ARI-0006 — ARI-0010;
+- [ ] verifica operativa di ARI-0006, ARI-0007, ARI-0008 e ARI-0010;
 - [ ] checklist e modelli di rapporto specifici dove necessari;
 - [ ] revisione incrociata della matrice delle evidenze del nucleo.
 
