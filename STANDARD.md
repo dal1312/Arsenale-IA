@@ -113,11 +113,13 @@ Prima di integrare modifiche eseguire:
 py Strumenti/verifica_procedure.py
 py Strumenti/verifica_skills.py
 py Strumenti/verifica_evidenze.py
+py Strumenti/verifica_promozioni.py
+py -m unittest Strumenti.test_verifica_evidenze Strumenti.test_verifica_promozioni
 ```
 
 Su Linux/macOS usare `python3` al posto di `py`.
 
-I controlli automatici verificano struttura e coerenza minima. Non sostituiscono le prove operative su progetti reali descritte in `VERIFICA.md`.
+I controlli automatici verificano struttura, coerenza minima e soglia conteggiabile delle promozioni. Non sostituiscono le prove operative su progetti reali descritte in `VERIFICA.md`.
 
 ## Regola fondamentale
 

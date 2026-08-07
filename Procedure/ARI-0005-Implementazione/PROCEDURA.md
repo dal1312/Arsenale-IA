@@ -2,8 +2,8 @@
 
 - **Categoria:** Nucleo
 - **Livello:** L4 Professionale
-- **Stato:** Bozza verificabile
-- **Versione:** 0.2.0
+- **Stato:** Verificata
+- **Versione:** 0.2.1
 - **Utilizzo offline:** Sì
 
 ## Scopo
@@ -85,5 +85,6 @@ Riepilogare requisito, incrementi eseguiti, file modificati, test aggiunti o agg
 
 ## Cronologia delle versioni
 
+- **0.2.1** — Procedura promossa a **Verificata** dopo due implementazioni operative documentate, inclusa una prova indipendente su Omega FL e una prova interna RED→GREEN. Nessuna modifica al metodo operativo.
 - **0.2.0** — Struttura uniformata a `STANDARD.md`; requisiti, controlli, rapporto e condizioni di uscita resi espliciti.
 - **0.1.0** — Prima versione operativa.
