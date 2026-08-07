@@ -59,7 +59,7 @@ Legenda: **Disponibile** = procedura presente; **Pianificata** = codice riservat
 | ARI-0001 — Revisione repository | **Verificata** | 2 | Sì |
 | ARI-0002 — Revisione codice | **Verificata** | 2 | Sì |
 | ARI-0003 — Diagnosi errori | **Verificata** | 2 | Sì |
-| ARI-0004 — Pianificazione tecnica | Da verificare | 0 | No |
+| ARI-0004 — Pianificazione tecnica | **Verificata** | 2 | Sì |
 | ARI-0005 — Implementazione controllata | Da verificare | 0 | No |
 | ARI-0006 — Refactoring controllato | Da verificare | 0 | No |
 | ARI-0007 — Analisi prestazioni | Da verificare | 0 | No |

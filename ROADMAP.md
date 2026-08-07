@@ -38,8 +38,10 @@
 - [x] verifica operativa e promozione di ARI-0001 — Revisione repository;
 - [x] verifica operativa e promozione di ARI-0002 — Revisione codice;
 - [x] verifica operativa e promozione di ARI-0003 — Diagnosi errori;
+- [x] verifica operativa e promozione di ARI-0004 — Pianificazione tecnica;
+- [x] piano operativo per completare ARI-0005 — ARI-0010;
 - [x] rafforzamento del validatore: versione evidenza collegata alla cronologia della procedura;
-- [ ] verifica operativa di ARI-0004 — ARI-0010;
+- [ ] verifica operativa di ARI-0005 — ARI-0010;
 - [ ] checklist e modelli di rapporto specifici dove necessari;
 - [ ] revisione incrociata della matrice delle evidenze del nucleo.
 
