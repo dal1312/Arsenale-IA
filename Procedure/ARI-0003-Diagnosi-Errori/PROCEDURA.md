@@ -2,8 +2,8 @@
 
 - **Categoria:** Nucleo
 - **Livello:** L4 Professionale
-- **Stato:** Bozza verificabile
-- **Versione:** 0.2.0
+- **Stato:** Verificata
+- **Versione:** 0.2.1
 - **Utilizzo offline:** Sì
 
 ## Scopo
@@ -65,7 +65,7 @@ Bug applicativi, errori di integrazione, regressioni, crash, comportamenti inter
 
 - modificare più parti contemporaneamente
 - affidarsi solo allo stack trace
-- eliminare un controllo per far passare un test
+- eliminare un controllo per far passare il test
 - cambiare il test senza verificare il requisito
 - dichiarare risolto senza prova di regressione
 
@@ -83,5 +83,6 @@ Riportare passaggi di riproduzione, frequenza, ambiente e versione, log essenzia
 
 ## Cronologia delle versioni
 
+- **0.2.1** — Procedura promossa a **Verificata** dopo due diagnosi operative documentate, inclusa una prova indipendente sul release gate Redis di Omega FL. Nessuna modifica al metodo operativo.
 - **0.2.0** — Struttura uniformata a `STANDARD.md`; requisiti, controlli, rapporto e condizioni di uscita resi espliciti.
 - **0.1.0** — Prima versione operativa.
