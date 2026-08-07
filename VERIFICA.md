@@ -50,6 +50,8 @@ Ogni file `VER-*.md` deve dichiarare:
 - Tipo prova
 - Stato evidenza
 
+`Versione procedura` deve corrispondere a una versione registrata nella sezione `Cronologia delle versioni` del relativo `PROCEDURA.md`. La compatibilità metodologica tra versioni diverse resta una decisione documentata, non una semplice equivalenza numerica.
+
 Le sezioni obbligatorie sono:
 
 1. `## Ambito`

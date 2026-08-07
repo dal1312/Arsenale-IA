@@ -32,6 +32,7 @@ REQUIRED_HEADINGS = (
 
 ID_RE = re.compile(r"^VER-(ARI-\d{4})-(\d{8})-(\d{2})$")
 VERSION_RE = re.compile(r"^\d+\.\d+\.\d+$")
+HISTORY_VERSION_RE = re.compile(r"^- \*\*(\d+\.\d+\.\d+)\*\*\s+—", re.MULTILINE)
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 VALID_TYPES = {"Interna", "Indipendente"}
 VALID_STATES = {"Eseguita", "Valida", "Inconcludente", "Respinta"}
@@ -53,11 +54,16 @@ def section_body(text: str, heading: str) -> str:
     return rest[:end].strip()
 
 
-def current_procedure_version(code: str) -> str | None:
+def declared_versions_from_text(text: str) -> set[str]:
+    return set(HISTORY_VERSION_RE.findall(section_body(text, "## Cronologia delle versioni")))
+
+
+def procedure_versions(code: str) -> set[str] | None:
     matches = list(PROCEDURE_ROOT.glob(f"{code}-*/PROCEDURA.md"))
     if len(matches) != 1:
         return None
-    return metadata(matches[0].read_text(encoding="utf-8"), "Versione")
+    text = matches[0].read_text(encoding="utf-8")
+    return declared_versions_from_text(text)
 
 
 def main() -> int:
@@ -95,12 +101,19 @@ def main() -> int:
             if report.stem != evidence_id:
                 errors.append(f"{report}: nome file diverso dall'Identificativo")
 
+        versions: set[str] | None = None
         if code and report.parent.name != code:
             errors.append(f"{report}: cartella diversa dal codice procedura {code}")
-        if code and not current_procedure_version(code):
-            errors.append(f"{report}: procedura {code} non trovata")
+        if code:
+            versions = procedure_versions(code)
+            if versions is None:
+                errors.append(f"{report}: procedura {code} non trovata")
         if version and not VERSION_RE.fullmatch(version):
             errors.append(f"{report}: versione procedura non semantica: {version}")
+        elif version and versions is not None and version not in versions:
+            errors.append(
+                f"{report}: versione procedura {version} non registrata nella cronologia di {code}"
+            )
         if date and not DATE_RE.fullmatch(date):
             errors.append(f"{report}: data non conforme: {date}")
         if evidence_type and evidence_type not in VALID_TYPES:
