@@ -30,6 +30,8 @@ Una procedura può essere promossa a **Verificata** quando esistono almeno due r
 
 La promozione viene registrata nella procedura, nel catalogo e nella matrice delle verifiche.
 
+La parte oggettivamente automatizzabile della soglia viene controllata da `Strumenti/verifica_promozioni.py`: una procedura marcata **Verificata** deve avere almeno 2 rapporti `Valida`, almeno 2 progetti distinti e almeno 1 prova `Indipendente`. Il controllo automatico non valuta la qualità metodologica dei rapporti.
+
 ## Stati dell'evidenza
 
 - **Eseguita:** il rapporto descrive un'applicazione reale completata.
@@ -82,12 +84,14 @@ Un test fallito nel progetto bersaglio è un'evidenza da analizzare, non un fall
 
 ## Automazione
 
-La struttura dei rapporti viene controllata da:
+Eseguire:
 
 ```text
 py Strumenti/verifica_evidenze.py
+py Strumenti/verifica_promozioni.py
+py -m unittest Strumenti.test_verifica_evidenze Strumenti.test_verifica_promozioni
 ```
 
 Su Linux/macOS usare `python3`.
 
-Il validatore controlla struttura e riferimenti; la decisione metodologica resta documentata nei rapporti e nel catalogo.
+I validatori controllano struttura, riferimenti e soglia conteggiabile; la decisione metodologica resta documentata nei rapporti e nel catalogo.

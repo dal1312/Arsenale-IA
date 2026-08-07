@@ -60,7 +60,7 @@ Legenda: **Disponibile** = procedura presente; **Pianificata** = codice riservat
 | ARI-0002 — Revisione codice | **Verificata** | 2 | Sì |
 | ARI-0003 — Diagnosi errori | **Verificata** | 2 | Sì |
 | ARI-0004 — Pianificazione tecnica | **Verificata** | 2 | Sì |
-| ARI-0005 — Implementazione controllata | Da verificare | 0 | No |
+| ARI-0005 — Implementazione controllata | **Verificata** | 2 | Sì |
 | ARI-0006 — Refactoring controllato | Da verificare | 0 | No |
 | ARI-0007 — Analisi prestazioni | Da verificare | 0 | No |
 | ARI-0008 — Analisi sicurezza | Da verificare | 0 | No |
@@ -69,7 +69,7 @@ Legenda: **Disponibile** = procedura presente; **Pianificata** = codice riservat
 
 Le evidenze sono archiviate in `Verifiche/` e seguono `VERIFICA.md`. Lo stato **Verificata** non è assegnato dalla sola conformità automatica.
 
-La conformità strutturale viene verificata da `Strumenti/verifica_procedure.py`; la compatibilità agente da `Strumenti/verifica_skills.py`; i rapporti operativi da `Strumenti/verifica_evidenze.py`.
+La conformità strutturale viene verificata da `Strumenti/verifica_procedure.py`; la compatibilità agente da `Strumenti/verifica_skills.py`; i rapporti operativi da `Strumenti/verifica_evidenze.py`; la soglia conteggiabile delle promozioni da `Strumenti/verifica_promozioni.py`.
 
 Le procedure pianificate ricevono `PROCEDURA.md` e `SKILL.md` conformi prima di passare allo stato **Disponibile**.
 
