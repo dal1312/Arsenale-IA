@@ -63,6 +63,17 @@ Latenza, throughput, uso CPU, memoria, I/O, rete, query, tempi di build o elabor
 - correttezza funzionale preservata
 - cache e concorrenza valutate insieme ai relativi costi
 
+### Punti da verificare quando pertinenti
+
+- complessità algoritmica
+- chiamate ripetute e query duplicate
+- operazioni bloccanti
+- allocazioni e copie inutili
+- caricamento completo di dati grandi
+- assenza di timeout, paginazione o limiti
+- concorrenza e lock
+- cache non necessarie o mancanti
+
 ## Errori frequenti
 
 - usare impressioni al posto delle metriche
@@ -85,5 +96,5 @@ Riportare scenario, ambiente, strumenti, dati di prova, metriche iniziali, collo
 
 ## Cronologia delle versioni
 
-- **0.2.0** — Struttura uniformata a `STANDARD.md`; requisiti, controlli, rapporto e condizioni di uscita resi espliciti.
+- **0.2.0** — Struttura uniformata a `STANDARD.md` preservando i controlli prestazionali specialistici.
 - **0.1.0** — Prima versione operativa.

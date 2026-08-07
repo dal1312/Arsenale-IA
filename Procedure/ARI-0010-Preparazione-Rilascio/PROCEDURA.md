@@ -64,6 +64,16 @@ Release candidate di applicazioni, servizi, librerie, immagini, pacchetti e dist
 - rollback o recupero disponibile per modifiche irreversibili
 - documentazione operativa sufficiente
 
+### Blocchi al rilascio
+
+- test critici falliti
+- build non riproducibile
+- vulnerabilità grave nota
+- migrazione non verificata
+- artefatto non installabile
+- assenza di recupero per modifiche irreversibili
+- documentazione operativa insufficiente
+
 ## Errori frequenti
 
 - verificare solo il codice e non l'artefatto
@@ -88,5 +98,5 @@ Registrare versione, commit/tag, esito test e build, artefatti verificati, insta
 
 ## Cronologia delle versioni
 
-- **0.2.0** — Struttura uniformata a `STANDARD.md`; requisiti, controlli, rapporto e condizioni di uscita resi espliciti.
+- **0.2.0** — Struttura uniformata a `STANDARD.md` preservando blocchi e verdetti di rilascio.
 - **0.1.0** — Prima versione operativa.

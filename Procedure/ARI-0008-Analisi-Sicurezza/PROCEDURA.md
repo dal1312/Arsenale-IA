@@ -58,9 +58,15 @@ Codice, configurazioni, dipendenze, autenticazione, autorizzazione, dati sensibi
 
 - superfici d'attacco identificate
 - evidenze raccolte senza riportare segreti in chiaro
-- classificazione tra confermata, altamente probabile, da verificare e miglioramento difensivo
 - mitigazioni collegate a test di verifica
 - rischi residui documentati
+
+### Classificazione delle evidenze
+
+- **confermata**
+- **altamente probabile**
+- **da verificare**
+- **miglioramento difensivo**
 
 ## Errori frequenti
 
@@ -85,5 +91,5 @@ Per ogni elemento indicare identificativo, categoria, stato dell'evidenza, scena
 
 ## Cronologia delle versioni
 
-- **0.2.0** — Struttura uniformata a `STANDARD.md`; requisiti, controlli, rapporto e condizioni di uscita resi espliciti.
+- **0.2.0** — Struttura uniformata a `STANDARD.md` preservando la classificazione delle evidenze.
 - **0.1.0** — Prima versione operativa.

@@ -62,6 +62,15 @@ Codice duplicato, moduli con responsabilità confuse, dipendenze eccessive, anni
 - nessuna nuova dipendenza non necessaria
 - codice morto rimosso solo dopo ricerca degli utilizzatori
 
+### Trasformazioni ammesse
+
+- estrazione di funzione o modulo
+- rinomina motivata
+- eliminazione di duplicazione reale
+- riduzione di annidamenti
+- separazione di responsabilità
+- rimozione di codice morto verificato
+
 ## Errori frequenti
 
 - mescolare refactoring e nuove funzioni
@@ -84,5 +93,5 @@ Indicare motivazione, confini, file modificati, trasformazioni eseguite, verific
 
 ## Cronologia delle versioni
 
-- **0.2.0** — Struttura uniformata a `STANDARD.md`; requisiti, controlli, rapporto e condizioni di uscita resi espliciti.
+- **0.2.0** — Struttura uniformata a `STANDARD.md` preservando le trasformazioni ammesse.
 - **0.1.0** — Prima versione operativa.

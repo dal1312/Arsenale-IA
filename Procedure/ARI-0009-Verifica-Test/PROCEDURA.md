@@ -62,6 +62,15 @@ Suite unitarie, integrazione, end-to-end, test di contratto, test di regressione
 - instabilità ripetuta e misurata
 - coverage usata solo come indicatore complementare
 
+### Categorie di valutazione
+
+- test valido
+- test debole
+- test duplicato
+- test instabile
+- test troppo accoppiato all'implementazione
+- comportamento critico non coperto
+
 ## Errori frequenti
 
 - usare la percentuale di copertura come unica misura
@@ -84,5 +93,5 @@ Riportare comandi, ambiente, risultati, durata, test problematici, lacune, aree 
 
 ## Cronologia delle versioni
 
-- **0.2.0** — Struttura uniformata a `STANDARD.md`; requisiti, controlli, rapporto e condizioni di uscita resi espliciti.
+- **0.2.0** — Struttura uniformata a `STANDARD.md` preservando le categorie di valutazione dei test.
 - **0.1.0** — Prima versione operativa.

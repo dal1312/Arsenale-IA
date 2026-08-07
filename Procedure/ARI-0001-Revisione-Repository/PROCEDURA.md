@@ -45,13 +45,13 @@ Repository applicativi, librerie, servizi, strumenti CLI, progetti multipiattafo
 
 1. Identificare scopo, linguaggi, framework, entry point, piattaforme, dipendenze e servizi esterni.
 2. Mappare sorgenti, test, configurazioni, documentazione, script, CI/CD, Docker e artefatti generati.
-3. Eseguire quando possibile installazione dipendenze, lint, controllo tipi, test, build e avvio locale; registrare comando ed esito.
+3. Eseguire quando possibile installazione dipendenze, lint, controllo tipi, test, build e avvio locale; per ogni comando registrare comando, esito, durata, avvisi ed errore principale.
 4. Analizzare responsabilità dei moduli, accoppiamento, duplicazioni, complessità, gestione errori, side effect, codice morto e dipendenze circolari.
-5. Valutare test, casi limite, instabilità e dipendenze da rete, tempo o ordine di esecuzione.
-6. Controllare sicurezza, configurazioni, segreti, validazione input e dipendenze vulnerabili quando pertinenti.
-7. Segnalare prestazioni solo sulla base di evidenze o necessità di misurazione.
-8. Verificare README, installazione, versionamento, CI/CD, pacchettizzazione e rilascio.
-9. Classificare i rilievi da P0 a P4 e costruire il piano di miglioramento senza applicarlo.
+5. Valutare copertura delle funzioni critiche, qualità delle asserzioni, casi limite, test intermittenti e dipendenze da rete, tempo o ordine di esecuzione.
+6. Controllare quando pertinenti segreti, autenticazione, autorizzazione, validazione input, gestione file, injection, replay, dati sensibili e dipendenze vulnerabili.
+7. Segnalare prestazioni solo sulla base di evidenze o necessità di misurazione; evitare ottimizzazioni premature.
+8. Verificare README, installazione, configurazione, comandi di test, versionamento, CI/CD, pacchettizzazione e rilascio.
+9. Classificare i rilievi e costruire il piano di miglioramento senza applicarlo.
 
 ## Controlli
 
@@ -61,17 +61,53 @@ Repository applicativi, librerie, servizi, strumenti CLI, progetti multipiattafo
 - nessuna modifica è applicata nella fase di revisione
 - i componenti stabili e da non toccare sono esplicitati
 
+### Classificazione delle priorità
+
+- **P0:** bloccante
+- **P1:** critica
+- **P2:** alta
+- **P3:** media
+- **P4:** bassa
+
 ## Errori frequenti
 
 - iniziare subito il refactoring
 - criticare lo stile senza dimostrare un impatto
 - dichiarare test superati senza dati
 - ignorare parti stabili del progetto
+- confondere documentazione obsoleta con codice errato
 - presentare supposizioni come vulnerabilità confermate
 
 ## Rapporto finale
 
-Produrre: sintesi esecutiva; mappa del repository; esito di build e test; problemi con priorità P0-P4 ed evidenze; punti di forza; piano di miglioramento; ticket proposti; ordine consigliato; componenti da non modificare; verdetto finale. Verdetti ammessi: NON AVVIABILE, INSTABILE, FUNZIONANTE CON PROBLEMI CRITICI, FUNZIONANTE MA DA CONSOLIDARE, BUONO, PRONTO PER HARDENING, PRONTO PER PRODUZIONE.
+Produrre: sintesi esecutiva; mappa del repository; esito di build e test; problemi con priorità P0-P4 ed evidenze; punti di forza; piano di miglioramento; ticket proposti; ordine consigliato; componenti da non modificare; verdetto finale.
+
+### Scheda obbligatoria del problema
+
+Per ogni problema indicare:
+
+- identificativo
+- titolo
+- priorità
+- categoria
+- file e funzione
+- evidenza
+- impatto
+- correzione consigliata
+- test richiesti
+- stima
+- rischio della modifica
+- dipendenze
+
+### Verdetti consentiti
+
+- NON AVVIABILE
+- INSTABILE
+- FUNZIONANTE CON PROBLEMI CRITICI
+- FUNZIONANTE MA DA CONSOLIDARE
+- BUONO
+- PRONTO PER HARDENING
+- PRONTO PER PRODUZIONE
 
 ## Condizioni di uscita
 
@@ -83,5 +119,5 @@ Produrre: sintesi esecutiva; mappa del repository; esito di build e test; proble
 
 ## Cronologia delle versioni
 
-- **0.2.0** — Struttura uniformata a `STANDARD.md`; requisiti, controlli, rapporto e condizioni di uscita resi espliciti.
+- **0.2.0** — Struttura uniformata a `STANDARD.md` preservando classificazione P0-P4, scheda problema e verdetti.
 - **0.1.0** — Prima versione operativa.

@@ -59,6 +59,14 @@ Patch, commit, pull request, moduli o gruppi limitati di file già modificati. L
 - i test mancanti sono descritti con comportamento atteso
 - nessun codice è modificato automaticamente durante la revisione
 
+### Classificazione dei rilievi
+
+- **Bloccante:** impedisce utilizzo o rilascio
+- **Critica:** rischio elevato di errore, perdita dati o vulnerabilità
+- **Alta:** regressione probabile o forte debito tecnico
+- **Media:** problema reale ma non urgente
+- **Bassa:** miglioramento facoltativo
+
 ## Errori frequenti
 
 - confondere preferenze stilistiche con difetti
@@ -81,5 +89,5 @@ Per ogni rilievo indicare identificativo, titolo, gravità, file e funzione, evi
 
 ## Cronologia delle versioni
 
-- **0.2.0** — Struttura uniformata a `STANDARD.md`; requisiti, controlli, rapporto e condizioni di uscita resi espliciti.
+- **0.2.0** — Struttura uniformata a `STANDARD.md` preservando la classificazione dei rilievi.
 - **0.1.0** — Prima versione operativa.
