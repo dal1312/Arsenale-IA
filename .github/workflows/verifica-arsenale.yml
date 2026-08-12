@@ -46,8 +46,9 @@ jobs:
         run: |
           dest="$RUNNER_TEMP/arsenale-skills"
           sh Strumenti/installa-skills.sh custom "$dest"
+          expected=$(find Procedure -mindepth 2 -maxdepth 2 -type f -name SKILL.md | wc -l)
           count=$(find "$dest" -mindepth 1 -maxdepth 1 -type d | wc -l)
-          test "$count" -eq 19
+          test "$count" -eq "$expected"
 
       - name: Prova installatore PowerShell
         if: runner.os == 'Windows'
@@ -56,7 +57,9 @@ jobs:
           $dest = Join-Path $env:RUNNER_TEMP "arsenale-skills"
           New-Item -ItemType Directory -Path $dest -Force | Out-Null
           .\Strumenti\Installa-Skills.ps1 -Destinazione Personalizzato -Percorso $dest -Forza
+          $expected = (Get-ChildItem -LiteralPath "Procedure" -Directory |
+              Where-Object { Test-Path (Join-Path $_.FullName "SKILL.md") }).Count
           $count = (Get-ChildItem -LiteralPath $dest -Directory).Count
-          if ($count -ne 19) {
-              throw "Attese 19 skill installate, trovate $count"
+          if ($count -ne $expected) {
+              throw "Attese $expected skill installate, trovate $count"
           }
