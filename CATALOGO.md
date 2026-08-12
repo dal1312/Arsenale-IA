@@ -29,7 +29,7 @@ Legenda: **Disponibile** = procedura presente; **Pianificata** = codice riservat
 
 ## Intelligenza artificiale
 
-- ARI-1501 — Valutazione modelli locali — Pianificata
+- **ARI-1501 — Valutazione modelli locali** — Disponibile
 - ARI-1502 — Ottimizzazione inferenza locale — Pianificata
 - ARI-1601 — Revisione modelli linguistici — Pianificata
 - ARI-1701 — Revisione agenti IA — Pianificata
@@ -45,9 +45,9 @@ Legenda: **Disponibile** = procedura presente; **Pianificata** = codice riservat
 
 ## Stato di conformità
 
-- procedure disponibili: **19**;
-- conformi alla struttura canonica di `STANDARD.md`: **19/19**;
-- procedure disponibili con adattatore `SKILL.md`: **19/19**;
+- procedure disponibili: **20**;
+- conformi alla struttura canonica di `STANDARD.md`: **20/20**;
+- procedure disponibili con adattatore `SKILL.md`: **20/20**;
 - fonte canonica: `PROCEDURA.md`;
 - formato adattatori: Agent Skills;
 - utilizzo locale: supportato senza dipendenza runtime da GitHub.
