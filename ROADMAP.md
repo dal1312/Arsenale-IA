@@ -48,6 +48,15 @@
 - [ ] checklist e modelli di rapporto specifici dove necessari;
 - [ ] revisione incrociata della matrice delle evidenze del nucleo.
 
+## Versione 0.6 — Espansione Intelligenza artificiale — In corso
+
+- [x] ARI-1501 — Valutazione modelli locali;
+- [ ] ARI-1502 — Ottimizzazione inferenza locale;
+- [ ] ARI-1601 — Revisione modelli linguistici;
+- [ ] ARI-1701 — Revisione agenti IA;
+- [ ] prove operative specifiche per hardware e runtime locali;
+- [ ] modelli di rapporto comparativo per qualità, prestazioni e memoria.
+
 ## Versione 1.0
 
 La versione 1.0 sarà dichiarata solo quando le procedure del nucleo saranno complete, verificate su progetti reali e coerenti con `STANDARD.md` e `VERIFICA.md`.
