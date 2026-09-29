@@ -43,6 +43,17 @@ Legenda: **Disponibile** = procedura presente; **Pianificata** = codice riservat
 - ARI-1901 — Revisione visione artificiale — Pianificata
 - ARI-2001 — Revisione software di stampa 3D — Pianificata
 
+## Web, App, UI Design e Asset
+
+- ARI-2101 — Revisione siti web statici — Pianificata
+- ARI-2102 — Revisione applicazioni web (full-stack / SPA) — Pianificata
+- ARI-2103 — Design e accessibilità interfaccia — Pianificata
+- ARI-2104 — Performance UX/UI Web e App — Pianificata
+- ARI-2105 — Asset discovery e selezione asset — Pianificata
+- ARI-2106 — Replica funzionale e clone legale sito — Pianificata
+- ARI-2107 — App Windows con interfaccia stile iOS/macOS — Pianificata
+- ARI-2108 — UX, accessibilità e conversione — Pianificata
+
 ## Stato di conformità
 
 - procedure disponibili: **20**;
