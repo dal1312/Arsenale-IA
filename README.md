@@ -15,6 +15,8 @@ Arsenale IA raccoglie procedure tecniche in italiano, riutilizzabili da persone,
 - compatibilità Agent Skills v0.3 completata;
 - standardizzazione v0.4 completata;
 - verifica operativa v0.5 in corso;
+- espansione IA v0.6 in corso;
+- famiglia Web, App, UI Design e Asset ARI-2101…ARI-2108 registrata come pianificata;
 - 20 procedure disponibili;
 - 20/20 procedure con `PROCEDURA.md` conforme e `SKILL.md`;
 - ARI-0001…ARI-0005 e ARI-0009 verificate con due prove operative ciascuna, inclusa una prova indipendente;
