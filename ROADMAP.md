@@ -57,6 +57,18 @@
 - [ ] prove operative specifiche per hardware e runtime locali;
 - [ ] modelli di rapporto comparativo per qualità, prestazioni e memoria.
 
+## Versione 0.7 — Web, App, UI Design e Asset — Pianificata
+
+- [ ] ARI-2101 — Revisione siti web statici;
+- [ ] ARI-2102 — Revisione applicazioni web (full-stack / SPA);
+- [ ] ARI-2103 — Design e accessibilità interfaccia;
+- [ ] ARI-2104 — Performance UX/UI Web e App;
+- [ ] ARI-2105 — Asset discovery e selezione asset;
+- [ ] ARI-2106 — Replica funzionale e clone legale sito;
+- [ ] ARI-2107 — App Windows con interfaccia stile iOS/macOS;
+- [ ] ARI-2108 — UX, accessibilità e conversione;
+- [ ] promozione a **Disponibile** solo dopo presenza di `PROCEDURA.md` e `SKILL.md` conformi.
+
 ## Versione 1.0
 
 La versione 1.0 sarà dichiarata solo quando le procedure del nucleo saranno complete, verificate su progetti reali e coerenti con `STANDARD.md` e `VERIFICA.md`.
