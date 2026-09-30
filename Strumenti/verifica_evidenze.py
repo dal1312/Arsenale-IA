@@ -36,6 +36,23 @@ HISTORY_VERSION_RE = re.compile(r"^- \*\*(\d+\.\d+\.\d+)\*\*\s+—", re.MULTILIN
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 VALID_TYPES = {"Interna", "Indipendente"}
 VALID_STATES = {"Eseguita", "Valida", "Inconcludente", "Respinta"}
+PLACEHOLDER_PATTERNS = (
+    ("TODO", re.compile(r"\bTODO\b", re.IGNORECASE)),
+    ("TBD", re.compile(r"\bTBD\b", re.IGNORECASE)),
+    ("N/A", re.compile(r"\bN/A\b")),
+    ("da completare", re.compile(r"\bda completare\b", re.IGNORECASE)),
+    ("da definire", re.compile(r"\bda definire\b", re.IGNORECASE)),
+)
+
+
+def placeholder_hits(text: str) -> list[str]:
+    hits: list[str] = []
+    lines = text.splitlines()
+    for idx, line in enumerate(lines, 1):
+        for label, pattern in PLACEHOLDER_PATTERNS:
+            if pattern.search(line):
+                hits.append(f"riga {idx}: {label}")
+    return hits
 
 
 def metadata(text: str, key: str) -> str | None:
@@ -66,12 +83,13 @@ def procedure_versions(code: str) -> set[str] | None:
     return declared_versions_from_text(text)
 
 
-def main() -> int:
-    errors: list[str] = []
-    reports = sorted(EVIDENCE_ROOT.glob("ARI-*/VER-*.md")) if EVIDENCE_ROOT.is_dir() else []
+def validate_reports(reports: list[Path]) -> dict[Path, list[str]]:
+    """Valida i rapporti e restituisce gli errori associati a ogni file."""
+    errors_by_report: dict[Path, list[str]] = {}
     seen_ids: set[str] = set()
 
     for report in reports:
+        errors: list[str] = []
         text = report.read_text(encoding="utf-8")
         values = {key: metadata(text, key) for key in REQUIRED_METADATA}
 
@@ -120,6 +138,8 @@ def main() -> int:
             errors.append(f"{report}: tipo prova non ammesso: {evidence_type}")
         if state and state not in VALID_STATES:
             errors.append(f"{report}: stato evidenza non ammesso: {state}")
+        for hit in placeholder_hits(text):
+            errors.append(f"{report}: placeholder esplicito nel report ({hit})")
 
         positions: list[int] = []
         for heading in REQUIRED_HEADINGS:
@@ -133,6 +153,15 @@ def main() -> int:
 
         if len(positions) == len(REQUIRED_HEADINGS) and positions != sorted(positions):
             errors.append(f"{report}: sezioni obbligatorie fuori ordine")
+        errors_by_report[report] = errors
+
+    return errors_by_report
+
+
+def main() -> int:
+    reports = sorted(EVIDENCE_ROOT.glob("ARI-*/VER-*.md")) if EVIDENCE_ROOT.is_dir() else []
+    errors_by_report = validate_reports(reports)
+    errors = [error for report_errors in errors_by_report.values() for error in report_errors]
 
     if errors:
         print("VERIFICA EVIDENZE FALLITA")
