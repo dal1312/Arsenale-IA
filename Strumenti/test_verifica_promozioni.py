@@ -1,6 +1,6 @@
 import unittest
 
-from Strumenti.verifica_promozioni import promotion_errors
+from Strumenti.verifica_promozioni import catalog_matrix_errors, promotion_errors
 
 
 def report(project: str, evidence_type: str = "Interna", state: str = "Valida") -> dict[str, str]:
@@ -49,6 +49,30 @@ class PromotionThresholdTests(unittest.TestCase):
             ],
         )
         self.assertTrue(any("almeno 2 evidenze valide" in error for error in errors))
+
+    def test_catalog_matrix_requires_every_available_procedure(self) -> None:
+        text = "\n".join(
+            [
+                "- **ARI-0001 — Revisione repository** — Disponibile",
+                "- **ARI-0101 — Revisione Python** — Disponibile",
+                "| Procedura | Stato | Evidenze valide | Prova indipendente |",
+                "| --- | --- | ---: | --- |",
+                "| ARI-0001 — Revisione repository | **Verificata** | 2 | Sì |",
+            ]
+        )
+        errors = catalog_matrix_errors(text)
+        self.assertTrue(any("ARI-0101" in error for error in errors))
+
+    def test_catalog_matrix_accepts_available_procedure_rows(self) -> None:
+        text = "\n".join(
+            [
+                "- **ARI-0001 — Revisione repository** — Disponibile",
+                "| Procedura | Stato | Evidenze valide | Prova indipendente |",
+                "| --- | --- | ---: | --- |",
+                "| ARI-0001 — Revisione repository | **Verificata** | 2 | Sì |",
+            ]
+        )
+        self.assertEqual(catalog_matrix_errors(text), [])
 
 
 if __name__ == "__main__":
