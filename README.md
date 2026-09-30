@@ -12,16 +12,18 @@ Arsenale IA raccoglie procedure tecniche in italiano, riutilizzabili da persone,
 
 ## Stato
 
-- compatibilità Agent Skills v0.3 completata;
+- compatibilità Competenze agente v0.3 completata;
 - standardizzazione v0.4 completata;
 - verifica operativa v0.5 in corso;
-- 20 procedure disponibili;
-- 20/20 procedure con `PROCEDURA.md` conforme e `SKILL.md`;
+- 56 procedure disponibili nel catalogo;
+- 56/56 procedure disponibili con `PROCEDURA.md` e `SKILL.md`;
 - ARI-0001…ARI-0005 e ARI-0009 verificate con due prove operative ciascuna, inclusa una prova indipendente;
+- nuove categorie locali aggiunte: documentazione, automazione, gestione locale, desktop Windows, IA avanzata, sicurezza e test browser;
+- nuove competenze aggiunte: revisione testi e progettazione prompt per agenti;
 - piano operativo v0.5 disponibile in `Piani/VERIFICA-OPERATIVA-V0.5.md`;
 - soglia minima delle promozioni verificata automaticamente;
-- utilizzo locale senza dipendenza runtime da GitHub;
-- CI Windows/Linux per procedure, adattatori, evidenze, promozioni, test dei validatori e installatori.
+- utilizzo locale senza dipendenza ambiente di esecuzione da GitHub;
+- verifiche locali Windows/Linux per procedure, adattatori, evidenze, promozioni, test dei validatori e installatori.
 
 ## Struttura
 
@@ -38,7 +40,7 @@ Modelli/
 Strumenti/
 ```
 
-`PROCEDURA.md` è la fonte canonica. `SKILL.md` è l'adattatore per gli agenti compatibili. `VERIFICA.md` definisce le evidenze richieste per lo stato **Verificata**.
+`Disponibile` indica che la procedura è presente nel catalogo e utilizzabile. Lo stato interno (`Bozza verificabile`, `In revisione`, `Verificata` o altro) descrive la maturità metodologica: non è implicato dalla disponibilità. Solo **Verificata** richiede le evidenze operative definite in `VERIFICA.md`. `PROCEDURA.md` è la fonte canonica e `SKILL.md` l'adattatore per gli agenti compatibili.
 
 ## Verifica locale
 
@@ -63,3 +65,4 @@ python3 -m unittest Strumenti.test_verifica_evidenze Strumenti.test_verifica_pro
 ```
 
 Per installazione ed esempi con Codex, Claude Code e altri agenti vedere `COMPATIBILITA.md`.
+
