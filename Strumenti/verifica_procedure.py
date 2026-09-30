@@ -34,7 +34,11 @@ REQUIRED_HEADINGS = (
 DIR_RE = re.compile(r"^(ARI-\d{4})-")
 TITLE_RE = re.compile(r"^# (ARI-\d{4}) — .+", re.MULTILINE)
 VERSION_RE = re.compile(r"^\d+\.\d+\.\d+$")
-AVAILABLE_RE = re.compile(r"\*\*(ARI-\d{4}) — [^\n]+?\*\* — Disponibile")
+CATALOG_ENTRY_RE = re.compile(
+    r"^-\s+(?:\*\*)?(ARI-\d{4})\b[^\n]*?\s+—\s+(Disponibile|Pianificata)\s*$",
+    re.MULTILINE,
+)
+ROUTER_CODE_RE = re.compile(r"\bARI-\d{4}\b")
 
 
 def metadata_value(text: str, key: str) -> str | None:
@@ -119,13 +123,34 @@ def main() -> int:
 
     if CATALOGO.is_file():
         catalog_text = CATALOGO.read_text(encoding="utf-8")
-        available = set(AVAILABLE_RE.findall(catalog_text))
+        catalog_entries = CATALOG_ENTRY_RE.findall(catalog_text)
+        catalog_codes = [code for code, _state in catalog_entries]
+        duplicate_catalog_codes = sorted(
+            code for code in set(catalog_codes) if catalog_codes.count(code) > 1
+        )
+        if duplicate_catalog_codes:
+            errors.append(
+                "Codici duplicati nel catalogo: " + ", ".join(duplicate_catalog_codes)
+            )
+
+        available = {code for code, state in catalog_entries if state == "Disponibile"}
+        listed = set(catalog_codes)
         missing = sorted(available - codes)
-        extra = sorted(codes - available)
+        unlisted = sorted(codes - listed)
         if missing:
             errors.append("Procedure disponibili senza cartella: " + ", ".join(missing))
-        if extra:
-            errors.append("Cartelle procedura non marcate Disponibile: " + ", ".join(extra))
+        if unlisted:
+            errors.append("Cartelle procedura non catalogate: " + ", ".join(unlisted))
+
+        router = ROOT / "AGENTI.md"
+        if router.is_file():
+            router_codes = set(ROUTER_CODE_RE.findall(router.read_text(encoding="utf-8")))
+            unknown_router_codes = sorted(router_codes - listed)
+            if unknown_router_codes:
+                errors.append(
+                    "Riferimenti ARI nel router non presenti nel catalogo: "
+                    + ", ".join(unknown_router_codes)
+                )
     else:
         errors.append("CATALOGO.md mancante")
 
