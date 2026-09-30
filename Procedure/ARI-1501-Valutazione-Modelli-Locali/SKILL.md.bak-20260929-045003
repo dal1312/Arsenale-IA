@@ -1,0 +1,17 @@
+---
+name: valutazione-modelli-locali
+description: Valuta e confronta modelli IA locali usando metadata e benchmark verificabili; usala per scelta di LLM, modelli multimodali o embedding, quantizzazioni e runtime. Obbliga a distinguere osservato, derivato, non verificato e stima; non dedurre proprietà dal filename o dal provider.
+---
+
+# Valutazione modelli locali
+
+Segui integralmente `PROCEDURA.md` nella stessa cartella, che è la fonte canonica del metodo.
+
+## Vincoli di attivazione
+
+- Classifica ogni affermazione tecnica come **OSSERVATO**, **DERIVATO**, **NON VERIFICATO** o **STIMA** (solo se esplicitamente richiesta); cita la fonte e non inventare valori.
+- Per GGUF ispeziona metadata e, quando affermi la quantizzazione effettiva, i tensor types. Distingui `general.file_type` dai tipi dei tensori; non inferire architettura, layer o MoE dal filename.
+- Distingui context massimo del modello dal context runtime. In llama.cpp `-ngl` è una richiesta di offload da verificare nei log; `-np` riguarda parallel sequences/slots, non i thread CPU.
+- Controlla template incorporato e configurazione runtime; non dedurre tool calling dal solo provider. Distingui GPU discreta da iGPU/UMA e non inventare VRAM dedicata.
+- Riporta prestazioni solo da benchmark osservati, separando PP da TG. Senza benchmark scrivi **non misurato**; nessuna previsione tok/s o latenza non richiesta.
+- Registra configurazioni, anomalie e almeno tre ripetizioni valide per configurazione secondo la procedura. Se uno strumento o un dato manca, dichiaralo e non sostituirlo con supposizioni.

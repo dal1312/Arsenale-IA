@@ -1,0 +1,159 @@
+# ARI-1501 — Valutazione modelli locali
+
+- **Categoria:** Intelligenza artificiale
+- **Livello:** L4 Professionale
+- **Stato:** Bozza verificabile
+- **Versione:** 0.2.0
+- **Utilizzo offline:** Sì
+
+## Scopo
+
+Confrontare modelli di intelligenza artificiale eseguiti localmente con misure ripetibili di qualità, prestazioni, consumo di risorse e compatibilità, producendo una scelta motivata per uno specifico caso d'uso.
+
+## Campo di applicazione
+
+Modelli linguistici, multimodali e di embedding eseguiti su workstation, server o dispositivi locali tramite runtime come llama.cpp, Ollama, LM Studio, vLLM o motori equivalenti. La procedura copre confronti tra modelli, quantizzazioni, runtime e configurazioni hardware. Le indicazioni sui metadata GGUF e sui flag llama.cpp si applicano quando questi formati/runtime sono in uso; per altri stack si raccolgono i campi equivalenti documentati.
+
+## Quando usarla
+
+- prima di scegliere un modello locale per un'applicazione o un agente
+- quando si confrontano quantizzazioni, runtime o acceleratori differenti
+- dopo aggiornamenti di modello, driver o motore di inferenza
+- quando servono dati verificabili su qualità, latenza, memoria e stabilità
+
+## Quando non usarla
+
+- il modello deve essere addestrato o sottoposto a fine-tuning
+- serve ottimizzare una configurazione già scelta senza confrontare alternative
+- l'ambiente non permette di fissare e registrare versioni, parametri e carico
+- si vuole dedurre la qualità da impressioni o da una singola conversazione
+
+## Prerequisiti
+
+- caso d'uso, lingua, requisiti e vincoli hardware definiti
+- almeno un modello e un runtime installati e disponibili localmente
+- dataset di prova rappresentativo e privo di dati non autorizzati
+- strumenti di sola lettura per ispezionare modello, configurazione, runtime e hardware, se tali dati devono essere dichiarati
+- strumenti per misurare tempo, memoria e utilizzo dell'acceleratore
+- condizioni di esecuzione sufficientemente stabili e ripetibili
+
+## Materiale necessario
+
+- identificativo esatto, versione, licenza e provenienza di ogni modello
+- formato e quantizzazione dei pesi, supportati da metadata o inventario tensoriale quando disponibili
+- versione di runtime, driver e librerie di accelerazione
+- configurazione effettiva, comando di avvio, log e stato runtime
+- scheda hardware con CPU, RAM, GPU o NPU e memoria disponibile, distinguendo memoria dedicata e condivisa
+- prompt o dataset di valutazione versionato
+- criteri di scoring e soglie di accettazione
+- log grezzi delle esecuzioni e configurazioni utilizzate
+
+## Procedura operativa
+
+### Classificazione delle evidenze
+
+Per ogni affermazione tecnica e risultato usare una delle seguenti classi, indicando la fonte e il metodo di acquisizione:
+
+- **OSSERVATO** — letto direttamente da metadata del modello, configurazione, comando/processo, log, benchmark oppure inventario hardware.
+- **DERIVATO** — calcolato direttamente da dati osservati, con formula o passaggio riproducibile.
+- **NON VERIFICATO** — dato non disponibile, non leggibile o non confermato dalla fonte appropriata.
+- **STIMA** — previsione approssimata, ammessa solo se richiesta esplicitamente dall'utente; dichiarare ipotesi e incertezza e non presentarla come misura.
+
+Non promuovere un dato inferito dal nome del file, da una pagina commerciale o da una configurazione richiesta a dato osservato. Se uno strumento non è disponibile, riportare il campo come **NON VERIFICATO** e fermarsi su quella conclusione senza inventare un valore.
+
+### Identificazione del modello e ispezione GGUF
+
+1. Registrare percorso, dimensione, hash se disponibile, formato e provenienza dichiarata. Il filename è un identificatore, non una fonte sufficiente per architettura, quantizzazione, numero di layer, MoE o prestazioni.
+2. Per GGUF, usare un lettore metadata locale compatibile in modalità sola lettura. Registrare le chiavi realmente presenti, tra cui, se disponibili: `general.architecture`, `general.file_type`, `general.quantization_version`, `general.size_label`, `general.finetune`, provenance (`general.url`, `general.source.url`, `*.quantized_by`), `tokenizer.ggml.model`, `tokenizer.ggml.pre`, `tokenizer.chat_template` e chiavi architetturali quali `<architecture>.block_count`, `<architecture>.context_length`, `<architecture>.expert_count` e `<architecture>.expert_used_count`.
+3. Se un metadata manca, riportarlo come non verificato; non colmare il vuoto con il nome commerciale o con valori trovati per un modello solo apparentemente simile.
+4. Distinguere `general.file_type`, che è un'etichetta/enum di classificazione del file, dai tipi effettivi dei tensori. Quando si afferma quali quantizzazioni sono presenti, ispezionare l'inventario dei tensor types e descrivere la distribuzione o i gruppi pertinenti. Non ridurre un GGUF con tipi tensoriali misti a una sola etichetta come “tutto 4-bit” sulla base del filename o del solo `general.file_type`.
+5. Per modelli Mixture-of-Experts, leggere i metadata di conteggio esperti pertinenti all'architettura, in particolare numero totale e numero usato per token quando disponibili. Non dedurre la configurazione MoE dal nome.
+6. Registrare tokenizer e template. Verificare prima `tokenizer.chat_template` incorporato nel GGUF; annotare separatamente template esterni o override del runtime. Un template presente non prova da solo che sia quello effettivamente usato.
+
+### Configurazione runtime e capacità osservate
+
+1. Separare i limiti dichiarati dal modello dalla configurazione runtime. Per il contesto riportare distintamente il massimo metadata del modello, il valore richiesto all'avvio e quello effettivamente attivo/confermato dal runtime.
+2. Per llama.cpp, interpretare `-ngl` come richiesta di offload di layer verso GPU. Non trattare il valore richiesto come numero di layer effettivamente collocati: verificare log e stato runtime; riportare separatamente richiesta ed esito. Non dedurre l'offload dal solo flag o dalla presenza di una GPU.
+3. In llama.cpp, `-np` indica parallel sequences/slots, non thread CPU. Rilevare il parallelismo e i thread CPU dai rispettivi parametri e dalla configurazione runtime effettiva; non confonderli.
+4. Registrare flag e opzioni rilevanti per template, inclusi `--jinja` quando presente. Non chiamare un template “standard” o “predefinito” senza indicare la fonte e la configurazione effettivamente attiva.
+5. La capacità di tool calling va analizzata per livelli distinti: supporto e template del modello; server/API e formato di tool call esposto; richiesta e payload del client; comportamento osservato in una prova appropriata. Il tipo di provider, da solo, non dimostra presenza né assenza della capacità.
+
+### Hardware e memoria
+
+1. Identificare modello reale di CPU, GPU/NPU e RAM con inventario hardware o fonte di sistema; indicare la fonte. Distinguere GPU discreta da GPU integrata.
+2. Per iGPU e sistemi UMA, descrivere memoria GPU condivisa e RAM di sistema come risorse correlate, non come pool fisici indipendenti. Non inventare VRAM dedicata né sommare memoria condivisa e RAM come se fossero capacità separate.
+3. Distinguere memoria installata, memoria disponibile prima del test e picco osservato durante il carico. Se un valore non è misurato o leggibile, dichiararlo non verificato.
+
+### Disegno ed esecuzione delle prove
+
+1. Definire caso d'uso, errori inaccettabili e soglie minime di qualità, latenza, memoria e stabilità prima delle prove.
+2. Registrare hardware, sistema operativo, driver, runtime, modello, quantizzazione, contesto e parametri effettivi di generazione.
+3. Preparare un insieme di prove rappresentativo, separando controlli deterministici, valutazioni automatiche e giudizi umani.
+4. Eseguire un riscaldamento iniziale non conteggiato e verificare che nessun altro carico alteri significativamente le misure.
+5. Eseguire almeno tre ripetizioni valide per configurazione con stessi input, seed quando supportato e parametri invariati. Conservare tutte le ripetizioni, inclusi errori e timeout.
+6. Misurare tempo di caricamento, latenza al primo token, token al secondo, durata totale, memoria di picco, errori e arresti. Separare prompt processing (PP/prefill) da text generation (TG/decode), indicando token, parametri e unità usati.
+7. Riportare benchmark misurati con comando, runtime/versione, contesto, batch, lunghezza input/output, numero ripetizioni, metodo e log. Se mancano risultati validi, scrivere **non misurato**.
+8. Non inventare throughput, latenza o intervalli previsionali. Fornire una stima solo se richiesta esplicitamente, etichettandola **STIMA**, esplicitando ipotesi e tenendola separata dai risultati misurati.
+9. Valutare la qualità con criteri espliciti: correttezza, aderenza alle istruzioni, lingua italiana, robustezza, formato e allucinazioni rilevabili.
+10. Eseguire prove negative e limite su input lunghi, richieste ambigue, output strutturati e saturazione della memoria solo entro limiti sicuri e autorizzati.
+11. Confrontare configurazioni a parità di condizioni; separare sempre l'effetto del modello da quello di runtime, quantizzazione, hardware e parametri.
+12. Conservare configurazioni, risultati grezzi, aggregazioni e anomalie sufficienti a ripetere il confronto.
+13. Formulare una raccomandazione per il caso d'uso dichiarato, indicando compromessi, limiti, evidenze e condizioni che richiedono una nuova valutazione.
+
+## Controlli
+
+- ogni affermazione tecnica è classificata OSSERVATO, DERIVATO, NON VERIFICATO o, se richiesta, STIMA, con fonte indicata
+- filename e nome commerciale non sono usati come unica prova di proprietà tecniche
+- metadata GGUF, `general.file_type` e tipi tensoriali effettivi sono distinti
+- metadata MoE e tokenizer/template sono riportati solo se effettivamente leggibili
+- contesto massimo del modello e contesto runtime sono distinti
+- richiesta di offload (`-ngl`) ed esito osservato sono distinti; `-np` non è descritto come thread CPU
+- iGPU/UMA è descritta senza inventare VRAM dedicata o pool indipendenti
+- tool calling non è dedotto dal solo provider
+- benchmark PP e TG sono separati e accompagnati da evidenze; assenza di benchmark è dichiarata “non misurato”
+- nessuna stima è presentata come misura né introdotta senza richiesta esplicita
+- stesso dataset e stessi parametri nelle prove comparabili
+- almeno tre ripetizioni valide per ogni configurazione; riscaldamento escluso
+- mediana e variabilità riportate, non solo il risultato migliore
+- qualità e prestazioni valutate separatamente
+- fallimenti, timeout e risultati anomali conservati
+- licenza e requisiti hardware compatibili con l'uso previsto
+- nessun dato riservato inviato a servizi esterni durante una prova dichiarata locale
+
+## Errori frequenti
+
+- dedurre architettura, bit per peso, layer o MoE dal filename
+- trattare `general.file_type` come descrizione completa del tipo di ogni tensore
+- dichiarare un offload effettivo leggendo soltanto il valore richiesto con `-ngl`
+- confondere contesto massimo del modello con contesto configurato nel runtime
+- interpretare `-np` come numero di thread CPU
+- riportare una iGPU UMA come GPU discreta con VRAM dedicata non osservata
+- ignorare il chat template incorporato o dichiarare quale template è attivo senza controllare GGUF e runtime
+- concludere che tool calling sia assente o presente basandosi soltanto sul provider
+- dichiarare sconosciuti dati MoE disponibili nei metadata o inferirli dal nome
+- inventare tok/s o latenze senza benchmark e chiamare una stima “misurata”
+- confrontare modelli con prompt, contesto o parametri differenti
+- misurare una sola esecuzione o includere il caricamento in modo incoerente
+- scegliere il modello solo per token al secondo ignorando qualità e memoria
+- usare benchmark generici non rappresentativi del caso d'uso reale
+- confondere limiti del runtime con limiti del modello
+- scartare silenziosamente errori, risposte vuote o arresti per memoria
+- dichiarare vincitore un modello senza soglie definite prima delle prove
+
+## Rapporto finale
+
+Riportare obiettivo, ambiente hardware e software, fonti e classi di evidenza, configurazioni confrontate, metadata modello effettivamente disponibili, template/tokenizer, dataset e criteri, numero di ripetizioni, benchmark distinti PP/TG con risultati grezzi e aggregati, qualità per categoria, memoria, errori, limiti e raccomandazione. Separare chiaramente valori osservati, derivati, non verificati e stime richieste. Usare uno dei verdetti: **Idoneo**, **Idoneo con vincoli**, **Non idoneo** o **Inconcludente**.
+
+## Condizioni di uscita
+
+- ambiente e configurazioni registrati in modo riproducibile
+- prove comparabili completate o impedimenti documentati
+- soglie applicate senza modificarle dopo aver visto i risultati
+- risultati anomali e limiti esplicitati
+- nessuna proprietà non verificata presentata come fatto osservato
+- raccomandazione collegata al caso d'uso e supportata da evidenze
+
+## Cronologia delle versioni
+
+- **0.2.0** — Aggiunta classificazione delle evidenze e controlli espliciti per metadata GGUF/tensor types, MoE, template, flag llama.cpp, hardware UMA, tool calling e misure PP/TG; nessun valore specifico di un modello incorporato come assunzione.
+- **0.1.0** — Prima versione operativa per confronto ripetibile di modelli, quantizzazioni e runtime locali.

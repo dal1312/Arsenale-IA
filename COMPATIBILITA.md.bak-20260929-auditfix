@@ -2,9 +2,9 @@
 
 ## Scopo
 
-Arsenale IA adotta un modello **prima locale**: `PROCEDURA.md` contiene il metodo canonico, mentre `SKILL.md` è un adattatore leggero per i client che supportano il formato Competenze agente.
+Arsenale IA adotta un modello **local-first**: `PROCEDURA.md` contiene il metodo canonico, mentre `SKILL.md` è un adattatore leggero per i client che supportano il formato Agent Skills.
 
-GitHub è utile per distribuire e versionare il progetto, ma non è una dipendenza dell'ambiente di esecuzione. Una copia locale del repository è sufficiente.
+GitHub è utile per distribuire e versionare il progetto, ma non è una dipendenza runtime. Una copia locale del repository è sufficiente.
 
 ## Modello sorgente
 
@@ -15,7 +15,7 @@ Procedure/
     └── SKILL.md
 ```
 
-Le cartelle sorgenti mantengono il codice ARI. Lo standard Competenze agente richiede invece che la cartella di esecuzione abbia lo stesso nome dichiarato nel campo `name` di `SKILL.md`.
+Le cartelle sorgenti mantengono il codice ARI. Lo standard Agent Skills richiede invece che la cartella runtime abbia lo stesso nome dichiarato nel campo `name` di `SKILL.md`.
 
 Gli installatori locali trasformano quindi il modello sorgente in:
 
@@ -46,7 +46,7 @@ Il controllo verifica presenza, front matter minimo, nomi univoci, descrizione e
 
 ## Codex
 
-Codex carica le competenze locali da `.agents/skills` nel repository oppure da `~/.agents/skills` per l'utente.
+Codex carica le skill locali da `.agents/skills` nel repository oppure da `~/.agents/skills` per l'utente.
 
 ### Installazione utente — Windows
 
@@ -87,7 +87,7 @@ $diagnosi-errori Riproduci il problema descritto nel ticket e individua la causa
 $implementazione-controllata Applica il piano approvato in PLAN.md e verifica ogni incremento.
 ```
 
-Codex può anche selezionare una competenza in base alla `description` quando la richiesta corrisponde al suo ambito.
+Codex può anche selezionare una skill in base alla `description` quando la richiesta corrisponde al suo ambito.
 
 ## Claude Code
 
@@ -115,11 +115,11 @@ Claude Code usa normalmente `.claude/skills` nel progetto oppure `~/.claude/skil
 /analisi-prestazioni Misura il percorso lento, registra la baseline e proponi interventi solo dopo il profiling.
 ```
 
-Le competenze sono invocabili dall'utente per impostazione predefinita; non è necessario aggiungere campi proprietari al front matter comune.
+Le skill sono invocabili dall'utente per impostazione predefinita; non è necessario aggiungere campi proprietari al front matter comune.
 
-## Altri client Competenze agente
+## Altri client Agent Skills
 
-Per un client che supporta Competenze agente ma usa una cartella differente, indicare una destinazione personalizzata.
+Per un client che supporta Agent Skills ma usa una cartella differente, indicare una destinazione personalizzata.
 
 Windows:
 
@@ -152,7 +152,7 @@ Questo percorso non richiede GitHub né un sistema di plugin.
 
 ## Aggiornamento locale
 
-Dopo aver modificato gli adattatori sorgente, rieseguire l'installatore con `-Forza` su Windows oppure `--force` sullo script POSIX, indicando la stessa destinazione. Senza il flag di forzatura, le competenze già presenti vengono saltate. I file dell'ambiente di esecuzione vengono così riallineati alla copia locale di Arsenale IA.
+Dopo aver modificato gli adattatori sorgente, rieseguire l'installatore con `-Forza` su Windows oppure lo script shell sulla stessa destinazione. I file runtime vengono riallineati alla copia locale di Arsenale IA.
 
 ## Principio di compatibilità
 
@@ -160,5 +160,4 @@ Dopo aver modificato gli adattatori sorgente, rieseguire l'installatore con `-Fo
 2. Un adattatore piccolo: `SKILL.md`.
 3. Nessuna dipendenza da GitHub durante l'uso locale.
 4. Nessuna regola specifica di un singolo agente dentro la procedura canonica.
-5. Cartella di esecuzione conforme al `name` dichiarato dalla competenza.
-
+5. Cartella runtime conforme al `name` dichiarato dalla skill.
