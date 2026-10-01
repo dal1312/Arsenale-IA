@@ -1,0 +1,14 @@
+{
+  "code": "ARI-0101",
+  "risultato": "PASS",
+  "test": "Revisione Python e nuovo scenario di rifiuto input non UTF-8",
+  "criteri": "Analizzare struttura/dipendenze/packaging/rischi; eseguire nuovo controllo reale: input UTF-8 invalido rifiutato con exit 1, diagnostica esplicita, nessun output; produrre piano P0-P4 senza correggere codice.",
+  "osservazioni": "Compilazione riuscita; 4 import tutti standard library. Input invalido rifiutato: exit 1 atteso, stderr Errore, nessun CSV. Piano con rilievi P2/P3 prodotto.",
+  "limiti": "Script esistente isolato; assenza packaging e tool lint/type-check motivata. Nessuna installazione eseguita. Nessuna prova Linux o compatibilità di tutte le versioni, nessun audit globale dei segreti. Il test positivo ARI-1202 non è stato ripetuto.",
+  "stato_evidenza": "Valida",
+  "script_sha256": "c662ecca8109e86393f0bb1cb7a14324a1f365c7af192ab3a1f1620f1d4bfd55",
+  "procedura_sha256": "dd772990695e9e80fcdfa99532fb3db0dae1bf1100312084dc1cd74d6ebacfb3",
+  "skill_sha256": "eaa762c8ca893a5b525cfc23ee6cb59dc4e9b87841bcacf9f1f6fae9f2eadb33",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0"
+}

@@ -1,0 +1,63 @@
+{
+  "code": "ARI-0501",
+  "test": "SQLite: schema relazionale, vincoli, rollback, query e copia recuperata",
+  "risultato": "PASS",
+  "osservazioni": {
+    "sqlite_version": "3.53.1",
+    "schema_version": 1,
+    "schema": [
+      [
+        "table",
+        "cliente",
+        "CREATE TABLE cliente(id INTEGER PRIMARY KEY,nome TEXT NOT NULL UNIQUE)"
+      ],
+      [
+        "table",
+        "ordine",
+        "CREATE TABLE ordine(id INTEGER PRIMARY KEY,cliente_id INTEGER NOT NULL REFERENCES cliente(id),importo INTEGER NOT NULL CHECK(importo>0))"
+      ],
+      [
+        "index",
+        "ordine_cliente",
+        "CREATE INDEX ordine_cliente ON ordine(cliente_id)"
+      ]
+    ],
+    "query": "SELECT c.nome,COUNT(o.id),SUM(o.importo) FROM cliente c JOIN ordine o ON c.id=o.cliente_id WHERE c.id=? GROUP BY c.id HAVING SUM(o.importo)>?",
+    "parametri": [
+      1,
+      20
+    ],
+    "risultato": [
+      [
+        "Cliente fittizio",
+        2,
+        40
+      ]
+    ],
+    "piano": [
+      [
+        8,
+        0,
+        45,
+        "SEARCH c USING INTEGER PRIMARY KEY (rowid=?)"
+      ],
+      [
+        11,
+        0,
+        62,
+        "SEARCH o USING INDEX ordine_cliente (cliente_id=?)"
+      ]
+    ],
+    "vincoli_rifiutati": 2,
+    "rollback_verificato": true,
+    "restore_verificato": true
+  },
+  "classificazione": "Valida",
+  "limiti": "SQLite locale senza ruoli server; autorizzazione filesystem ereditata dalla fixture, ACL/cifratura non validate. Carico minimo: nessuna conclusione prestazionale, concorrenza non esercitata; schema versione 1 con recupero tramite backup, nessuna migrazione in produzione.",
+  "rilievi": "P3: conservare query parametrizzate e CHECK/FK; indice giustificato dal JOIN sul cliente. P2 prima di produzione: definire capacità, monitoraggio, conservazione backup e politica accessi; non richiesti a una fixture isolata.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "procedura_sha256": "8a1bcbc739c4f45310f4243d5396f875d3e2fa5c5251528372ee451bdf0dd2ac",
+  "skill_sha256": "18164795673a3bf06835ccb1d4ecaff0f00403e6d7c6284123c8fbd39338bcef",
+  "runner_sha256": "eadbaecb45c94a1b6fd77b911348f54e77c031ae21fc7d033dfc073c17566cc3"
+}

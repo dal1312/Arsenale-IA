@@ -1,0 +1,300 @@
+{
+  "disponibili": [
+    "ARI-0001",
+    "ARI-0002",
+    "ARI-0003",
+    "ARI-0004",
+    "ARI-0005",
+    "ARI-0006",
+    "ARI-0007",
+    "ARI-0008",
+    "ARI-0009",
+    "ARI-0010",
+    "ARI-0101",
+    "ARI-0201",
+    "ARI-0301",
+    "ARI-0401",
+    "ARI-0501",
+    "ARI-0601",
+    "ARI-0701",
+    "ARI-0801",
+    "ARI-0901",
+    "ARI-1101",
+    "ARI-1102",
+    "ARI-1103",
+    "ARI-1104",
+    "ARI-1201",
+    "ARI-1202",
+    "ARI-1203",
+    "ARI-1301",
+    "ARI-1302",
+    "ARI-1303",
+    "ARI-1304",
+    "ARI-1401",
+    "ARI-1402",
+    "ARI-1403",
+    "ARI-1501",
+    "ARI-1502",
+    "ARI-1601",
+    "ARI-1701",
+    "ARI-1702",
+    "ARI-1703",
+    "ARI-1704",
+    "ARI-1705",
+    "ARI-1803",
+    "ARI-1804",
+    "ARI-1805",
+    "ARI-1806",
+    "ARI-1807",
+    "ARI-1808",
+    "ARI-1809",
+    "ARI-1810",
+    "ARI-2101",
+    "ARI-2102",
+    "ARI-2103",
+    "ARI-2104",
+    "ARI-2105",
+    "ARI-2106",
+    "ARI-2107",
+    "ARI-2108",
+    "ARI-2201",
+    "ARI-2202",
+    "ARI-2203",
+    "ARI-2204",
+    "ARI-2501",
+    "ARI-2502",
+    "ARI-2503"
+  ],
+  "con_valida": [
+    "ARI-0001",
+    "ARI-0002",
+    "ARI-0003",
+    "ARI-0004",
+    "ARI-0005",
+    "ARI-0009",
+    "ARI-1103",
+    "ARI-1104",
+    "ARI-1201",
+    "ARI-1202",
+    "ARI-1203",
+    "ARI-1301",
+    "ARI-1302",
+    "ARI-1303",
+    "ARI-1702"
+  ],
+  "senza_valida": [
+    "ARI-0006",
+    "ARI-0007",
+    "ARI-0008",
+    "ARI-0010",
+    "ARI-0101",
+    "ARI-0201",
+    "ARI-0301",
+    "ARI-0401",
+    "ARI-0501",
+    "ARI-0601",
+    "ARI-0701",
+    "ARI-0801",
+    "ARI-0901",
+    "ARI-1101",
+    "ARI-1102",
+    "ARI-1304",
+    "ARI-1401",
+    "ARI-1402",
+    "ARI-1403",
+    "ARI-1501",
+    "ARI-1502",
+    "ARI-1601",
+    "ARI-1701",
+    "ARI-1703",
+    "ARI-1704",
+    "ARI-1705",
+    "ARI-1803",
+    "ARI-1804",
+    "ARI-1805",
+    "ARI-1806",
+    "ARI-1807",
+    "ARI-1808",
+    "ARI-1809",
+    "ARI-1810",
+    "ARI-2101",
+    "ARI-2102",
+    "ARI-2103",
+    "ARI-2104",
+    "ARI-2105",
+    "ARI-2106",
+    "ARI-2107",
+    "ARI-2108",
+    "ARI-2201",
+    "ARI-2202",
+    "ARI-2203",
+    "ARI-2204",
+    "ARI-2501",
+    "ARI-2502",
+    "ARI-2503"
+  ],
+  "verificate": [
+    "ARI-0001",
+    "ARI-0002",
+    "ARI-0003",
+    "ARI-0004",
+    "ARI-0005",
+    "ARI-0009"
+  ],
+  "pianificate": [
+    "ARI-1801",
+    "ARI-1802",
+    "ARI-1901",
+    "ARI-2001"
+  ],
+  "evidenze": [
+    {
+      "file": "Verifiche\\ARI-0001\\VER-ARI-0001-20260807-01.md",
+      "stato": "Valida",
+      "tipo": "Interna",
+      "code": "ARI-0001"
+    },
+    {
+      "file": "Verifiche\\ARI-0001\\VER-ARI-0001-20260807-02.md",
+      "stato": "Valida",
+      "tipo": "Indipendente",
+      "code": "ARI-0001"
+    },
+    {
+      "file": "Verifiche\\ARI-0002\\VER-ARI-0002-20260807-01.md",
+      "stato": "Valida",
+      "tipo": "Interna",
+      "code": "ARI-0002"
+    },
+    {
+      "file": "Verifiche\\ARI-0002\\VER-ARI-0002-20260807-02.md",
+      "stato": "Valida",
+      "tipo": "Indipendente",
+      "code": "ARI-0002"
+    },
+    {
+      "file": "Verifiche\\ARI-0003\\VER-ARI-0003-20260807-01.md",
+      "stato": "Valida",
+      "tipo": "Interna",
+      "code": "ARI-0003"
+    },
+    {
+      "file": "Verifiche\\ARI-0003\\VER-ARI-0003-20260807-02.md",
+      "stato": "Valida",
+      "tipo": "Indipendente",
+      "code": "ARI-0003"
+    },
+    {
+      "file": "Verifiche\\ARI-0004\\VER-ARI-0004-20260807-01.md",
+      "stato": "Valida",
+      "tipo": "Interna",
+      "code": "ARI-0004"
+    },
+    {
+      "file": "Verifiche\\ARI-0004\\VER-ARI-0004-20260807-02.md",
+      "stato": "Valida",
+      "tipo": "Indipendente",
+      "code": "ARI-0004"
+    },
+    {
+      "file": "Verifiche\\ARI-0005\\VER-ARI-0005-20260807-01.md",
+      "stato": "Valida",
+      "tipo": "Interna",
+      "code": "ARI-0005"
+    },
+    {
+      "file": "Verifiche\\ARI-0005\\VER-ARI-0005-20260807-02.md",
+      "stato": "Valida",
+      "tipo": "Indipendente",
+      "code": "ARI-0005"
+    },
+    {
+      "file": "Verifiche\\ARI-0009\\VER-ARI-0009-20260807-01.md",
+      "stato": "Valida",
+      "tipo": "Interna",
+      "code": "ARI-0009"
+    },
+    {
+      "file": "Verifiche\\ARI-0009\\VER-ARI-0009-20260807-02.md",
+      "stato": "Valida",
+      "tipo": "Indipendente",
+      "code": "ARI-0009"
+    },
+    {
+      "file": "Verifiche\\ARI-1103\\VER-ARI-1103-20261001-01.md",
+      "stato": "Valida",
+      "tipo": "Interna",
+      "code": "ARI-1103"
+    },
+    {
+      "file": "Verifiche\\ARI-1104\\VER-ARI-1104-20261001-01.md",
+      "stato": "Valida",
+      "tipo": "Interna",
+      "code": "ARI-1104"
+    },
+    {
+      "file": "Verifiche\\ARI-1201\\VER-ARI-1201-20261001-01.md",
+      "stato": "Valida",
+      "tipo": "Interna",
+      "code": "ARI-1201"
+    },
+    {
+      "file": "Verifiche\\ARI-1202\\VER-ARI-1202-20261001-01.md",
+      "stato": "Valida",
+      "tipo": "Interna",
+      "code": "ARI-1202"
+    },
+    {
+      "file": "Verifiche\\ARI-1203\\VER-ARI-1203-20261001-01.md",
+      "stato": "Valida",
+      "tipo": "Interna",
+      "code": "ARI-1203"
+    },
+    {
+      "file": "Verifiche\\ARI-1301\\VER-ARI-1301-20261001-01.md",
+      "stato": "Valida",
+      "tipo": "Interna",
+      "code": "ARI-1301"
+    },
+    {
+      "file": "Verifiche\\ARI-1302\\VER-ARI-1302-20261001-01.md",
+      "stato": "Valida",
+      "tipo": "Interna",
+      "code": "ARI-1302"
+    },
+    {
+      "file": "Verifiche\\ARI-1303\\VER-ARI-1303-20261001-01.md",
+      "stato": "Valida",
+      "tipo": "Interna",
+      "code": "ARI-1303"
+    },
+    {
+      "file": "Verifiche\\ARI-1702\\VER-ARI-1702-20261001-01.md",
+      "stato": "Valida",
+      "tipo": "Interna",
+      "code": "ARI-1702"
+    },
+    {
+      "file": "Verifiche\\ARI-1807\\VER-ARI-1807-20261001-01.md",
+      "stato": "Eseguita",
+      "tipo": "Interna",
+      "code": "ARI-1807"
+    },
+    {
+      "file": "Verifiche\\ARI-1810\\VER-ARI-1810-20261001-01.md",
+      "stato": "Eseguita",
+      "tipo": "Interna",
+      "code": "ARI-1810"
+    }
+  ],
+  "selezionate": [
+    "ARI-0006",
+    "ARI-0101"
+  ],
+  "escluse_esplicite": [
+    "ARI-1804",
+    "ARI-1805",
+    "ARI-1807"
+  ],
+  "motivo_limite": "Due scenari nuovi definiti e sicuri; nessuna quota da raggiungere. Altre candidate richiedono progetto/runtime o scenario operativo dedicato non definito qui."
+}

@@ -1,0 +1,29 @@
+{
+  "code": "ARI-0007",
+  "test": "Benchmark SHA-256 con cinque ripetizioni e profiling",
+  "risultato": "PASS",
+  "osservazioni": {
+    "tempi_secondi": [
+      0.0137004,
+      0.0137333,
+      0.0136733,
+      0.0136567,
+      0.0136669
+    ],
+    "mediana": 0.0136733,
+    "min": 0.0136567,
+    "max": 0.0137333,
+    "deviazione_standard": 3.094013574630866e-05,
+    "soglia_rispettata": true,
+    "input_sha256": "fbbab289f7f94b25736c58be46a994c441fd02552cc6022352e3d86d2fab7c83",
+    "iterazioni_totali_misurate": 160
+  },
+  "classificazione": "Valida",
+  "limiti": "Diagnosi senza modifica: nessun prima/dopo di ottimizzazione dichiarato. Cache input in memoria, seriale, I/O e rete fuori misura; memoria fissa circa 1 MiB. Tempi validi solo per questa fixture, non prestazioni generali del PC. Profilo collega il costo alle chiamate hash; nessun intervento su servizi.",
+  "rilievi": "P3: ottimizzare solo se questo carico diventa critico; costo di modifica non giustificato da una fixture. Dispersione registrata senza dichiarare significatività statistica universale.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "procedura_sha256": "444d1c3c646422e5f0c0947929507a12e414d81f96043c6eafba2ed38332973c",
+  "skill_sha256": "fe184f79b0e72ad5ca957c41cfc48068d964f0ecc209ac0f1204ffe6a0a7c249",
+  "runner_sha256": "eadbaecb45c94a1b6fd77b911348f54e77c031ae21fc7d033dfc073c17566cc3"
+}

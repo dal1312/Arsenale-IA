@@ -1,0 +1,13 @@
+{
+  "validazione": "PASS",
+  "candidate": 7,
+  "PASS": 5,
+  "FAIL": 1,
+  "SKIPPED": 1,
+  "nuove_valida": 5,
+  "nuove_eseguita": 0,
+  "promosse": 0,
+  "backup_catalogo": 1,
+  "da_verificare": 58,
+  "errori": []
+}

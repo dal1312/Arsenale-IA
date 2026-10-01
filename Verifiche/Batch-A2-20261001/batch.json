@@ -1,0 +1,230 @@
+[
+  {
+    "code": "ARI-0007",
+    "test": "Benchmark SHA-256 con cinque ripetizioni e profiling",
+    "risultato": "PASS",
+    "osservazioni": {
+      "tempi_secondi": [
+        0.0137004,
+        0.0137333,
+        0.0136733,
+        0.0136567,
+        0.0136669
+      ],
+      "mediana": 0.0136733,
+      "min": 0.0136567,
+      "max": 0.0137333,
+      "deviazione_standard": 3.094013574630866e-05,
+      "soglia_rispettata": true,
+      "input_sha256": "fbbab289f7f94b25736c58be46a994c441fd02552cc6022352e3d86d2fab7c83",
+      "iterazioni_totali_misurate": 160
+    },
+    "classificazione": "Valida",
+    "limiti": "Diagnosi senza modifica: nessun prima/dopo di ottimizzazione dichiarato. Cache input in memoria, seriale, I/O e rete fuori misura; memoria fissa circa 1 MiB. Tempi validi solo per questa fixture, non prestazioni generali del PC. Profilo collega il costo alle chiamate hash; nessun intervento su servizi.",
+    "rilievi": "P3: ottimizzare solo se questo carico diventa critico; costo di modifica non giustificato da una fixture. Dispersione registrata senza dichiarare significatività statistica universale.",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "sistema": "Windows-11-10.0.26300-SP0",
+    "procedura_sha256": "444d1c3c646422e5f0c0947929507a12e414d81f96043c6eafba2ed38332973c",
+    "skill_sha256": "fe184f79b0e72ad5ca957c41cfc48068d964f0ecc209ac0f1204ffe6a0a7c249",
+    "runner_sha256": "eadbaecb45c94a1b6fd77b911348f54e77c031ae21fc7d033dfc073c17566cc3",
+    "evidenza": "Verifiche\\ARI-0007\\VER-ARI-0007-20261001-01.md"
+  },
+  {
+    "code": "ARI-0008",
+    "test": "Traversal relativo rifiutato al confine della fixture",
+    "risultato": "PASS",
+    "osservazioni": {
+      "input_rifiutato": true,
+      "sentinella_sha256_invariato": "2413ec991297b81b84642db9becf1912b312661751880c594fddf767b28d3d77"
+    },
+    "classificazione": "Valida",
+    "limiti": "Controllo su fixture interna, nessun attacco reale. Non prova resistenza a race/symlink concorrenti: aprire mediante handle e controlli OS se necessario. Nessun segreto, sessione o servizio presente; crittografia e replay non applicabili.",
+    "rilievi": "Miglioramento difensivo P2: confinamento dopo resolve confermato; impatto potenziale lettura fuori perimetro, probabilità dipendente da uso reale. Residuo P2: TOCTOU non esercitato; mitigazione proposta, non integrata.",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "sistema": "Windows-11-10.0.26300-SP0",
+    "procedura_sha256": "798ec1b89542adef1e5a1bd34fed926ab2bb4e099085d68f2aa9923789aedae6",
+    "skill_sha256": "d1d40171bd048479df2ccf3f395a5e71568219ce4974e1f128154937eb0aa0b9",
+    "runner_sha256": "eadbaecb45c94a1b6fd77b911348f54e77c031ae21fc7d033dfc073c17566cc3",
+    "evidenza": "Verifiche\\ARI-0008\\VER-ARI-0008-20261001-01.md"
+  },
+  {
+    "code": "ARI-0501",
+    "test": "SQLite: schema relazionale, vincoli, rollback, query e copia recuperata",
+    "risultato": "PASS",
+    "osservazioni": {
+      "sqlite_version": "3.53.1",
+      "schema_version": 1,
+      "schema": [
+        [
+          "table",
+          "cliente",
+          "CREATE TABLE cliente(id INTEGER PRIMARY KEY,nome TEXT NOT NULL UNIQUE)"
+        ],
+        [
+          "table",
+          "ordine",
+          "CREATE TABLE ordine(id INTEGER PRIMARY KEY,cliente_id INTEGER NOT NULL REFERENCES cliente(id),importo INTEGER NOT NULL CHECK(importo>0))"
+        ],
+        [
+          "index",
+          "ordine_cliente",
+          "CREATE INDEX ordine_cliente ON ordine(cliente_id)"
+        ]
+      ],
+      "query": "SELECT c.nome,COUNT(o.id),SUM(o.importo) FROM cliente c JOIN ordine o ON c.id=o.cliente_id WHERE c.id=? GROUP BY c.id HAVING SUM(o.importo)>?",
+      "parametri": [
+        1,
+        20
+      ],
+      "risultato": [
+        [
+          "Cliente fittizio",
+          2,
+          40
+        ]
+      ],
+      "piano": [
+        [
+          8,
+          0,
+          45,
+          "SEARCH c USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          11,
+          0,
+          62,
+          "SEARCH o USING INDEX ordine_cliente (cliente_id=?)"
+        ]
+      ],
+      "vincoli_rifiutati": 2,
+      "rollback_verificato": true,
+      "restore_verificato": true
+    },
+    "classificazione": "Valida",
+    "limiti": "SQLite locale senza ruoli server; autorizzazione filesystem ereditata dalla fixture, ACL/cifratura non validate. Carico minimo: nessuna conclusione prestazionale, concorrenza non esercitata; schema versione 1 con recupero tramite backup, nessuna migrazione in produzione.",
+    "rilievi": "P3: conservare query parametrizzate e CHECK/FK; indice giustificato dal JOIN sul cliente. P2 prima di produzione: definire capacità, monitoraggio, conservazione backup e politica accessi; non richiesti a una fixture isolata.",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "sistema": "Windows-11-10.0.26300-SP0",
+    "procedura_sha256": "8a1bcbc739c4f45310f4243d5396f875d3e2fa5c5251528372ee451bdf0dd2ac",
+    "skill_sha256": "18164795673a3bf06835ccb1d4ecaff0f00403e6d7c6284123c8fbd39338bcef",
+    "runner_sha256": "eadbaecb45c94a1b6fd77b911348f54e77c031ae21fc7d033dfc073c17566cc3",
+    "evidenza": "Verifiche\\ARI-0501\\VER-ARI-0501-20261001-01.md"
+  },
+  {
+    "code": "ARI-0601",
+    "test": "Audit Git locale: stato, cronologia, tracciati, rami e artefatti",
+    "risultato": "PASS",
+    "osservazioni": {
+      "head": "1e66cbb472beff416a016101e879dab9e9f67ce1",
+      "ramo": "56",
+      "tracciati": 165,
+      "file_grandi": [],
+      "gitignore_presente": false,
+      "git_metadata_sha256_invariati": 370,
+      "working_tree_pulito": false
+    },
+    "classificazione": "Valida",
+    "limiti": "Cinque commit analizzati per messaggi/statistiche, nessuna garanzia assenza segreti nell’intera storia. Ramo remoto predefinito e protezioni non consultati; nessuna rete. GIT_OPTIONAL_LOCKS=0; metadati .git verificati invariati. Branch/tag elencati, non mutati.",
+    "rilievi": "P2: working tree e file non tracciati documentati nei log, nessuna pulizia. P3: .gitignore assente nel root osservato; definire esclusioni secondo artefatti necessari, senza rimuovere evidenze. Protezioni remote da verificare in altro perimetro autorizzato.",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "sistema": "Windows-11-10.0.26300-SP0",
+    "procedura_sha256": "cb54c57ec7f63998a534bbf7b238f6d723dc17ff1bce44474e4bfe21cc094d19",
+    "skill_sha256": "75ff2b823508cbfaa1c00d915e7a8986abc934e199b2d9ac729cec7cd8bf728c",
+    "runner_sha256": "eadbaecb45c94a1b6fd77b911348f54e77c031ae21fc7d033dfc073c17566cc3",
+    "evidenza": "Verifiche\\ARI-0601\\VER-ARI-0601-20261001-01.md"
+  },
+  {
+    "code": "ARI-1402",
+    "test": "Installatore Personalizzato con skill parziale preesistente, senza Forza",
+    "risultato": "PASS",
+    "osservazioni": {
+      "exit_code": 0,
+      "destinazioni": 64,
+      "copiate": 63,
+      "saltate": 1,
+      "marker_sha256_invariato": "3a314adf426db53957de64a0a3aef6ed61849d61950a3b0b6e816b1d63dfea62",
+      "procedura_mancante_preservata": true
+    },
+    "classificazione": "Valida",
+    "limiti": "Esecuzione esclusivamente nella fixture. Il ramo senza forza salta tutta la cartella esistente: non completa la skill parziale. Nessuna installazione in profili reali, scorciatoie/registry/disinstallazione non pertinenti allo script.",
+    "rilievi": "P2: cartella parziale resta incompleta per preservazione deliberata; warning registrato. Documentare che senza forza non avviene riparazione. Nessuna correzione applicata.",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "sistema": "Windows-11-10.0.26300-SP0",
+    "procedura_sha256": "53218f1a562cd8f21fdc85fc6d24c92b9d719c077d92e32587403bdebbb23fcb",
+    "skill_sha256": "557377406a264d031847cb0836dc278db62353ce66111a702c04901e0fd262e5",
+    "runner_sha256": "eadbaecb45c94a1b6fd77b911348f54e77c031ae21fc7d033dfc073c17566cc3",
+    "evidenza": "Verifiche\\ARI-1402\\VER-ARI-1402-20261001-01.md"
+  },
+  {
+    "code": "ARI-2101",
+    "risultato": "BLOCKED",
+    "motivo": "Nessun tool browser/DOM disponibile in questa sessione; niente installazioni o simulazioni del browser"
+  },
+  {
+    "code": "ARI-2201",
+    "risultato": "BLOCKED",
+    "motivo": "Nessun tool browser/DOM disponibile in questa sessione; niente installazioni o simulazioni del browser"
+  },
+  {
+    "code": "ARI-2204",
+    "test": "Confronto avvisi UVT con licenze locali e versioni dichiarate",
+    "risultato": "PASS",
+    "osservazioni": {
+      "gruppi": [
+        "SoundVolumeView 2.53",
+        "FFmpeg 8.1.2 Full Build",
+        "Python Runtime Components",
+        "External Components"
+      ],
+      "confronti": [
+        {
+          "componente": "SoundVolumeView",
+          "versione_avviso": "2.53",
+          "avviso_presente": true,
+          "file_locale": "UVT_LOCAL_FINAL_20260821-094455\\release-codex-20260919-argosfix\\UniversalVideoTranslator-0.2.1-windows-x86_64\\licenses\\SoundVolumeView-readme.txt",
+          "presente": true,
+          "indicatore_testuale": true,
+          "sha256": "8b587f0b2ad6f694197bfac34ccf558d27851c64661e203af3eeec1b00a3c5ce"
+        },
+        {
+          "componente": "FFmpeg",
+          "versione_avviso": "8.1.2",
+          "avviso_presente": true,
+          "file_locale": "UVT_LOCAL_FINAL_20260821-094455\\release-codex-20260919-argosfix\\UniversalVideoTranslator-0.2.1-windows-x86_64\\licenses\\FFmpeg-LICENSE.txt",
+          "presente": true,
+          "indicatore_testuale": true,
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        {
+          "componente": "Python Runtime Components",
+          "versione_avviso": "versioni da constraints",
+          "avviso_presente": true,
+          "file_locale": "requirements\\windows-py310-x64.constraints.txt",
+          "presente": true,
+          "indicatore_testuale": true,
+          "sha256": "2096e0b77ed0515ec27eb95b9f3a805967d8f5eda76d4578d65d46de60ba10ce"
+        }
+      ]
+    },
+    "classificazione": "Valida",
+    "limiti": "Analisi documentale locale; non certificazione legale o completezza dei diritti. Materiali reali UVT ma rapporto conservativamente Interna: nessuna indipendenza attribuita per promuovere. Versioni constraints non provano installazione runtime; modelli esterni non scaricati.",
+    "rilievi": "P2: elenco runtime aggregato non collega ogni dipendenza alla propria licenza nel root; verificare inventario release prima di distribuzione. Qualsiasi file assente o indicatore mancante è lacuna documentata in confronto.json, non corretto automaticamente.",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "sistema": "Windows-11-10.0.26300-SP0",
+    "procedura_sha256": "08a1efdf8527f81736dca67508b99d5bd7a7bde5bf8b5e06931339cb24f4e973",
+    "skill_sha256": "01baf078f12097330029facf32841239cddfdd5ac294cc6d9042fa1cb6928994",
+    "runner_sha256": "eadbaecb45c94a1b6fd77b911348f54e77c031ae21fc7d033dfc073c17566cc3",
+    "evidenza": "Verifiche\\ARI-2204\\VER-ARI-2204-20261001-01.md"
+  },
+  {
+    "code": "ARI-2501",
+    "risultato": "BLOCKED",
+    "motivo": "Nessun tool browser/DOM disponibile in questa sessione; niente installazioni o simulazioni del browser"
+  },
+  {
+    "code": "ARI-2502",
+    "risultato": "BLOCKED",
+    "motivo": "Nessun tool browser/DOM disponibile in questa sessione; niente installazioni o simulazioni del browser"
+  }
+]

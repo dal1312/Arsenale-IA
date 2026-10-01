@@ -1,0 +1,19 @@
+{
+  "code": "ARI-1601",
+  "test": "Un caso di classificazione a formato JSON sul modello della sessione",
+  "risultato": "PASS",
+  "classificazione": "Valida",
+  "tipo": "Interna",
+  "osservazioni": {
+    "schema_chiuso": true,
+    "input_coperti": 3,
+    "classi_corrette": 3,
+    "violazioni_osservate": 0,
+    "origine": "risposta del modello corrente persistita nella sessione, nessuna inferenza locale protetta"
+  },
+  "limiti": "Autovalutazione non cieca: il modello che produce la risposta conosce i criteri. Un solo caso senza isolamento del contesto di sessione, nessuna robustezza generale dimostrata. Nessuna chiamata separata a un endpoint LLM, nessuna valutazione del runtime llama.cpp, velocità, quantizzazione, offload o tool calling.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "procedura_sha256": "c05a2eda844ab6d6ea4d0ab6c18c4ea6571e730405a552f3dadc30e4b32c693c",
+  "skill_sha256": "242132e8c5b959426c60ffad2481d14a8e965f7fd2c2b09fc32b54fb5d69f0e1"
+}

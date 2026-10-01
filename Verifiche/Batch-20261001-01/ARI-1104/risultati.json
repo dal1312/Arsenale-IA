@@ -1,0 +1,13 @@
+{
+  "code": "ARI-1104",
+  "status": "PASS",
+  "test": "Correzione di una richiesta reale dell’utente",
+  "criteri": "Preservare py, Python, segnalazione e richiesta; correggere refuso e punteggiatura senza promesse o diagnosi nuove.",
+  "osservazioni": "Confronto prima/dopo: identificatori e significato preservati; testo finale pronto all’uso. Giudizio linguistico dell’agente esplicitamente distinto dai controlli stringa.",
+  "limiti": "Non verifica la condizione attuale di Python e non corregge il launcher; revisione del testo soltanto.",
+  "evidence": "Valida",
+  "comandi": [],
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "script_sha256": "fceb08e218510ffd6eb7ad8e712a51ab2439f89681b2e609e75074ed2756d6df"
+}

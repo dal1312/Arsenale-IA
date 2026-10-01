@@ -1,0 +1,18 @@
+{
+  "code": "ARI-1705",
+  "risultato": "PASS",
+  "test": "Prompt delimitato e checklist di coerenza",
+  "osservazioni": {
+    "sezioni": 10,
+    "permessi_senza_intersezioni": true,
+    "arresti": 3
+  },
+  "limiti": "Checklist deterministica della struttura; revisione semantica dell’agente: sola lettura coerente con inventario, nessuna scrittura richiesta. Non misura aderenza di un altro modello.",
+  "classificazione": "Valida",
+  "tipo": "Interna",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "procedura_sha256": "5b086b15486f4df44936bfc8e20f52c4b475a0a5d7a164f3af08c1b0dedb5d94",
+  "skill_sha256": "cdc82a1c1f20ecdf298f16f06489131110bbb6b3b0fa0d7d1e37fd67ac61de77",
+  "runner_sha256": "c19629036fc848dd4f2ad02766b0a51012879decc0f345e4ed0788a476328a3d"
+}

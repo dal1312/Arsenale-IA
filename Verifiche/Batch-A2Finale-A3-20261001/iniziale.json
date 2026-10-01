@@ -1,0 +1,12 @@
+{
+  "candidate_gia_valide": [],
+  "senza_valida": 33,
+  "con_valida": 31,
+  "candidate": [
+    "ARI-1601",
+    "ARI-1701",
+    "ARI-1704",
+    "ARI-2503"
+  ],
+  "disponibili": 64
+}

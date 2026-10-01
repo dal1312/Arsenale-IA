@@ -1,0 +1,14 @@
+{
+  "code": "ARI-0006",
+  "risultato": "PASS",
+  "test": "Refactoring isolato di metadata(): rimozione accoppiamento al template globale",
+  "criteri": "API e risultati identici su 16 casi di caratterizzazione; compilazione riuscita prima/dopo; ramificazioni non aumentate; dipendenza globale eliminata; sorgente operativa intatta.",
+  "osservazioni": "16 casi baseline e 16 confronti dopo un’unica trasformazione riusciti; ramificazioni 1 → 1; dipendenza dal template globale 1 → 0.",
+  "limiti": "Una copia della funzione reale, non modifica o rilascio del validatore completo. Test di caratterizzazione circoscritti: non provata ogni possibile stringa Unicode. Nessuna accelerazione prestazionale dichiarata, nessun codice morto eliminato. Nessuna esecuzione ripetuta dei validatori come test operativo.",
+  "stato_evidenza": "Valida",
+  "script_sha256": "c662ecca8109e86393f0bb1cb7a14324a1f365c7af192ab3a1f1620f1d4bfd55",
+  "procedura_sha256": "32d17d19179ff450f11ad060b82771737485d194fc9d3e512ee7a97afcf867df",
+  "skill_sha256": "6603f9b974a9445757e4a5655fa819ced30de146581823b494095394178957e9",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0"
+}

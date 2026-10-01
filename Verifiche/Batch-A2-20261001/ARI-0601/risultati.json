@@ -1,0 +1,22 @@
+{
+  "code": "ARI-0601",
+  "test": "Audit Git locale: stato, cronologia, tracciati, rami e artefatti",
+  "risultato": "PASS",
+  "osservazioni": {
+    "head": "1e66cbb472beff416a016101e879dab9e9f67ce1",
+    "ramo": "56",
+    "tracciati": 165,
+    "file_grandi": [],
+    "gitignore_presente": false,
+    "git_metadata_sha256_invariati": 370,
+    "working_tree_pulito": false
+  },
+  "classificazione": "Valida",
+  "limiti": "Cinque commit analizzati per messaggi/statistiche, nessuna garanzia assenza segreti nell’intera storia. Ramo remoto predefinito e protezioni non consultati; nessuna rete. GIT_OPTIONAL_LOCKS=0; metadati .git verificati invariati. Branch/tag elencati, non mutati.",
+  "rilievi": "P2: working tree e file non tracciati documentati nei log, nessuna pulizia. P3: .gitignore assente nel root osservato; definire esclusioni secondo artefatti necessari, senza rimuovere evidenze. Protezioni remote da verificare in altro perimetro autorizzato.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "procedura_sha256": "cb54c57ec7f63998a534bbf7b238f6d723dc17ff1bce44474e4bfe21cc094d19",
+  "skill_sha256": "75ff2b823508cbfaa1c00d915e7a8986abc934e199b2d9ac729cec7cd8bf728c",
+  "runner_sha256": "eadbaecb45c94a1b6fd77b911348f54e77c031ae21fc7d033dfc073c17566cc3"
+}

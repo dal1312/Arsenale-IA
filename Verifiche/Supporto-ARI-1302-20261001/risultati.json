@@ -1,0 +1,75 @@
+{
+  "data": "2026-10-01T05:36:53.856347+02:00",
+  "criteri": {
+    "perimetro": [
+      "STANDARD.md",
+      "VERIFICA.md",
+      "Procedure/ARI-1302-gestione-backup-locali/PROCEDURA.md",
+      "Procedure/ARI-1302-gestione-backup-locali/SKILL.md"
+    ],
+    "verifica": "Hash SHA-256 e dimensioni identici fra sorgente, backup e ripristino; originali invariati; ripristino selettivo dei due file ARI-1302 soltanto",
+    "rischi": "Copie documentali senza credenziali; nessun overwrite o cancellazione; spazio verificato; nessuna rete; backup conservato",
+    "conservazione": "Conservare questa copia e manifest senza rotazione o eliminazione automatica; backup locale sullo stesso volume, nessuna protezione da perdita disco"
+  },
+  "sorgenti": {
+    "STANDARD.md": {
+      "sha256": "fa5e376936cdd0ba421569d3f5a2bfe7918e64c01ecca9b4875b53aff5990d3d",
+      "bytes": 4408,
+      "mtime_ns": 1786500560666547700
+    },
+    "VERIFICA.md": {
+      "sha256": "747b3e5c917a0cb034463e866560c7f353a8f096705c91a1f949200b2639438f",
+      "bytes": 4470,
+      "mtime_ns": 1786500560680291900
+    },
+    "Procedure/ARI-1302-gestione-backup-locali/PROCEDURA.md": {
+      "sha256": "318e5cbf93d7edacc543d0b1a59b785d4ad69b17ffba576ff310c90f72eb2f64",
+      "bytes": 3180,
+      "mtime_ns": 1790657142338337000
+    },
+    "Procedure/ARI-1302-gestione-backup-locali/SKILL.md": {
+      "sha256": "6c933f18085eca3da2119f456120ebd7484d21f3f023b9abe942c54d0ef92569",
+      "bytes": 616,
+      "mtime_ns": 1790657142338337000
+    }
+  },
+  "controlli": [
+    {
+      "file": "STANDARD.md",
+      "backup_hash": "fa5e376936cdd0ba421569d3f5a2bfe7918e64c01ecca9b4875b53aff5990d3d",
+      "backup_conforme": true
+    },
+    {
+      "file": "VERIFICA.md",
+      "backup_hash": "747b3e5c917a0cb034463e866560c7f353a8f096705c91a1f949200b2639438f",
+      "backup_conforme": true
+    },
+    {
+      "file": "Procedure/ARI-1302-gestione-backup-locali/PROCEDURA.md",
+      "backup_hash": "318e5cbf93d7edacc543d0b1a59b785d4ad69b17ffba576ff310c90f72eb2f64",
+      "backup_conforme": true
+    },
+    {
+      "file": "Procedure/ARI-1302-gestione-backup-locali/SKILL.md",
+      "backup_hash": "6c933f18085eca3da2119f456120ebd7484d21f3f023b9abe942c54d0ef92569",
+      "backup_conforme": true
+    },
+    {
+      "file": "Procedure/ARI-1302-gestione-backup-locali/PROCEDURA.md",
+      "ripristino_hash": "318e5cbf93d7edacc543d0b1a59b785d4ad69b17ffba576ff310c90f72eb2f64",
+      "ripristino_conforme": true
+    },
+    {
+      "file": "Procedure/ARI-1302-gestione-backup-locali/SKILL.md",
+      "ripristino_hash": "6c933f18085eca3da2119f456120ebd7484d21f3f023b9abe942c54d0ef92569",
+      "ripristino_conforme": true
+    }
+  ],
+  "originali_invariati": true,
+  "spazio_libero_iniziale": 181588717568,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "eseguibile": "C:\\Users\\[UTENTE]\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "hash_script": "806fb6050cbac8497af6e0bac6cac949ea11685d1f34ce7106d3f3b390d092eb",
+  "esito": "PASS"
+}

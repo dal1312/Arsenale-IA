@@ -1,0 +1,9 @@
+{
+  "procedura": "ARI-0401",
+  "bersaglio": "C:\\Users\\[UTENTE]\\Documents\\GitHub\\ ponte6",
+  "caso": "revisione JS/PWA e smoke script esistente, libreria standard Node",
+  "criterio": "exit 0 e OVERALL_OK=true, sorgenti invariati",
+  "limiti": "niente Playwright/browser, niente invio WhatsApp, niente build/install",
+  "runtime_osservati": "node 24.16.0, npm 11.13.0",
+  "lockfile": 3
+}

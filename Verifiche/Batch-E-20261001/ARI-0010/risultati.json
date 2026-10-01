@@ -1,0 +1,46 @@
+{
+  "code": "ARI-0010",
+  "bersaglio": "UVT portabile 0.2.1",
+  "test": "Readiness in sola lettura: provenienza, manifest e decisione go/no-go",
+  "risultato": "PASS",
+  "classificazione": "Eseguita",
+  "tipo": "Interna",
+  "osservazioni": {
+    "versione": "0.2.1",
+    "commit_dichiarato": "31572f0681b66e559280f0a8d5a7805444c3e12f",
+    "dirty_dichiarato": true,
+    "componenti_presenza": {
+      "PROVENANCE.json": true,
+      "SHA256SUMS.txt": true,
+      "README.md": true,
+      "README.en.md": true,
+      "CHANGELOG.md": true,
+      "LICENSE": true,
+      "THIRD_PARTY_NOTICES.md": true,
+      "VERIFY_RELEASE_WINDOWS.ps1": true,
+      "UniversalVideoTranslator.exe": true,
+      "UVTNativeHost.exe": true,
+      "_internal": true
+    },
+    "righe_manifest": 20100,
+    "documenti_sha256": {
+      "PROVENANCE.json": "0454e1ac0daf5ced345208286c24a68f6e9d3af3cf7f4be37b9a18f2c23fec98",
+      "SHA256SUMS.txt": "0ac7b11d2756a976fff63d42caa65c327dbc4ebed21f5fcf4bad930d42a7fe93",
+      "README.md": "aa66fae715232637bb61fd6a717e9b99106c337969e4e9613a1dba60f54da0bc",
+      "README.en.md": "17ebed0a321c1359d224c249bd1da73bd9a77a11c3bb5b9b8d8ab9d64bf68b05",
+      "CHANGELOG.md": "1363aab016c90afd710134691aff443d6993667c2f5cef2c40e60d158a739796",
+      "LICENSE": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+      "THIRD_PARTY_NOTICES.md": "ec4cf7f7939e20e70de1e760fc62f91471670433b7ad6d6d8c070805c767fa54",
+      "VERIFY_RELEASE_WINDOWS.ps1": "e58c1303aa17703b6e558f1463da67c54c0e543a75fd2db34c33b9dd4538c364"
+    },
+    "verdetto": "RILASCIO BLOCCATO",
+    "test_build_storici": "Dichiarazioni in WINDOWS_VALIDATION.md non rieseguite né attribuite a questa prova",
+    "causa": "provenienza dirty e nessuna nuova prova build pulita/installazione/avvio/rollback dati autorizzata"
+  },
+  "limiti": "Verifica parziale: nessuna build pulita, installazione, aggiornamento, avvio o rollback dati. Versione/commit dichiarati identificati, ma lo storico di validazione si riferisce a diverso commit e non prova automaticamente il candidato corrente. Archivio conservato non equivale a rollback di dati persistenti.",
+  "rilievi": "P1: rinvio del rilascio secondo policy dirty riportata dal progetto; prima di distribuzione verificare build pulita, avvio e recupero. Nessun rilascio approvato.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "procedura_sha256": "51cc968fe5a5ea2a4f24d4b6ef79ee6b11b6cc79e67b50e87429fc8fda724098",
+  "skill_sha256": "814ee05ece3789d14f0e53e26ceace65ae92e8fc6aaac3496cfcd4bb905da39e"
+}

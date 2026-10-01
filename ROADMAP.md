@@ -57,6 +57,22 @@
 - [ ] prove operative specifiche per hardware e runtime locali;
 - [ ] modelli di rapporto comparativo per qualità, prestazioni e memoria.
 
+## Blocco multimediale locale — Documentazione disponibile
+
+- [x] ARI-1803 — Generazione audio da terminale;
+- [x] ARI-1804 — Generazione video da terminale, composizione deterministica;
+- [x] ARI-1805 — Montaggio multimediale con FFmpeg;
+- [x] ARI-1806 — Trascrizione audio e video locale;
+- [x] ARI-1807 — Sintesi vocale locale;
+- [x] ARI-1808 — Generazione video IA locale;
+- [x] ARI-1809 — Pipeline multimediale automatizzata;
+- [x] ARI-1810 — Sintesi vocale con Edge TTS, documentazione e adattatore online;
+- [ ] ARI-1801/1802: revisione pipeline ancora pianificata, sorgenti conformi assenti;
+- [ ] prove operative su motori/modelli locali realmente disponibili;
+- [ ] verifica su progetti distinti e prova indipendente secondo VERIFICA.md.
+
+Le sette nuove procedure sono **Bozza verificabile**, non Verificate. Controlli documentali e degli installatori non costituiscono prove di generazione multimediale.
+
 ## Versione 1.0
 
 La versione 1.0 sarà dichiarata solo quando le procedure del nucleo saranno complete, verificate su progetti reali e coerenti con `STANDARD.md` e `VERIFICA.md`.

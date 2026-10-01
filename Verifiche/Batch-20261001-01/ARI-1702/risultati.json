@@ -1,0 +1,36 @@
+{
+  "code": "ARI-1702",
+  "status": "PASS",
+  "test": "Persistenza e caricamento della memoria di un agente di prova",
+  "criteri": "Categorie separate, preferenze/conoscenza/log recuperabili in processo nuovo, contesto e segreti esclusi per schema.",
+  "osservazioni": "Due processi nel singolo scenario save → restart/load; stato recuperato con le tre categorie previste e senza altre chiavi.",
+  "limiti": "Agente di prova sintetico senza modello: verifica progettazione/persistenza, non influenza sul ragionamento di un LLM. Esclusione per schema, non rilevatore universale di segreti. Nessuna memoria Hermes/Codex esistente modificata.",
+  "evidence": "Valida",
+  "comandi": [
+    {
+      "label": "salvataggio",
+      "comando": [
+        "C:\\Users\\[UTENTE]\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\[UTENTE]\\Documents\\GitHub\\Arsenale-IA\\Verifiche\\Batch-20261001-01\\ARI-1702\\memoria.py",
+        "save",
+        "C:\\Users\\[UTENTE]\\Documents\\GitHub\\Arsenale-IA\\Verifiche\\Batch-20261001-01\\ARI-1702\\stato.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "label": "riavvio-lettura",
+      "comando": [
+        "C:\\Users\\[UTENTE]\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "C:\\Users\\[UTENTE]\\Documents\\GitHub\\Arsenale-IA\\Verifiche\\Batch-20261001-01\\ARI-1702\\memoria.py",
+        "load",
+        "C:\\Users\\[UTENTE]\\Documents\\GitHub\\Arsenale-IA\\Verifiche\\Batch-20261001-01\\ARI-1702\\stato.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "script_sha256": "fceb08e218510ffd6eb7ad8e712a51ab2439f89681b2e609e75074ed2756d6df"
+}

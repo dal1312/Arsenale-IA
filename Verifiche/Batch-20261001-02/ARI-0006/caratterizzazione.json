@@ -1,0 +1,123 @@
+{
+  "casi": [
+    {
+      "testo": "- **Stato:**  valore à  \n",
+      "chiave": "Stato",
+      "atteso": "valore à",
+      "prima": "valore à",
+      "dopo": "valore à"
+    },
+    {
+      "testo": "contenuto senza metadati",
+      "chiave": "Stato",
+      "atteso": null,
+      "prima": null,
+      "dopo": null
+    },
+    {
+      "testo": "- **Stato:** primo\n- **Stato:** secondo\n",
+      "chiave": "Stato",
+      "atteso": "primo",
+      "prima": "primo",
+      "dopo": "primo"
+    },
+    {
+      "testo": "testo\n- **Stato:** valore\n",
+      "chiave": "Stato",
+      "atteso": "valore",
+      "prima": "valore",
+      "dopo": "valore"
+    },
+    {
+      "testo": "- **Versione procedura:**  valore à  \n",
+      "chiave": "Versione procedura",
+      "atteso": "valore à",
+      "prima": "valore à",
+      "dopo": "valore à"
+    },
+    {
+      "testo": "contenuto senza metadati",
+      "chiave": "Versione procedura",
+      "atteso": null,
+      "prima": null,
+      "dopo": null
+    },
+    {
+      "testo": "- **Versione procedura:** primo\n- **Versione procedura:** secondo\n",
+      "chiave": "Versione procedura",
+      "atteso": "primo",
+      "prima": "primo",
+      "dopo": "primo"
+    },
+    {
+      "testo": "testo\n- **Versione procedura:** valore\n",
+      "chiave": "Versione procedura",
+      "atteso": "valore",
+      "prima": "valore",
+      "dopo": "valore"
+    },
+    {
+      "testo": "- **A.B[1]:**  valore à  \n",
+      "chiave": "A.B[1]",
+      "atteso": "valore à",
+      "prima": "valore à",
+      "dopo": "valore à"
+    },
+    {
+      "testo": "contenuto senza metadati",
+      "chiave": "A.B[1]",
+      "atteso": null,
+      "prima": null,
+      "dopo": null
+    },
+    {
+      "testo": "- **A.B[1]:** primo\n- **A.B[1]:** secondo\n",
+      "chiave": "A.B[1]",
+      "atteso": "primo",
+      "prima": "primo",
+      "dopo": "primo"
+    },
+    {
+      "testo": "testo\n- **A.B[1]:** valore\n",
+      "chiave": "A.B[1]",
+      "atteso": "valore",
+      "prima": "valore",
+      "dopo": "valore"
+    },
+    {
+      "testo": "- **È un dato:**  valore à  \n",
+      "chiave": "È un dato",
+      "atteso": "valore à",
+      "prima": "valore à",
+      "dopo": "valore à"
+    },
+    {
+      "testo": "contenuto senza metadati",
+      "chiave": "È un dato",
+      "atteso": null,
+      "prima": null,
+      "dopo": null
+    },
+    {
+      "testo": "- **È un dato:** primo\n- **È un dato:** secondo\n",
+      "chiave": "È un dato",
+      "atteso": "primo",
+      "prima": "primo",
+      "dopo": "primo"
+    },
+    {
+      "testo": "testo\n- **È un dato:** valore\n",
+      "chiave": "È un dato",
+      "atteso": "valore",
+      "prima": "valore",
+      "dopo": "valore"
+    }
+  ],
+  "ramificazioni_prima": 1,
+  "ramificazioni_dopo": 1,
+  "dipendenze_globali_template_prima": 1,
+  "dipendenze_globali_template_dopo": 0,
+  "sorgente_sha256": "347789c975a6573c64c2f929339bc46b4151541f49b431c338be9f6030886b75",
+  "build": "compile() riuscito su entrambi i moduli",
+  "controllo_statico": "AST e firma pubblica invariata"
+}

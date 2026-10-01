@@ -1,0 +1,18 @@
+{
+  "worker_a": {
+    "identita": "/root/a3_somma",
+    "ruolo": "somma",
+    "file_scrittura": "worker-a/output.json",
+    "stato": "completed",
+    "risposta_finale": "Risultato 21; output creato in modo esclusivo, strumenti functions.exec/exec_command PowerShell"
+  },
+  "worker_b": {
+    "identita": "/root/a3_intervallo",
+    "ruolo": "intervallo",
+    "file_scrittura": "worker-b/output.json",
+    "stato": "completed",
+    "risposta_finale": "Minimo 3 massimo 11; creazione esclusiva, strumenti functions.exec/exec_command PowerShell"
+  },
+  "capacita": "collaboration.spawn_agent realmente chiamato due volte; messaggi finali ricevuti",
+  "limite": "confini contrattuali, non isolamento OS"
+}

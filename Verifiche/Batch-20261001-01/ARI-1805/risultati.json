@@ -1,0 +1,9 @@
+{
+  "code": "ARI-1805",
+  "status": "SKIPPED",
+  "motivo": "Sorgente dal test ARI-1804 non disponibile",
+  "comandi": [],
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "script_sha256": "fceb08e218510ffd6eb7ad8e712a51ab2439f89681b2e609e75074ed2756d6df"
+}

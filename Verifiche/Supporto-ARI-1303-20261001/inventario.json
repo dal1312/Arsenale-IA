@@ -1,0 +1,1594 @@
+{
+  "criteri": "File regolari nella radice e ricorsivamente in Procedure e Strumenti; escludere .git, profili/configurazioni esterne, Verifiche e cache __pycache__. Nessun link seguito. Corrispondenza esatta fra elenco filesystem e inventario; percorsi relativi univoci, dimensioni/hash corretti, leggibilità del report, corrispondenza procedure disponibili/catalogo.",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "eseguibile": "C:\\Users\\[UTENTE]\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "script_sha256": "6d9f3dc2cc3b2ad90e6d6f182397a74ee1bcb0c7e712402c2e500271c60c2764",
+  "file": [
+    {
+      "percorso": ".gitattributes",
+      "dimensione": 17,
+      "mtime_ns": 1790820847475684700,
+      "sha256": "1d5d71dcc6ccd28ab46a335349ecc74742ca4b81f4fcad212f8d134f70f1f13e",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "AGENTI.md",
+      "dimensione": 17073,
+      "mtime_ns": 1790657756995231700,
+      "sha256": "d4083d5f3a4daa1d5cfc46ab514d81b562e5eafec4819a8168dc58d899543cec",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "CATALOGO.md",
+      "dimensione": 10869,
+      "mtime_ns": 1790825813970548700,
+      "sha256": "97428152084efb60778818445f15934d34c6cd21076b795f904bf73eae0a8e41",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "CATALOGO.md.bak-20260929-auditfix",
+      "dimensione": 4348,
+      "mtime_ns": 1787881776663707600,
+      "sha256": "b7289b03d10ae5b715c404132fa0b81158306b44c0460ed573cb78d8b581263b",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "COMANDI_RAPIDI.md",
+      "dimensione": 4566,
+      "mtime_ns": 1790810355863925000,
+      "sha256": "d3393d093e0ae9c021a9cb2332a1c5da324487f8b54b579093a63ea1bb55eebe",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "COMPATIBILITA.md",
+      "dimensione": 9150,
+      "mtime_ns": 1790824296960485400,
+      "sha256": "dcd814917f5e2ef45421078e9ababc0a1a83efeb90a1e7ffa3d39ca22ed84bcc",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "COMPATIBILITA.md.bak-20260929-auditfix",
+      "dimensione": 4555,
+      "mtime_ns": 1790652389614013500,
+      "sha256": "0681fd7c64de9b44ccf82bffd28fd02ae932016c2093b34ab53d6f48c71b2eb2",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "CONTRIBUIRE.md",
+      "dimensione": 1545,
+      "mtime_ns": 1786500560647506200,
+      "sha256": "35a2c25b08c69cf9002e4077c2c59ce8a62d5b3daf171f252791594ce9c5173c",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "GLOSSARIO.md",
+      "dimensione": 2649,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "a074fb01ecbfa05b1145d56057b4ae9ab303f4199951233846ac0262932ed187",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "inventario-hermes-selettivo.json",
+      "dimensione": 156646,
+      "mtime_ns": 1790825039975753200,
+      "sha256": "8ffc643b9199b824942e1eba0ab0a252ad43d66c45ac6d786d18cfba6d5b77b0",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "Procedure/ARI-0001-Revisione-Repository/PROCEDURA.md",
+      "dimensione": 4952,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "f18c584c9ab022d78bc6db0efd566dd24ceace32853916a5af5eca7e79e832d8",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0001-Revisione-Repository/SKILL.md",
+      "dimensione": 646,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "ea6ea1aae7752c9bb288bf4e2ff1b6c399d349b4cde0b35e919d5b91649114ad",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0002-Revisione-Codice/PROCEDURA.md",
+      "dimensione": 3597,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "f1a50539b2256b06c7f29932ae614c042bfc0de555ec90c343271f887e0a277d",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0002-Revisione-Codice/SKILL.md",
+      "dimensione": 749,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "aaa060b04ec96c93e25f15f9a769f10116f23d27491863567d5ca67a4ecd5082",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0003-Diagnosi-Errori/PROCEDURA.md",
+      "dimensione": 3432,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "d53be74def2b34c9f8075d9ace06c7ccc9e604d601fca6a2e3e8f19b5a2a5f11",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0003-Diagnosi-Errori/SKILL.md",
+      "dimensione": 737,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "20277ba9b0b74fdbd10c8ba6de248b88e5e25f29bc42bd0b38dcaba6a61a1d7e",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0004-Pianificazione/PROCEDURA.md",
+      "dimensione": 3304,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "025ae17b4b3bd347d09cc346a99ea05311dcfabc6f9e7fd37497dc14c6e30261",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0004-Pianificazione/SKILL.md",
+      "dimensione": 710,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "b95d0d1eaef7a9a0c07a5047d3d872cdadda5b1ae8061b52c5c0da67b2578b50",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0005-Implementazione/PROCEDURA.md",
+      "dimensione": 3152,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "b787c5edeb77b5351a7622cb88054660912093ddaeb5600be4120880ab3d8dc8",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0005-Implementazione/SKILL.md",
+      "dimensione": 754,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "87665f5e89b91f55735e1ac839fcd19dab7c292d73778b6d4464d89d1cc0366a",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0006-Refactoring/PROCEDURA.md",
+      "dimensione": 3057,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "32d17d19179ff450f11ad060b82771737485d194fc9d3e512ee7a97afcf867df",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0006-Refactoring/SKILL.md",
+      "dimensione": 749,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "6603f9b974a9445757e4a5655fa819ced30de146581823b494095394178957e9",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0007-Analisi-Prestazioni/PROCEDURA.md",
+      "dimensione": 3099,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "444d1c3c646422e5f0c0947929507a12e414d81f96043c6eafba2ed38332973c",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0007-Analisi-Prestazioni/SKILL.md",
+      "dimensione": 748,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "fe184f79b0e72ad5ca957c41cfc48068d964f0ecc209ac0f1204ffe6a0a7c249",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0008-Analisi-Sicurezza/PROCEDURA.md",
+      "dimensione": 3336,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "798ec1b89542adef1e5a1bd34fed926ab2bb4e099085d68f2aa9923789aedae6",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0008-Analisi-Sicurezza/SKILL.md",
+      "dimensione": 827,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "d1d40171bd048479df2ccf3f395a5e71568219ce4974e1f128154937eb0aa0b9",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0009-Verifica-Test/PROCEDURA.md",
+      "dimensione": 3489,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "14a23dfb438482f91a86d2a2010795050dcf888dd4d8dba58548468ca61983fc",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0009-Verifica-Test/SKILL.md",
+      "dimensione": 771,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "6e3c3879b6ed2a2b0bfa0ec3dbdf48205e8fe8e393fb8e3beaec1d2cced0b247",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0010-Preparazione-Rilascio/PROCEDURA.md",
+      "dimensione": 3399,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "51cc968fe5a5ea2a4f24d4b6ef79ee6b11b6cc79e67b50e87429fc8fda724098",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0010-Preparazione-Rilascio/SKILL.md",
+      "dimensione": 765,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "814ee05ece3789d14f0e53e26ceace65ae92e8fc6aaac3496cfcd4bb905da39e",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0101-Revisione-Python/PROCEDURA.md",
+      "dimensione": 2953,
+      "mtime_ns": 1786500560648571300,
+      "sha256": "dd772990695e9e80fcdfa99532fb3db0dae1bf1100312084dc1cd74d6ebacfb3",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0101-Revisione-Python/SKILL.md",
+      "dimensione": 854,
+      "mtime_ns": 1786500560664542000,
+      "sha256": "eaa762c8ca893a5b525cfc23ee6cb59dc4e9b87841bcacf9f1f6fae9f2eadb33",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0201-Revisione-CSharp/PROCEDURA.md",
+      "dimensione": 2749,
+      "mtime_ns": 1786500560664542000,
+      "sha256": "c69a0f1786c70c07cd22b649f6ac9d439681bf828d3302413e1f9f963da28ceb",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0201-Revisione-CSharp/SKILL.md",
+      "dimensione": 779,
+      "mtime_ns": 1786500560664542000,
+      "sha256": "1d162044974c32628e8b23a87a553c258693a83a6278811247486df8faf1993f",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0301-Revisione-Cpp/PROCEDURA.md",
+      "dimensione": 2911,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "efe7d724e4e8a758497aabaa61cc6d44e425f9989d5ab35367a43782b12b1016",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0301-Revisione-Cpp/SKILL.md",
+      "dimensione": 813,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "bcd0a7922a8e700f4a53d7dbcfef6534a8487fb275c2e7b4915427a75d08d8f3",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0401-Revisione-JavaScript-TypeScript/PROCEDURA.md",
+      "dimensione": 2922,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "021858a136997c3f01cfcf6173714a2dbb5e8db0d1a0a3abe60e8a2852725a55",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0401-Revisione-JavaScript-TypeScript/SKILL.md",
+      "dimensione": 830,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "3498fd6648e273bca6ed114c9578add8ac8a2a42a2027fc96803784d6cb12a2e",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0501-Revisione-Database/PROCEDURA.md",
+      "dimensione": 3026,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "8a1bcbc739c4f45310f4243d5396f875d3e2fa5c5251528372ee451bdf0dd2ac",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0501-Revisione-Database/SKILL.md",
+      "dimensione": 823,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "18164795673a3bf06835ccb1d4ecaff0f00403e6d7c6284123c8fbd39338bcef",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0601-Revisione-Git/PROCEDURA.md",
+      "dimensione": 2898,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "cb54c57ec7f63998a534bbf7b238f6d723dc17ff1bce44474e4bfe21cc094d19",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0601-Revisione-Git/SKILL.md",
+      "dimensione": 761,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "75ff2b823508cbfaa1c00d915e7a8986abc934e199b2d9ac729cec7cd8bf728c",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0701-Revisione-Docker/PROCEDURA.md",
+      "dimensione": 2837,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "75cd53b500490735393fb6d02854539da226bee49bf2cedf532679abf8e67352",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0701-Revisione-Docker/SKILL.md",
+      "dimensione": 783,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "78b32370b05a041ed61b18b863f76897e127da6314326087623726ed4dc89080",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0801-Diagnostica-Windows/PROCEDURA.md",
+      "dimensione": 2999,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "c91998ac0cd61dc201016d1fceb6409fe38d00bb1459804085c967234fc472a6",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0801-Diagnostica-Windows/SKILL.md",
+      "dimensione": 769,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "d9e389b150bfd14c5c7a194c2d34b6306c2842e0ab7af08e95ab8d9bc0068d7e",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0901-Diagnostica-Linux/PROCEDURA.md",
+      "dimensione": 2823,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "9da8b2b7d913192df30b9e3f7fe2f47071618938ce41856029d4f6ac27ed3ae3",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-0901-Diagnostica-Linux/SKILL.md",
+      "dimensione": 753,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "2ceb2d66333bf29dce06cc25a203b53f33befcb90ed1efde0c3c39d3d3b9ac96",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1101-documentazione-tecnica-progetto/PROCEDURA.md",
+      "dimensione": 3275,
+      "mtime_ns": 1790657142276768200,
+      "sha256": "99a0cebb9790a9ad939f2e46c6946b51cb6b769a40c5a693a29751dca5658dca",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1101-documentazione-tecnica-progetto/SKILL.md",
+      "dimensione": 667,
+      "mtime_ns": 1790657142276768200,
+      "sha256": "da4da58e740dcafacadaa1d2b4ae5558a9d0129b6637805958259fbecb740f34",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1102-manuale-utente-locale/PROCEDURA.md",
+      "dimensione": 3209,
+      "mtime_ns": 1790657142314261400,
+      "sha256": "fa8cf065cc52033658dd4885af293b2c5cc43621bcca7244277a48769bf84c54",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1102-manuale-utente-locale/SKILL.md",
+      "dimensione": 635,
+      "mtime_ns": 1790657142315265400,
+      "sha256": "c25db10bb6be934b7c2309fa27166cb8e014d1ce6ce97866198520c26bab5f0a",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1103-glossario-italiano-tecnico/PROCEDURA.md",
+      "dimensione": 3213,
+      "mtime_ns": 1790657142319263100,
+      "sha256": "68aa38bf7721dd769ae83f0f8f7447df267e1bb2c07f1096e4593527567c62c2",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1103-glossario-italiano-tecnico/SKILL.md",
+      "dimensione": 646,
+      "mtime_ns": 1790657142321263600,
+      "sha256": "99ac6bb6e1f2ccc6775bdfa2057f45552a700c3491a792cb758f203f4861c281",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1104-revisione-correzione-testi/PROCEDURA.md",
+      "dimensione": 3366,
+      "mtime_ns": 1790657700228943800,
+      "sha256": "19e98fd3b97ec59abcad02ddbc611088733ff1b8c0810dd941002321a57a7e9f",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1104-revisione-correzione-testi/SKILL.md",
+      "dimensione": 780,
+      "mtime_ns": 1790657701558210200,
+      "sha256": "9dc4c84a4672761c8bd106fff3daabb1b4b694bee1a13c811c067b44b5f9d639",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1201-automazione-powershell/PROCEDURA.md",
+      "dimensione": 3152,
+      "mtime_ns": 1790657142324332200,
+      "sha256": "c397f667795dab89f3d3f3a8fbbf6b7ebfc823ed5db20a53914285a0fa1f9e41",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1201-automazione-powershell/SKILL.md",
+      "dimensione": 631,
+      "mtime_ns": 1790657142326334700,
+      "sha256": "b841f0dfd92913d249b1ebc36fdaca3afab40ecc83fbbdc9e33e23d3e83274ef",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1202-automazione-python-cli/PROCEDURA.md",
+      "dimensione": 3217,
+      "mtime_ns": 1790657142330332200,
+      "sha256": "dbf3c0f4eddcb6d12ab1bbad5c3be99f70851522425a0167c8a5b158ee5aa4e9",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1202-automazione-python-cli/SKILL.md",
+      "dimensione": 635,
+      "mtime_ns": 1790657142332334800,
+      "sha256": "37465472db336be11faf94b98ea7beabd98cf0f21b763ee02e066aeec7914d9b",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1203-flusso-locale-ripetibile/PROCEDURA.md",
+      "dimensione": 3192,
+      "mtime_ns": 1790657142335334600,
+      "sha256": "0e19e22f70d8bbb5fb0a867b3982086cce4d5a53203a39b8d3acf39b46d699f9",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1203-flusso-locale-ripetibile/SKILL.md",
+      "dimensione": 643,
+      "mtime_ns": 1790657142337332500,
+      "sha256": "388f473e30db82ed01a09063444f045232a32e15f37b760009499d9b0ac98bce",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1301-pulizia-progetto-locale/PROCEDURA.md",
+      "dimensione": 3245,
+      "mtime_ns": 1790657142338337000,
+      "sha256": "6988b0652aa699b83b358dc4ba8c3b75e03f83b4085afc09f3478c905d3e6b1a",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1301-pulizia-progetto-locale/SKILL.md",
+      "dimensione": 643,
+      "mtime_ns": 1790657142338337000,
+      "sha256": "d730255878fbaaccfa91e51ea0c2ce68fba491bc3fac34ce3b166b7b18be2126",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1302-gestione-backup-locali/PROCEDURA.md",
+      "dimensione": 3180,
+      "mtime_ns": 1790657142338337000,
+      "sha256": "318e5cbf93d7edacc543d0b1a59b785d4ad69b17ffba576ff310c90f72eb2f64",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1302-gestione-backup-locali/SKILL.md",
+      "dimensione": 616,
+      "mtime_ns": 1790657142338337000,
+      "sha256": "6c933f18085eca3da2119f456120ebd7484d21f3f023b9abe942c54d0ef92569",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1303-inventario-progetto-locale/PROCEDURA.md",
+      "dimensione": 3201,
+      "mtime_ns": 1790657142338337000,
+      "sha256": "1d2bc11f47dcc78ed227ee3d4a017dd64d42b0a190bb606421c9d43f921fa89f",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1303-inventario-progetto-locale/SKILL.md",
+      "dimensione": 626,
+      "mtime_ns": 1790657142338337000,
+      "sha256": "6c3f6e3bb14fd371becfd21f3529f53ed59d46ee98f311fc990d4001bba20905",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1304-ripristino-controllato-locale/PROCEDURA.md",
+      "dimensione": 3197,
+      "mtime_ns": 1790657142354411600,
+      "sha256": "b83c132d495a6821c8261c88229f4b914ecdb33176f2d9e79fabed84d1f35838",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1304-ripristino-controllato-locale/SKILL.md",
+      "dimensione": 642,
+      "mtime_ns": 1790657142354411600,
+      "sha256": "3e520913422a545b2eefdec1182380dc87cb591630bb341f280f2b67a16b14ae",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1401-confezionamento-app-windows/PROCEDURA.md",
+      "dimensione": 3194,
+      "mtime_ns": 1790657142359449700,
+      "sha256": "7881d64cf407142cb9f726eccccc186f2e8919fa7158d7676abb7424df610257",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1401-confezionamento-app-windows/SKILL.md",
+      "dimensione": 638,
+      "mtime_ns": 1790657142359449700,
+      "sha256": "ec9aba10ca3f8946ad7bd31b6b7c9f35fe9638a762c71dad881aed61f64bad3e",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1402-installatore-windows-locale/PROCEDURA.md",
+      "dimensione": 3208,
+      "mtime_ns": 1790657142367208800,
+      "sha256": "53218f1a562cd8f21fdc85fc6d24c92b9d719c077d92e32587403bdebbb23fcb",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1402-installatore-windows-locale/SKILL.md",
+      "dimensione": 653,
+      "mtime_ns": 1790657142369217400,
+      "sha256": "557377406a264d031847cb0836dc278db62353ce66111a702c04901e0fd262e5",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1403-icone-e-metadati-app/PROCEDURA.md",
+      "dimensione": 3168,
+      "mtime_ns": 1790657142371315900,
+      "sha256": "5c6dceaba16ed765a4cbe8c26450a186993f999f14f26edb3dbd3571ce7f9930",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1403-icone-e-metadati-app/SKILL.md",
+      "dimensione": 610,
+      "mtime_ns": 1790657142371315900,
+      "sha256": "62a4922d98664e84ece8bd81fee21d4e35df40a9b16ee680971eb4c8b2d3d505",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1501-Valutazione-Modelli-Locali/PROCEDURA.md",
+      "dimensione": 18291,
+      "mtime_ns": 1790652508628402500,
+      "sha256": "da7eb2d428445517de2a0e8a8f5f61b4dddd01efae4fb5df2a7b848b491c129e",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1501-Valutazione-Modelli-Locali/PROCEDURA.md.bak-20260927-190050",
+      "dimensione": 5649,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "aff3d2229f6734b39bdc092bde0bef8d90bac3aea3d1e330c6dad5cd3bf638d3",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1501-Valutazione-Modelli-Locali/PROCEDURA.md.bak-20260929-045003",
+      "dimensione": 13383,
+      "mtime_ns": 1790528524559947900,
+      "sha256": "6a63c65b6b46a5a29fedcf87fa8260a20956907a68b31d70c8597154f4c097d6",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1501-Valutazione-Modelli-Locali/PROCEDURA.md.bak-20260929-auditfix",
+      "dimensione": 18295,
+      "mtime_ns": 1790650429770427200,
+      "sha256": "30ff826476ad877c7acb4c0ea043760c9a466d79be1ea5ab09aede3cd3d841a8",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1501-Valutazione-Modelli-Locali/SKILL.md",
+      "dimensione": 1803,
+      "mtime_ns": 1790650324823481200,
+      "sha256": "3b6856cc3d09ea7f32ed9e51ff8d48a3c69faeeb7c7830d20925abba7a2efb8e",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1501-Valutazione-Modelli-Locali/SKILL.md.bak-20260927-190050",
+      "dimensione": 973,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "87710514673bceb994261e5c374cdcbd5cbd1ad72f00126286cc2605f33b264b",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1501-Valutazione-Modelli-Locali/SKILL.md.bak-20260929-045003",
+      "dimensione": 1579,
+      "mtime_ns": 1790528538742868100,
+      "sha256": "84e92c753b88c4f690792613137be9f6e0f9d7a5d0aea50b31855b770655ff52",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1502-ottimizzazione-inferenza-locale/PROCEDURA.md",
+      "dimensione": 3227,
+      "mtime_ns": 1790657142371315900,
+      "sha256": "2b8a11857fd323f525432a6203cdb661ef6c953b4dda645f2c19324a9eeb9b82",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1502-ottimizzazione-inferenza-locale/SKILL.md",
+      "dimensione": 655,
+      "mtime_ns": 1790657142380037600,
+      "sha256": "a86061f907c5ff843800592795af1d14aeafa47cfcea863a098b0658ba0b9a93",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1601-revisione-modelli-linguistici/PROCEDURA.md",
+      "dimensione": 3190,
+      "mtime_ns": 1790657142386254900,
+      "sha256": "c05a2eda844ab6d6ea4d0ab6c18c4ea6571e730405a552f3dadc30e4b32c693c",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1601-revisione-modelli-linguistici/SKILL.md",
+      "dimensione": 635,
+      "mtime_ns": 1790657142386254900,
+      "sha256": "242132e8c5b959426c60ffad2481d14a8e965f7fd2c2b09fc32b54fb5d69f0e1",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1701-revisione-agenti-ia/PROCEDURA.md",
+      "dimensione": 3149,
+      "mtime_ns": 1790657142386254900,
+      "sha256": "9b0012064db531fead22afaacda5d2aa1dbfd5e935e44d201ad6d4eb7ca92802",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1701-revisione-agenti-ia/SKILL.md",
+      "dimensione": 629,
+      "mtime_ns": 1790657142386254900,
+      "sha256": "8a65334f96c636c0d5e4ecbe628537c2025b4d6db702840c947fbe0493655fe9",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1702-progettazione-memoria-agente/PROCEDURA.md",
+      "dimensione": 3201,
+      "mtime_ns": 1790657142402010200,
+      "sha256": "b184ccf21e61bcaa81ad7fc8fa76b4886b1c2215c2f28baaa32a79fa10db5f91",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1702-progettazione-memoria-agente/SKILL.md",
+      "dimensione": 653,
+      "mtime_ns": 1790657142403018000,
+      "sha256": "c669f018b7dccfdd6260b467928f15f31018de7a72c8927ef68fd9342b7ab538",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1703-valutazione-strumenti-agente/PROCEDURA.md",
+      "dimensione": 3179,
+      "mtime_ns": 1790657142405551800,
+      "sha256": "c608945e8c9663af4a9c714f06e5351e2270b95f0369eb4ddcb1dad7113a7d19",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1703-valutazione-strumenti-agente/SKILL.md",
+      "dimensione": 624,
+      "mtime_ns": 1790657142405551800,
+      "sha256": "a3b7f00112bd87ab32932f22661a91e50d39219c07106426eb313d4833e3d5d3",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1704-orchestrazione-multi-agente-locale/PROCEDURA.md",
+      "dimensione": 3217,
+      "mtime_ns": 1790657142411399700,
+      "sha256": "6dbdaa773cfda8f71f11ff33a439d8a9d44bde9ab7b444054298165b9402b60b",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1704-orchestrazione-multi-agente-locale/SKILL.md",
+      "dimensione": 648,
+      "mtime_ns": 1790657142411399700,
+      "sha256": "a1c5dbe58a8bf90ef3ce2cc2a0c769a558682941887c66285f80109754938473",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1705-progettazione-prompt-agenti/PROCEDURA.md",
+      "dimensione": 3479,
+      "mtime_ns": 1790657705524990300,
+      "sha256": "5b086b15486f4df44936bfc8e20f52c4b475a0a5d7a164f3af08c1b0dedb5d94",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1705-progettazione-prompt-agenti/SKILL.md",
+      "dimensione": 800,
+      "mtime_ns": 1790657706838952300,
+      "sha256": "cdc82a1c1f20ecdf298f16f06489131110bbb6b3b0fa0d7d1e37fd67ac61de77",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1803-generazione-audio-terminale/PROCEDURA.md",
+      "dimensione": 8266,
+      "mtime_ns": 1790820721971581300,
+      "sha256": "4aa97dca057c31f95b348e63f728611851f5cb07a9eb26b8b5a296c5a158e169",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1803-generazione-audio-terminale/SKILL.md",
+      "dimensione": 827,
+      "mtime_ns": 1790820721971581300,
+      "sha256": "1484b33422d8061a51e1d802eb662cbd682d289d0f3cb3356ae9cc4352bf2179",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1804-generazione-video-terminale/PROCEDURA.md",
+      "dimensione": 8207,
+      "mtime_ns": 1790820721971581300,
+      "sha256": "ea27f7a3822e101d66dc404bd8fd290789bd61c8f8281184f24555fb7a32af65",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1804-generazione-video-terminale/SKILL.md",
+      "dimensione": 836,
+      "mtime_ns": 1790820721971581300,
+      "sha256": "ad427e5aa996f57a8e2a20d7431892d84f9778b50e4bc835e02ee135668181e9",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1805-montaggio-multimediale-ffmpeg/PROCEDURA.md",
+      "dimensione": 8415,
+      "mtime_ns": 1790820721971581300,
+      "sha256": "df4a220c817b5bb136ecb2cc12d1f9cdf7b3d0b3c17916476b586d6f66192f3c",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1805-montaggio-multimediale-ffmpeg/SKILL.md",
+      "dimensione": 801,
+      "mtime_ns": 1790820721971581300,
+      "sha256": "862cc522ff6767e37817375aaf30eb97808d8f318454898e4d5c4416ba8a83fe",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1806-trascrizione-audio-video-locale/PROCEDURA.md",
+      "dimensione": 8584,
+      "mtime_ns": 1790820721971581300,
+      "sha256": "1b9e75bc50d328fbb6edc8d95f1f96b18c7397cb0635cef20ce6bec022d16601",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1806-trascrizione-audio-video-locale/SKILL.md",
+      "dimensione": 832,
+      "mtime_ns": 1790820721971581300,
+      "sha256": "a48d8f1bd990e6d1f355c53665f7e4fc6795f5585cbaecbfdbe2a23189387f76",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1807-sintesi-vocale-locale/PROCEDURA.md",
+      "dimensione": 8588,
+      "mtime_ns": 1790820721971581300,
+      "sha256": "e879923df0d3ef9085ff7b62f814050cabfd26e37fc607f2d2143c9a69971afd",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1807-sintesi-vocale-locale/SKILL.md",
+      "dimensione": 792,
+      "mtime_ns": 1790820721971581300,
+      "sha256": "15f9c09855b15f51c9b81295ebc2fc9da698e5fa9a908cc67fe8c52b77842a7d",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1808-generazione-video-ia-locale/PROCEDURA.md",
+      "dimensione": 9020,
+      "mtime_ns": 1790820721971581300,
+      "sha256": "b8a44dc8449cdb69bc5249a91f9b31585e9e3dba6412d2c15a15cdd069be39b0",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1808-generazione-video-ia-locale/SKILL.md",
+      "dimensione": 799,
+      "mtime_ns": 1790820721971581300,
+      "sha256": "096e88deff6184db74275c256eafda0c7374aa3379db39cfccf05e28971302d6",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1809-pipeline-multimediale-automatizzata/PROCEDURA.md",
+      "dimensione": 9191,
+      "mtime_ns": 1790820721971581300,
+      "sha256": "77a660263b82ba6342d4ab74a06fb555f5a92356a20197def9ad0310b720e76d",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1809-pipeline-multimediale-automatizzata/SKILL.md",
+      "dimensione": 827,
+      "mtime_ns": 1790820721971581300,
+      "sha256": "736fd8254b85398bfe11ebd8e7ab6c97e5a961d870cfe2f54991020cc93c08e7",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1810-sintesi-vocale-edge-tts/PROCEDURA.md",
+      "dimensione": 8968,
+      "mtime_ns": 1790823791579907700,
+      "sha256": "21d589c885af9835995e6ec23dceb52ac999ea24a6401a1fee052d90917ced27",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-1810-sintesi-vocale-edge-tts/SKILL.md",
+      "dimensione": 1495,
+      "mtime_ns": 1790823790270390800,
+      "sha256": "f095dce01116cc37d0d15ba59e217e20ef9c3dbd3fcd2d401bc370475f3dae40",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2101-Revisione-Siti-Web-Statici/PROCEDURA.md",
+      "dimensione": 4079,
+      "mtime_ns": 1790656475615105200,
+      "sha256": "0688ac0c030f4744c8f670ab67931f89db6ee746c83e8b071559edd9f817144d",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2101-Revisione-Siti-Web-Statici/SKILL.md",
+      "dimensione": 787,
+      "mtime_ns": 1790656217693665700,
+      "sha256": "87929002585ba285bb9316f8f4d3af22b3207654aacf19b48d26c62d3a1a5c98",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2102-Revisione-Applicazioni-Web/PROCEDURA.md",
+      "dimensione": 4077,
+      "mtime_ns": 1790656450517201200,
+      "sha256": "4789516777347c0146fa74df7396932c03819d2f115986523c541e46d8091b6d",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2102-Revisione-Applicazioni-Web/SKILL.md",
+      "dimensione": 797,
+      "mtime_ns": 1790656422904539300,
+      "sha256": "466647abe877fd7392f14a3458268a768726c349dd0533d0cd56ab28503cded2",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2103-Design-Accessibilita-Interfaccia/PROCEDURA.md",
+      "dimensione": 3590,
+      "mtime_ns": 1790656217702330800,
+      "sha256": "7076d3151aa97e4dd41168d0bc8d83c144b69355c755f5e3e3c8c2f89efc40ca",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2103-Design-Accessibilita-Interfaccia/SKILL.md",
+      "dimensione": 747,
+      "mtime_ns": 1790656217705329700,
+      "sha256": "c4d57126e60a6a03b9bd2812800cc8c909e2596c4c46c7abbf0dd305477f0d4d",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2104-Performance-UX-UI-Web-App/PROCEDURA.md",
+      "dimensione": 3758,
+      "mtime_ns": 1790656340869418500,
+      "sha256": "5aea89861ad4c7c09471b8810d07cd290c026bd89eeef2246b43eed5a108a9c5",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2104-Performance-UX-UI-Web-App/SKILL.md",
+      "dimensione": 765,
+      "mtime_ns": 1790656217710459800,
+      "sha256": "f87aa6a11adb04ded87cb4a2569024253d6711cc3b048889f168c9272e8953c2",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2105-Asset-Discovery-Selezione-Asset/PROCEDURA.md",
+      "dimensione": 3627,
+      "mtime_ns": 1790656342197737100,
+      "sha256": "a38cc724c0a346cf31987369479f3a03da17ed6f7a30d55d34461f6a8d0ff8b0",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2105-Asset-Discovery-Selezione-Asset/SKILL.md",
+      "dimensione": 759,
+      "mtime_ns": 1790656217715974700,
+      "sha256": "58eb8c1a487449093a5b2139567753751b6c238f7c32a2b3a2566ef093b1d7b7",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2106-Replica-Funzionale-Clone-Legale-Sito/PROCEDURA.md",
+      "dimensione": 4011,
+      "mtime_ns": 1790656451885175500,
+      "sha256": "ff7a329aeaffc42eb63864d4f0d408629c1bd52ebaac2fa44c216c84e3b897ca",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2106-Replica-Funzionale-Clone-Legale-Sito/SKILL.md",
+      "dimensione": 777,
+      "mtime_ns": 1790656217721090000,
+      "sha256": "2fbc8d872b47011b2c3d5f7ff83cfbf5d60f6b9c9258283ce9aedd069c2bede3",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2107-App-Windows-Interfaccia-Ios-Macos/PROCEDURA.md",
+      "dimensione": 3866,
+      "mtime_ns": 1790656217723090700,
+      "sha256": "5d450108b4397530334c2486f1c758e4599d608d452630e2814e5f71e99bad87",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2107-App-Windows-Interfaccia-Ios-Macos/SKILL.md",
+      "dimensione": 788,
+      "mtime_ns": 1790656217727090500,
+      "sha256": "1745df60a90c27cf1db3d8c6bc202c6811ff986d032e6ec19fe6322cfc0dc7f3",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2108-UX-Accessibilita-Conversione/PROCEDURA.md",
+      "dimensione": 3585,
+      "mtime_ns": 1790656453236777100,
+      "sha256": "402125ae1ae97631185af4ee73a2e94e9a4719bdbd4fb768fd516d8ee56aeffa",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2108-UX-Accessibilita-Conversione/SKILL.md",
+      "dimensione": 768,
+      "mtime_ns": 1790656454558083000,
+      "sha256": "81a79b2355f09c8d88b35f23c5fcfb64ca5e18aaad85d343573d6e3bd347e06d",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2201-revisione-sicurezza-web-e-app/PROCEDURA.md",
+      "dimensione": 3197,
+      "mtime_ns": 1790657142418346900,
+      "sha256": "44443f480af5cca8f174a8290a81641a0ab71dd8ac5ffea10f9c15035d6829d0",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2201-revisione-sicurezza-web-e-app/SKILL.md",
+      "dimensione": 643,
+      "mtime_ns": 1790657142418346900,
+      "sha256": "252d1b0bd50700d02ece6c5c05ccb74f6f64af8410e01605326a70ccaabda6b0",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2202-gestione-segreti-locali/PROCEDURA.md",
+      "dimensione": 3160,
+      "mtime_ns": 1790657142422062000,
+      "sha256": "fec5ec3edfb66854eac0a9815883cfdc18bbbf9a1159bcadc52f8c07d73d9719",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2202-gestione-segreti-locali/SKILL.md",
+      "dimensione": 632,
+      "mtime_ns": 1790657142422062000,
+      "sha256": "b0e23f143d50106a65da11d698287a4a7b8de87ef8f908ad779bfb79f02de10b",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2203-privacy-e-dati-personali/PROCEDURA.md",
+      "dimensione": 3166,
+      "mtime_ns": 1790657142422062000,
+      "sha256": "dec90b444733eb42cb31e8fb5b6bf9e5ccc7a787169d5a349124957d940d6443",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2203-privacy-e-dati-personali/SKILL.md",
+      "dimensione": 647,
+      "mtime_ns": 1790657142422062000,
+      "sha256": "2b5fdacfedcf4efdb663b66f503d46b733de1080b3f78e87db5136f43c1ccdd5",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2204-licenze-risorse-e-dipendenze/PROCEDURA.md",
+      "dimensione": 3187,
+      "mtime_ns": 1790657142433538000,
+      "sha256": "08a1efdf8527f81736dca67508b99d5bd7a7bde5bf8b5e06931339cb24f4e973",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2204-licenze-risorse-e-dipendenze/SKILL.md",
+      "dimensione": 626,
+      "mtime_ns": 1790657142435671300,
+      "sha256": "01baf078f12097330029facf32841239cddfdd5ac294cc6d9042fa1cb6928994",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2501-automazione-browser-controllata/PROCEDURA.md",
+      "dimensione": 3209,
+      "mtime_ns": 1790657142438671900,
+      "sha256": "7754ce6c37798f9c22d5b214d0c0da3be3fc68c16e3dfb35a750684a00007475",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2501-automazione-browser-controllata/SKILL.md",
+      "dimensione": 657,
+      "mtime_ns": 1790657142440673800,
+      "sha256": "77771191fa1911401de96fa4db3b0193487b76b08ea75915e5dcd439c3685be0",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2502-test-end-to-end-interfaccia/PROCEDURA.md",
+      "dimensione": 3204,
+      "mtime_ns": 1790657142444670400,
+      "sha256": "0eb74666bd97feebb01adff4b5cc1a7860211d4437952ef838b9b76586e424f4",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2502-test-end-to-end-interfaccia/SKILL.md",
+      "dimensione": 643,
+      "mtime_ns": 1790657142445673000,
+      "sha256": "947fbae63ece9bf5ebc6c41364dac9435ac5f38b295ffd3ba37e5f5fa7b4b161",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2503-audit-schermate-adattive/PROCEDURA.md",
+      "dimensione": 3184,
+      "mtime_ns": 1790657142448747900,
+      "sha256": "e30a35fad7849629da26957332341ad0237952e6c8b1defea6698e532292b86d",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "Procedure/ARI-2503-audit-schermate-adattive/SKILL.md",
+      "dimensione": 638,
+      "mtime_ns": 1790657142450748300,
+      "sha256": "0bd1c2c1df5c9d91ca246f5e98c9db68ff1fdd4daefb4a06c5dc2832804323c0",
+      "categoria": "procedura"
+    },
+    {
+      "percorso": "RAPPORTO-AMPLIAMENTO-SKILL-2026-10-01.md",
+      "dimensione": 8256,
+      "mtime_ns": 1790808401653373600,
+      "sha256": "aae073fca568287c77c0c4dffab387828064e017a37ddb5d8ccb377744794b4b",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "RAPPORTO-BLOCCO-MULTIMEDIALE-2026-10-01.md",
+      "dimensione": 5048,
+      "mtime_ns": 1790820935268294800,
+      "sha256": "680b99b792255646ad71275e32e67ab30c7f59131da701dc0123d09d4cce39e9",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "RAPPORTO-RIALLINEAMENTO-HERMES-2026-10-01.md",
+      "dimensione": 4779,
+      "mtime_ns": 1790825071727895600,
+      "sha256": "872b32f20bfbb465907aa18d7d8be831ca6d45c6b87a08eea5b597b399705ba6",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "README.md",
+      "dimensione": 2644,
+      "mtime_ns": 1790823841157728400,
+      "sha256": "3edb468581d3a7189249512be63d9fcfec7584a17b43dcedc101ad60f8dad69a",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "README.md.bak-20260929-auditfix",
+      "dimensione": 1917,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "a84d96c7c562758439f4b6a67f4c3074d26371f9b62ccef790793e9fa1c0ca39",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "ROADMAP.md",
+      "dimensione": 3709,
+      "mtime_ns": 1790823841158734200,
+      "sha256": "aed778a04229ea8f27ebefcbe6f72d4af125d9da2e2f8c1b12d56000882ea4d1",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "STANDARD.md",
+      "dimensione": 4408,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "fa5e376936cdd0ba421569d3f5a2bfe7918e64c01ecca9b4875b53aff5990d3d",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "START_HERE.md",
+      "dimensione": 3397,
+      "mtime_ns": 1790657764901939100,
+      "sha256": "353862493a5346e9665c98b1690d725ef3a245e5479319593b8c1a2b7beaa1e1",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "Strumenti/Genera-Audio-Edge.ps1",
+      "dimensione": 3507,
+      "mtime_ns": 1790823859685013700,
+      "sha256": "6b03107667c164e50b8ffa4a695d89ea40e5b2016eddb90e8c188568118b36d9",
+      "categoria": "strumento"
+    },
+    {
+      "percorso": "Strumenti/Genera-Audio.ps1",
+      "dimensione": 4943,
+      "mtime_ns": 1790824218759981800,
+      "sha256": "f3d9c3199b437bc1a40667ff9a60063aa594c915f81fd673c0bfd458a2ac903f",
+      "categoria": "strumento"
+    },
+    {
+      "percorso": "Strumenti/genera_procedure_consigliate.ps1",
+      "dimensione": 22318,
+      "mtime_ns": 1790657134942542100,
+      "sha256": "a7afebf59d910e9aa8abd35f3a67304cf406f11e8b6d8581f4df199ad4d40592",
+      "categoria": "strumento"
+    },
+    {
+      "percorso": "Strumenti/Installa-Skills.ps1",
+      "dimensione": 2852,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "052cddef6af8da3f1a1df9953c41e3beb5dab90cc29a5303b3a7f95781fb12f2",
+      "categoria": "strumento"
+    },
+    {
+      "percorso": "Strumenti/installa-skills.sh",
+      "dimensione": 1947,
+      "mtime_ns": 1790820847475684700,
+      "sha256": "8edee967013f15c07f1e73a295939725e006279fff46ed5141a5645bddfcfcb0",
+      "categoria": "strumento"
+    },
+    {
+      "percorso": "Strumenti/installa-skills.sh.bak-20260929-auditfix",
+      "dimensione": 1632,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "581c35032bffe26d03efb801aaa4d27e339e428261a05ec52ffee06779d07378",
+      "categoria": "strumento"
+    },
+    {
+      "percorso": "Strumenti/sintesi_audio_locale.py",
+      "dimensione": 3279,
+      "mtime_ns": 1790824217337117700,
+      "sha256": "a03a501d9c8dd4d31d594526a800996fdb96c650041ec01690cca295427ff036",
+      "categoria": "strumento"
+    },
+    {
+      "percorso": "Strumenti/test_verifica_evidenze.py",
+      "dimensione": 975,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "723de37c0fbe5fd88bc4c65a1bfcf201e0ad6f7e8c765bc032fd6915e79c6141",
+      "categoria": "strumento"
+    },
+    {
+      "percorso": "Strumenti/test_verifica_promozioni.py",
+      "dimensione": 3185,
+      "mtime_ns": 1790808386259800000,
+      "sha256": "ae016e02b90803e17eedafba25d3c93a4b29f05575b2f92d1203cf351ca55ece",
+      "categoria": "strumento"
+    },
+    {
+      "percorso": "Strumenti/verifica_evidenze.py",
+      "dimensione": 6664,
+      "mtime_ns": 1790652463659012200,
+      "sha256": "44bff4ff3bc883ffa189aa2e683bc44676daa2bd3d4741045021510c58735789",
+      "categoria": "strumento"
+    },
+    {
+      "percorso": "Strumenti/verifica_evidenze.py.bak-20260929-auditfix",
+      "dimensione": 6232,
+      "mtime_ns": 1786506642362409300,
+      "sha256": "66404774ad744c388d731b7c7c096db7821015bf8ff2113b8d1619d2cf913afa",
+      "categoria": "strumento"
+    },
+    {
+      "percorso": "Strumenti/verifica_procedure.py",
+      "dimensione": 5993,
+      "mtime_ns": 1790652737140259700,
+      "sha256": "e8de0ed426d682382703f721f557540f60101ae24bc2f2ccbc3cc05c713d3448",
+      "categoria": "strumento"
+    },
+    {
+      "percorso": "Strumenti/verifica_procedure.py.bak-20260929-053213-resume",
+      "dimensione": 5994,
+      "mtime_ns": 1790652403888826000,
+      "sha256": "140048242a93e5fc9b92ad2a78738831c126e2b039920e0b098c5d757dbc57a6",
+      "categoria": "strumento"
+    },
+    {
+      "percorso": "Strumenti/verifica_procedure.py.bak-20260929-auditfix",
+      "dimensione": 4938,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "cb81107dc1d3681f8e4b6baee9a297b94a8b91ad3b4ce8bac377658df9234d48",
+      "categoria": "strumento"
+    },
+    {
+      "percorso": "Strumenti/verifica_promozioni.py",
+      "dimensione": 4519,
+      "mtime_ns": 1790808477260249300,
+      "sha256": "347789c975a6573c64c2f929339bc46b4151541f49b431c338be9f6030886b75",
+      "categoria": "strumento"
+    },
+    {
+      "percorso": "Strumenti/verifica_promozioni.py.bak-20260929-auditfix",
+      "dimensione": 2916,
+      "mtime_ns": 1786500560666547700,
+      "sha256": "0c8fdd36fc20a354b31afff2b6049977a03c0aa7f51e4034d920425c6fcc5557",
+      "categoria": "strumento"
+    },
+    {
+      "percorso": "Strumenti/verifica_skills.py",
+      "dimensione": 3702,
+      "mtime_ns": 1786500560680291900,
+      "sha256": "d1c5d70366deb3734736c5dacc5600df38a077b25bbda49db53faa1f8f53d4be",
+      "categoria": "strumento"
+    },
+    {
+      "percorso": "sync_hermes_selettivo.py",
+      "dimensione": 6538,
+      "mtime_ns": 1790825036112009300,
+      "sha256": "f505327172cd04a4d35f289da979878653453e9d0c9a6e3b59b097654257a660",
+      "categoria": "file principale"
+    },
+    {
+      "percorso": "VERIFICA.md",
+      "dimensione": 4470,
+      "mtime_ns": 1786500560680291900,
+      "sha256": "747b3e5c917a0cb034463e866560c7f353a8f096705c91a1f949200b2639438f",
+      "categoria": "file principale"
+    }
+  ],
+  "procedure_disponibili": [
+    {
+      "codice": "ARI-0001",
+      "cartella": "Procedure/ARI-0001-Revisione-Repository",
+      "stato": "Verificata",
+      "runtime": "revisione-repository"
+    },
+    {
+      "codice": "ARI-0002",
+      "cartella": "Procedure/ARI-0002-Revisione-Codice",
+      "stato": "Verificata",
+      "runtime": "revisione-codice"
+    },
+    {
+      "codice": "ARI-0003",
+      "cartella": "Procedure/ARI-0003-Diagnosi-Errori",
+      "stato": "Verificata",
+      "runtime": "diagnosi-errori"
+    },
+    {
+      "codice": "ARI-0004",
+      "cartella": "Procedure/ARI-0004-Pianificazione",
+      "stato": "Verificata",
+      "runtime": "pianificazione-tecnica"
+    },
+    {
+      "codice": "ARI-0005",
+      "cartella": "Procedure/ARI-0005-Implementazione",
+      "stato": "Verificata",
+      "runtime": "implementazione-controllata"
+    },
+    {
+      "codice": "ARI-0006",
+      "cartella": "Procedure/ARI-0006-Refactoring",
+      "stato": "Bozza verificabile",
+      "runtime": "refactoring-controllato"
+    },
+    {
+      "codice": "ARI-0007",
+      "cartella": "Procedure/ARI-0007-Analisi-Prestazioni",
+      "stato": "Bozza verificabile",
+      "runtime": "analisi-prestazioni"
+    },
+    {
+      "codice": "ARI-0008",
+      "cartella": "Procedure/ARI-0008-Analisi-Sicurezza",
+      "stato": "Bozza verificabile",
+      "runtime": "analisi-sicurezza"
+    },
+    {
+      "codice": "ARI-0009",
+      "cartella": "Procedure/ARI-0009-Verifica-Test",
+      "stato": "Verificata",
+      "runtime": "verifica-test"
+    },
+    {
+      "codice": "ARI-0010",
+      "cartella": "Procedure/ARI-0010-Preparazione-Rilascio",
+      "stato": "Bozza verificabile",
+      "runtime": "preparazione-rilascio"
+    },
+    {
+      "codice": "ARI-0101",
+      "cartella": "Procedure/ARI-0101-Revisione-Python",
+      "stato": "Bozza verificabile",
+      "runtime": "revisione-python"
+    },
+    {
+      "codice": "ARI-0201",
+      "cartella": "Procedure/ARI-0201-Revisione-CSharp",
+      "stato": "Bozza verificabile",
+      "runtime": "revisione-csharp"
+    },
+    {
+      "codice": "ARI-0301",
+      "cartella": "Procedure/ARI-0301-Revisione-Cpp",
+      "stato": "Bozza verificabile",
+      "runtime": "revisione-cpp"
+    },
+    {
+      "codice": "ARI-0401",
+      "cartella": "Procedure/ARI-0401-Revisione-JavaScript-TypeScript",
+      "stato": "Bozza verificabile",
+      "runtime": "revisione-javascript-typescript"
+    },
+    {
+      "codice": "ARI-0501",
+      "cartella": "Procedure/ARI-0501-Revisione-Database",
+      "stato": "Bozza verificabile",
+      "runtime": "revisione-database"
+    },
+    {
+      "codice": "ARI-0601",
+      "cartella": "Procedure/ARI-0601-Revisione-Git",
+      "stato": "Bozza verificabile",
+      "runtime": "revisione-git"
+    },
+    {
+      "codice": "ARI-0701",
+      "cartella": "Procedure/ARI-0701-Revisione-Docker",
+      "stato": "Bozza verificabile",
+      "runtime": "revisione-docker"
+    },
+    {
+      "codice": "ARI-0801",
+      "cartella": "Procedure/ARI-0801-Diagnostica-Windows",
+      "stato": "Bozza verificabile",
+      "runtime": "diagnostica-windows"
+    },
+    {
+      "codice": "ARI-0901",
+      "cartella": "Procedure/ARI-0901-Diagnostica-Linux",
+      "stato": "Bozza verificabile",
+      "runtime": "diagnostica-linux"
+    },
+    {
+      "codice": "ARI-1101",
+      "cartella": "Procedure/ARI-1101-documentazione-tecnica-progetto",
+      "stato": "Bozza verificabile",
+      "runtime": "documentazione-tecnica-progetto"
+    },
+    {
+      "codice": "ARI-1102",
+      "cartella": "Procedure/ARI-1102-manuale-utente-locale",
+      "stato": "Bozza verificabile",
+      "runtime": "manuale-utente-locale"
+    },
+    {
+      "codice": "ARI-1103",
+      "cartella": "Procedure/ARI-1103-glossario-italiano-tecnico",
+      "stato": "Bozza verificabile",
+      "runtime": "glossario-italiano-tecnico"
+    },
+    {
+      "codice": "ARI-1104",
+      "cartella": "Procedure/ARI-1104-revisione-correzione-testi",
+      "stato": "Bozza verificabile",
+      "runtime": "revisione-correzione-testi"
+    },
+    {
+      "codice": "ARI-1201",
+      "cartella": "Procedure/ARI-1201-automazione-powershell",
+      "stato": "Bozza verificabile",
+      "runtime": "automazione-powershell"
+    },
+    {
+      "codice": "ARI-1202",
+      "cartella": "Procedure/ARI-1202-automazione-python-cli",
+      "stato": "Bozza verificabile",
+      "runtime": "automazione-python-cli"
+    },
+    {
+      "codice": "ARI-1203",
+      "cartella": "Procedure/ARI-1203-flusso-locale-ripetibile",
+      "stato": "Bozza verificabile",
+      "runtime": "flusso-locale-ripetibile"
+    },
+    {
+      "codice": "ARI-1301",
+      "cartella": "Procedure/ARI-1301-pulizia-progetto-locale",
+      "stato": "Bozza verificabile",
+      "runtime": "pulizia-progetto-locale"
+    },
+    {
+      "codice": "ARI-1302",
+      "cartella": "Procedure/ARI-1302-gestione-backup-locali",
+      "stato": "Bozza verificabile",
+      "runtime": "gestione-backup-locali"
+    },
+    {
+      "codice": "ARI-1303",
+      "cartella": "Procedure/ARI-1303-inventario-progetto-locale",
+      "stato": "Bozza verificabile",
+      "runtime": "inventario-progetto-locale"
+    },
+    {
+      "codice": "ARI-1304",
+      "cartella": "Procedure/ARI-1304-ripristino-controllato-locale",
+      "stato": "Bozza verificabile",
+      "runtime": "ripristino-controllato-locale"
+    },
+    {
+      "codice": "ARI-1401",
+      "cartella": "Procedure/ARI-1401-confezionamento-app-windows",
+      "stato": "Bozza verificabile",
+      "runtime": "confezionamento-app-windows"
+    },
+    {
+      "codice": "ARI-1402",
+      "cartella": "Procedure/ARI-1402-installatore-windows-locale",
+      "stato": "Bozza verificabile",
+      "runtime": "installatore-windows-locale"
+    },
+    {
+      "codice": "ARI-1403",
+      "cartella": "Procedure/ARI-1403-icone-e-metadati-app",
+      "stato": "Bozza verificabile",
+      "runtime": "icone-metadati-app"
+    },
+    {
+      "codice": "ARI-1501",
+      "cartella": "Procedure/ARI-1501-Valutazione-Modelli-Locali",
+      "stato": "Bozza verificabile",
+      "runtime": "valutazione-modelli-locali"
+    },
+    {
+      "codice": "ARI-1502",
+      "cartella": "Procedure/ARI-1502-ottimizzazione-inferenza-locale",
+      "stato": "Bozza verificabile",
+      "runtime": "ottimizzazione-inferenza-locale"
+    },
+    {
+      "codice": "ARI-1601",
+      "cartella": "Procedure/ARI-1601-revisione-modelli-linguistici",
+      "stato": "Bozza verificabile",
+      "runtime": "revisione-modelli-linguistici"
+    },
+    {
+      "codice": "ARI-1701",
+      "cartella": "Procedure/ARI-1701-revisione-agenti-ia",
+      "stato": "Bozza verificabile",
+      "runtime": "revisione-agenti-ia"
+    },
+    {
+      "codice": "ARI-1702",
+      "cartella": "Procedure/ARI-1702-progettazione-memoria-agente",
+      "stato": "Bozza verificabile",
+      "runtime": "progettazione-memoria-agente"
+    },
+    {
+      "codice": "ARI-1703",
+      "cartella": "Procedure/ARI-1703-valutazione-strumenti-agente",
+      "stato": "Bozza verificabile",
+      "runtime": "valutazione-strumenti-agente"
+    },
+    {
+      "codice": "ARI-1704",
+      "cartella": "Procedure/ARI-1704-orchestrazione-multi-agente-locale",
+      "stato": "Bozza verificabile",
+      "runtime": "orchestrazione-multi-agente-locale"
+    },
+    {
+      "codice": "ARI-1705",
+      "cartella": "Procedure/ARI-1705-progettazione-prompt-agenti",
+      "stato": "Bozza verificabile",
+      "runtime": "progettazione-prompt-agenti"
+    },
+    {
+      "codice": "ARI-1803",
+      "cartella": "Procedure/ARI-1803-generazione-audio-terminale",
+      "stato": "Bozza verificabile",
+      "runtime": "generazione-audio-terminale"
+    },
+    {
+      "codice": "ARI-1804",
+      "cartella": "Procedure/ARI-1804-generazione-video-terminale",
+      "stato": "Bozza verificabile",
+      "runtime": "generazione-video-terminale"
+    },
+    {
+      "codice": "ARI-1805",
+      "cartella": "Procedure/ARI-1805-montaggio-multimediale-ffmpeg",
+      "stato": "Bozza verificabile",
+      "runtime": "montaggio-multimediale-ffmpeg"
+    },
+    {
+      "codice": "ARI-1806",
+      "cartella": "Procedure/ARI-1806-trascrizione-audio-video-locale",
+      "stato": "Bozza verificabile",
+      "runtime": "trascrizione-audio-video-locale"
+    },
+    {
+      "codice": "ARI-1807",
+      "cartella": "Procedure/ARI-1807-sintesi-vocale-locale",
+      "stato": "Bozza verificabile",
+      "runtime": "sintesi-vocale-locale"
+    },
+    {
+      "codice": "ARI-1808",
+      "cartella": "Procedure/ARI-1808-generazione-video-ia-locale",
+      "stato": "Bozza verificabile",
+      "runtime": "generazione-video-ia-locale"
+    },
+    {
+      "codice": "ARI-1809",
+      "cartella": "Procedure/ARI-1809-pipeline-multimediale-automatizzata",
+      "stato": "Bozza verificabile",
+      "runtime": "pipeline-multimediale-automatizzata"
+    },
+    {
+      "codice": "ARI-1810",
+      "cartella": "Procedure/ARI-1810-sintesi-vocale-edge-tts",
+      "stato": "Bozza verificabile",
+      "runtime": "sintesi-vocale-edge-tts"
+    },
+    {
+      "codice": "ARI-2101",
+      "cartella": "Procedure/ARI-2101-Revisione-Siti-Web-Statici",
+      "stato": "Bozza verificabile",
+      "runtime": "revisione-siti-web-statici"
+    },
+    {
+      "codice": "ARI-2102",
+      "cartella": "Procedure/ARI-2102-Revisione-Applicazioni-Web",
+      "stato": "Bozza verificabile",
+      "runtime": "revisione-applicazioni-web"
+    },
+    {
+      "codice": "ARI-2103",
+      "cartella": "Procedure/ARI-2103-Design-Accessibilita-Interfaccia",
+      "stato": "Bozza verificabile",
+      "runtime": "design-accessibilita-interfaccia"
+    },
+    {
+      "codice": "ARI-2104",
+      "cartella": "Procedure/ARI-2104-Performance-UX-UI-Web-App",
+      "stato": "Bozza verificabile",
+      "runtime": "prestazioni-ux-ui-web-app"
+    },
+    {
+      "codice": "ARI-2105",
+      "cartella": "Procedure/ARI-2105-Asset-Discovery-Selezione-Asset",
+      "stato": "Bozza verificabile",
+      "runtime": "asset-discovery-selezione-asset"
+    },
+    {
+      "codice": "ARI-2106",
+      "cartella": "Procedure/ARI-2106-Replica-Funzionale-Clone-Legale-Sito",
+      "stato": "Bozza verificabile",
+      "runtime": "replica-funzionale-replica-legale-sito"
+    },
+    {
+      "codice": "ARI-2107",
+      "cartella": "Procedure/ARI-2107-App-Windows-Interfaccia-Ios-Macos",
+      "stato": "Bozza verificabile",
+      "runtime": "app-windows-interfaccia-ios-macos"
+    },
+    {
+      "codice": "ARI-2108",
+      "cartella": "Procedure/ARI-2108-UX-Accessibilita-Conversione",
+      "stato": "Bozza verificabile",
+      "runtime": "ux-accessibilita-conversione"
+    },
+    {
+      "codice": "ARI-2201",
+      "cartella": "Procedure/ARI-2201-revisione-sicurezza-web-e-app",
+      "stato": "Bozza verificabile",
+      "runtime": "revisione-sicurezza-web-app"
+    },
+    {
+      "codice": "ARI-2202",
+      "cartella": "Procedure/ARI-2202-gestione-segreti-locali",
+      "stato": "Bozza verificabile",
+      "runtime": "gestione-segreti-locali"
+    },
+    {
+      "codice": "ARI-2203",
+      "cartella": "Procedure/ARI-2203-privacy-e-dati-personali",
+      "stato": "Bozza verificabile",
+      "runtime": "privacy-dati-personali"
+    },
+    {
+      "codice": "ARI-2204",
+      "cartella": "Procedure/ARI-2204-licenze-risorse-e-dipendenze",
+      "stato": "Bozza verificabile",
+      "runtime": "licenze-risorse-dipendenze"
+    },
+    {
+      "codice": "ARI-2501",
+      "cartella": "Procedure/ARI-2501-automazione-browser-controllata",
+      "stato": "Bozza verificabile",
+      "runtime": "automazione-browser-controllata"
+    },
+    {
+      "codice": "ARI-2502",
+      "cartella": "Procedure/ARI-2502-test-end-to-end-interfaccia",
+      "stato": "Bozza verificabile",
+      "runtime": "test-end-to-end-interfaccia"
+    },
+    {
+      "codice": "ARI-2503",
+      "cartella": "Procedure/ARI-2503-audit-schermate-adattive",
+      "stato": "Bozza verificabile",
+      "runtime": "audit-schermate-adattive"
+    }
+  ],
+  "esclusioni": [],
+  "controlli": {
+    "file_verificati": 170,
+    "procedure_disponibili": 64,
+    "sorgenti_invariate": true,
+    "percorsi_univoci": true,
+    "catalogo_cartelle_coerenti": true,
+    "esito": "PASS"
+  }
+}

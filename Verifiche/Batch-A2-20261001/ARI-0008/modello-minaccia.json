@@ -1,0 +1,7 @@
+{
+  "bene": "sentinella esterna alla sottodirectory consentita ma interna alla fixture",
+  "confine": "nome relativo non fidato -> risoluzione filesystem",
+  "input": "../sentinella.txt",
+  "atteso": "rifiuto prima della lettura",
+  "dipendenze": "pathlib standard, niente rete/autenticazione/servizi"
+}

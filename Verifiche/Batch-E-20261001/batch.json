@@ -1,0 +1,174 @@
+[
+  {
+    "code": "ARI-0010",
+    "bersaglio": "UVT portabile 0.2.1",
+    "test": "Readiness in sola lettura: provenienza, manifest e decisione go/no-go",
+    "risultato": "PASS",
+    "classificazione": "Eseguita",
+    "tipo": "Interna",
+    "osservazioni": {
+      "versione": "0.2.1",
+      "commit_dichiarato": "31572f0681b66e559280f0a8d5a7805444c3e12f",
+      "dirty_dichiarato": true,
+      "componenti_presenza": {
+        "PROVENANCE.json": true,
+        "SHA256SUMS.txt": true,
+        "README.md": true,
+        "README.en.md": true,
+        "CHANGELOG.md": true,
+        "LICENSE": true,
+        "THIRD_PARTY_NOTICES.md": true,
+        "VERIFY_RELEASE_WINDOWS.ps1": true,
+        "UniversalVideoTranslator.exe": true,
+        "UVTNativeHost.exe": true,
+        "_internal": true
+      },
+      "righe_manifest": 20100,
+      "documenti_sha256": {
+        "PROVENANCE.json": "0454e1ac0daf5ced345208286c24a68f6e9d3af3cf7f4be37b9a18f2c23fec98",
+        "SHA256SUMS.txt": "0ac7b11d2756a976fff63d42caa65c327dbc4ebed21f5fcf4bad930d42a7fe93",
+        "README.md": "aa66fae715232637bb61fd6a717e9b99106c337969e4e9613a1dba60f54da0bc",
+        "README.en.md": "17ebed0a321c1359d224c249bd1da73bd9a77a11c3bb5b9b8d8ab9d64bf68b05",
+        "CHANGELOG.md": "1363aab016c90afd710134691aff443d6993667c2f5cef2c40e60d158a739796",
+        "LICENSE": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+        "THIRD_PARTY_NOTICES.md": "ec4cf7f7939e20e70de1e760fc62f91471670433b7ad6d6d8c070805c767fa54",
+        "VERIFY_RELEASE_WINDOWS.ps1": "e58c1303aa17703b6e558f1463da67c54c0e543a75fd2db34c33b9dd4538c364"
+      },
+      "verdetto": "RILASCIO BLOCCATO",
+      "test_build_storici": "Dichiarazioni in WINDOWS_VALIDATION.md non rieseguite né attribuite a questa prova",
+      "causa": "provenienza dirty e nessuna nuova prova build pulita/installazione/avvio/rollback dati autorizzata"
+    },
+    "limiti": "Verifica parziale: nessuna build pulita, installazione, aggiornamento, avvio o rollback dati. Versione/commit dichiarati identificati, ma lo storico di validazione si riferisce a diverso commit e non prova automaticamente il candidato corrente. Archivio conservato non equivale a rollback di dati persistenti.",
+    "rilievi": "P1: rinvio del rilascio secondo policy dirty riportata dal progetto; prima di distribuzione verificare build pulita, avvio e recupero. Nessun rilascio approvato.",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "sistema": "Windows-11-10.0.26300-SP0",
+    "procedura_sha256": "51cc968fe5a5ea2a4f24d4b6ef79ee6b11b6cc79e67b50e87429fc8fda724098",
+    "skill_sha256": "814ee05ece3789d14f0e53e26ceace65ae92e8fc6aaac3496cfcd4bb905da39e",
+    "evidenza": "Verifiche\\ARI-0010\\VER-ARI-0010-20261001-01.md"
+  },
+  {
+    "code": "ARI-0201",
+    "bersaglio": "Omega FL Windows launcher esistente",
+    "test": "Revisione C# e build offline della copia",
+    "risultato": "PASS",
+    "classificazione": "Valida",
+    "tipo": "Interna",
+    "osservazioni": {
+      "target_framework": "net8.0-windows",
+      "nuget_dichiarati_csproj": [],
+      "checks_statici": {
+        "nullable": true,
+        "risorse_http_using": true,
+        "processo_using": true,
+        "argomenti_senza_shell": true,
+        "timeout_http": true,
+        "errore_return1": true
+      },
+      "comando": [
+        "dotnet",
+        "build",
+        "C:\\Users\\[UTENTE]\\Documents\\GitHub\\Arsenale-IA\\Verifiche\\Batch-E-20261001\\ARI-0201\\progetto\\OmegaFL.Launcher.csproj",
+        "--no-restore",
+        "-c",
+        "Release",
+        "-r",
+        "win-x64",
+        "-p:EnableNETAnalyzers=false",
+        "-p:NuGetAudit=false"
+      ],
+      "build_exit_code": 0,
+      "build_output_presente": true,
+      "test_suite": "nessuna suite nel perimetro launcher",
+      "rilievi": [
+        {
+          "priorita": "P2",
+          "simbolo": "FindProjectRoot/Main",
+          "rilievo": "Path.GetFullPath invocato prima del try di Main: eccezioni percorso non catturate dal blocco di avvio",
+          "evidenza": "ordine di chiamata e posizione del try nel sorgente; analisi statica, nessun input guasto eseguito"
+        },
+        {
+          "priorita": "P3",
+          "simbolo": "OpenDashboardWhenReady",
+          "rilievo": "task avviato senza attesa e Process.Start browser non protetto nel ramo di successo",
+          "evidenza": "_ = OpenDashboardWhenReady(server); catch limitati a richieste HTTP"
+        },
+        {
+          "priorita": "P3",
+          "simbolo": "Fail",
+          "rilievo": "Console.ReadLine rende il ramo errore interattivo",
+          "evidenza": "README identifica launcher locale; automazione unattended richiede decisione esplicita"
+        }
+      ],
+      "sorgenti_sha256": {
+        "OmegaFL.Launcher.csproj": "94cb7fa5a4296da37eeb3ad560653488fb9ea2e4f1d492d9d2f2b226fe32975d",
+        "Program.cs": "d33ba868b1fc005be2bb2382c17f7aadccbb8c0e465a728e97c4ba7077e27052",
+        "README.md": "e127a50a393a12e36a301cafaf775d1b4c0dfe2ad39839eca4bbe900a94e41f2"
+      }
+    },
+    "limiti": "Nessun avvio launcher, servizio, HTTP, Python o browser. Analizzatori disabilitati nel comando isolato, non nel progetto originale; nessun test funzionale runtime, suite assente. Rilievi da codice distinti da guasti runtime osservati. Memoria/async e gestione risorse revisionati; nessuna prova su framework diversi.",
+    "rilievi": "P2 FindProjectRoot: eccezione percorso prima del try; P3 task dashboard non atteso e ramo errore interattivo. Rilievi con simboli in risultati.json; nessuna correzione applicata.",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "sistema": "Windows-11-10.0.26300-SP0",
+    "procedura_sha256": "c69a0f1786c70c07cd22b649f6ac9d439681bf828d3302413e1f9f963da28ceb",
+    "skill_sha256": "1d162044974c32628e8b23a87a553c258693a83a6278811247486df8faf1993f",
+    "evidenza": "Verifiche\\ARI-0201\\VER-ARI-0201-20261001-01.md"
+  },
+  {
+    "code": "ARI-0801",
+    "risultato": "BLOCKED",
+    "motivo": "Nessun sintomo Windows reale distinto da FFmpeg identificato nei materiali pertinenti"
+  },
+  {
+    "code": "ARI-1401",
+    "bersaglio": "Archivio reale UVT 0.2.1 Windows x86_64",
+    "test": "Copia del pacchetto portabile, checksum, CRC e contenuto atteso",
+    "risultato": "PASS",
+    "classificazione": "Valida",
+    "tipo": "Interna",
+    "osservazioni": {
+      "archivio_sha256": "79e2a494ef40d380d4211ef6ec009913c61deb822acedd38ffe7be8436367283",
+      "byte": 699141718,
+      "zip_crc": "tutti verificati",
+      "entrypoint": "UniversalVideoTranslator.exe",
+      "versione": "0.2.1",
+      "commit_dichiarato": "31572f0681b66e559280f0a8d5a7805444c3e12f",
+      "file_zip": 20101,
+      "righe_manifest": 20100,
+      "manifest_copertura_presenza": true,
+      "runtime_presente": true,
+      "originale_invariato": true
+    },
+    "limiti": "Pacchetto completo conservato senza estrazione o avvio. CRC e checksum archivio non provano assenza malware o funzionamento runtime; hash per-file del manifest non tutti ricalcolati individualmente, copertura presenza verificata. Dipendenze esterne riportate da PROVENANCE non installate. Nessuna valutazione estetica o nuova verifica ICO già coperta.",
+    "rilievi": "P2: dipendenze esterne necessarie ad alcune funzioni: non equiparare archivio integro ad ambiente pronto. Documenti e entrypoint presenti; avvio non esercitato per vincoli della campagna.",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "sistema": "Windows-11-10.0.26300-SP0",
+    "procedura_sha256": "7881d64cf407142cb9f726eccccc186f2e8919fa7158d7676abb7424df610257",
+    "skill_sha256": "ec9aba10ca3f8946ad7bd31b6b7c9f35fe9638a762c71dad881aed61f64bad3e",
+    "evidenza": "Verifiche\\ARI-1401\\VER-ARI-1401-20261001-01.md"
+  },
+  {
+    "code": "ARI-2103",
+    "risultato": "BLOCKED",
+    "motivo": "Controlli di focus, tastiera e resa effettiva non eseguibili senza capacità browser/interfaccia"
+  },
+  {
+    "code": "ARI-2104",
+    "risultato": "BLOCKED",
+    "motivo": "Manca una metrica con soglia documentata per un’interazione UI reale già eseguibile"
+  },
+  {
+    "code": "ARI-2105",
+    "risultato": "BLOCKED",
+    "motivo": "Nessuna esigenza documentata con almeno due candidati locali e vincoli di scelta identificata"
+  },
+  {
+    "code": "ARI-2106",
+    "risultato": "BLOCKED",
+    "motivo": "Manca un riferimento autorizzato per il nuovo prodotto"
+  },
+  {
+    "code": "ARI-2108",
+    "risultato": "BLOCKED",
+    "motivo": "Percorso UI e accessibilità non verificabili senza capacità browser/interfaccia"
+  }
+]

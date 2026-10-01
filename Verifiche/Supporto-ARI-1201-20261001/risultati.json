@@ -1,0 +1,13 @@
+{
+  "esito": "PASS",
+  "sorgente": "C:\\Users\\[UTENTE]\\Documents\\GitHub\\Arsenale-IA\\README.md",
+  "output": "C:\\Users\\[UTENTE]\\Documents\\GitHub\\Arsenale-IA\\Verifiche\\Supporto-ARI-1201-20261001\\README-anteprima.html",
+  "sorgente_sha256": "3EDB468581D3A7189249512BE63D9FCFEC7584A17B43DCEDC101AD60F8DAD69A",
+  "output_sha256": "4579E5C960AB24AE22F8BEA013C8649DAFD711837246B26831AACBD4E08C6640",
+  "caratteri_sorgente": 2634,
+  "bytes_output": 2816,
+  "roundtrip_testo": true,
+  "sorgente_invariata": true,
+  "powershell": "7.6.5",
+  "criterio": "HTML UTF-8 nuovo, contenuto README completo e protetto tramite HtmlEncode; rilettura e HtmlDecode identiche al sorgente; hash sorgente invariato. Nessuna risorsa esterna o esecuzione del testo."
+}

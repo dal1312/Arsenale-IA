@@ -1,0 +1,17 @@
+{
+  "code": "ARI-0008",
+  "test": "Traversal relativo rifiutato al confine della fixture",
+  "risultato": "PASS",
+  "osservazioni": {
+    "input_rifiutato": true,
+    "sentinella_sha256_invariato": "2413ec991297b81b84642db9becf1912b312661751880c594fddf767b28d3d77"
+  },
+  "classificazione": "Valida",
+  "limiti": "Controllo su fixture interna, nessun attacco reale. Non prova resistenza a race/symlink concorrenti: aprire mediante handle e controlli OS se necessario. Nessun segreto, sessione o servizio presente; crittografia e replay non applicabili.",
+  "rilievi": "Miglioramento difensivo P2: confinamento dopo resolve confermato; impatto potenziale lettura fuori perimetro, probabilità dipendente da uso reale. Residuo P2: TOCTOU non esercitato; mitigazione proposta, non integrata.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "procedura_sha256": "798ec1b89542adef1e5a1bd34fed926ab2bb4e099085d68f2aa9923789aedae6",
+  "skill_sha256": "d1d40171bd048479df2ccf3f395a5e71568219ce4974e1f128154937eb0aa0b9",
+  "runner_sha256": "eadbaecb45c94a1b6fd77b911348f54e77c031ae21fc7d033dfc073c17566cc3"
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "controllo": "verifica_procedure",
+    "exit_code": 0
+  },
+  {
+    "controllo": "verifica_skills",
+    "exit_code": 0
+  },
+  {
+    "controllo": "verifica_evidenze",
+    "exit_code": 0
+  },
+  {
+    "controllo": "verifica_promozioni",
+    "exit_code": 0
+  },
+  {
+    "controllo": "unittest",
+    "exit_code": 0
+  }
+]

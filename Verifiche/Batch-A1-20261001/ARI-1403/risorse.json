@@ -1,0 +1,59 @@
+{
+  "icone": [
+    {
+      "larghezza": 16,
+      "altezza": 16,
+      "byte": 657,
+      "offset": 102,
+      "formato": "PNG con CRC verificati"
+    },
+    {
+      "larghezza": 32,
+      "altezza": 32,
+      "byte": 1266,
+      "offset": 759,
+      "formato": "PNG con CRC verificati"
+    },
+    {
+      "larghezza": 48,
+      "altezza": 48,
+      "byte": 1960,
+      "offset": 2025,
+      "formato": "PNG con CRC verificati"
+    },
+    {
+      "larghezza": 64,
+      "altezza": 64,
+      "byte": 2420,
+      "offset": 3985,
+      "formato": "PNG con CRC verificati"
+    },
+    {
+      "larghezza": 128,
+      "altezza": 128,
+      "byte": 4423,
+      "offset": 6405,
+      "formato": "PNG con CRC verificati"
+    },
+    {
+      "larghezza": 256,
+      "altezza": 256,
+      "byte": 8111,
+      "offset": 10828,
+      "formato": "PNG con CRC verificati"
+    }
+  ],
+  "metadati": {
+    "CompanyName": "dal1312",
+    "FileDescription": "Universal Video Translator",
+    "FileVersion": "0.2.1",
+    "InternalName": "UniversalVideoTranslator",
+    "LegalCopyright": "Copyright 2026 dal1312",
+    "OriginalFilename": "UniversalVideoTranslator.exe",
+    "ProductName": "Universal Video Translator",
+    "ProductVersion": "0.2.1"
+  },
+  "ico_sha256": "466b07278aab563ed54a59c6ce1ff08d84976fb2b2a985ea9c43cda186eb9749",
+  "metadata_sha256": "381f9a8e6687eef1e80237b64377a2358a3928e9289784458f650ed04713c94d",
+  "coerenza": "Versioni e nome prodotto coerenti; ICO non contiene nome/versione da confrontare"
+}

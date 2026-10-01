@@ -1,0 +1,17 @@
+{
+  "motore": "edge-tts",
+  "versione": "edge-tts 7.2.8",
+  "online": true,
+  "voce": "it-IT-DiegoNeural",
+  "velocita": "-5%",
+  "input": "C:\\Users\\[UTENTE]\\.codex\\visualizations\\2026\\10\\01\\01a0f528-9843-73e2-b022-06f78b454584\\prova-edge-1810.txt",
+  "output": "C:\\Users\\[UTENTE]\\.codex\\visualizations\\2026\\10\\01\\01a0f528-9843-73e2-b022-06f78b454584\\audio-edge-c9ab356cc364491abb6c17dc9d7714d1\\audio.mp3",
+  "durata_secondi": 13.608,
+  "codec": "mp3",
+  "frequenza_hz": 24000,
+  "canali": 1,
+  "input_sha256": "F38FB76C638F222DFA556223DE03F714F6CC6998D3955904BF3E1F6FB4AFD918",
+  "output_sha256": "1F3017A4A6F211D0D99B44DFDBD5DB5550F63DDA93A0D03317E313944736D303",
+  "decodifica": "superata",
+  "revisione_percettiva": "da svolgere"
+}

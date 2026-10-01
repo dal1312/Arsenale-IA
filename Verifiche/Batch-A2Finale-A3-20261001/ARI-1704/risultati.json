@@ -1,0 +1,27 @@
+{
+  "code": "ARI-1704",
+  "test": "Due worker distinti con proprietà dei file e sintesi",
+  "risultato": "PASS",
+  "classificazione": "Valida",
+  "tipo": "Interna",
+  "osservazioni": {
+    "worker_distinti": 2,
+    "output_a": {
+      "ruolo": "somma",
+      "somma": 21
+    },
+    "output_b": {
+      "ruolo": "intervallo",
+      "minimo": 3,
+      "massimo": 11
+    },
+    "input_invariati": true,
+    "conflitti_osservati": 0,
+    "modifiche_preesistenti_inattese": []
+  },
+  "limiti": "Agenti Codex reali con artefatti nel filesystem locale condiviso; non attestazione di inferenza offline o due runtime locali installati. Confini assegnati nel contratto, non separazione OS. Traccia delle chiamate spawn e risposte finali presente nella sessione; dossier conserva riepilogo, non log interno completo dei worker. Nessun conflitto artificiale introdotto.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "procedura_sha256": "6dbdaa773cfda8f71f11ff33a439d8a9d44bde9ab7b444054298165b9402b60b",
+  "skill_sha256": "a1c5dbe58a8bf90ef3ce2cc2a0c769a558682941887c66285f80109754938473"
+}

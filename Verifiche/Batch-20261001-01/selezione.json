@@ -1,0 +1,408 @@
+[
+  {
+    "code": "ARI-0006",
+    "motivo": "Non selezionata: scenario specifico o progetto bersaglio distinto non definito; priorità alle sette candidate isolate.",
+    "procedura_sha256": "32d17d19179ff450f11ad060b82771737485d194fc9d3e512ee7a97afcf867df",
+    "skill_sha256": "6603f9b974a9445757e4a5655fa819ced30de146581823b494095394178957e9",
+    "scopo": "Migliorare la struttura interna del software senza alterarne il comportamento osservabile."
+  },
+  {
+    "code": "ARI-0007",
+    "motivo": "Non selezionata: scenario specifico o progetto bersaglio distinto non definito; priorità alle sette candidate isolate.",
+    "procedura_sha256": "444d1c3c646422e5f0c0947929507a12e414d81f96043c6eafba2ed38332973c",
+    "skill_sha256": "fe184f79b0e72ad5ca957c41cfc48068d964f0ecc209ac0f1204ffe6a0a7c249",
+    "scopo": "Individuare colli di bottiglia reali e proporre o verificare interventi basati su misurazioni ripetibili."
+  },
+  {
+    "code": "ARI-0008",
+    "motivo": "Non selezionata: scenario specifico o progetto bersaglio distinto non definito; priorità alle sette candidate isolate.",
+    "procedura_sha256": "798ec1b89542adef1e5a1bd34fed926ab2bb4e099085d68f2aa9923789aedae6",
+    "skill_sha256": "d1d40171bd048479df2ccf3f395a5e71568219ce4974e1f128154937eb0aa0b9",
+    "scopo": "Valutare i rischi di sicurezza di un progetto e produrre interventi prioritizzati distinguendo vulnerabilità confermate, ipotesi e miglioramenti difensivi."
+  },
+  {
+    "code": "ARI-0010",
+    "motivo": "Non selezionata: scenario specifico o progetto bersaglio distinto non definito; priorità alle sette candidate isolate.",
+    "procedura_sha256": "51cc968fe5a5ea2a4f24d4b6ef79ee6b11b6cc79e67b50e87429fc8fda724098",
+    "skill_sha256": "814ee05ece3789d14f0e53e26ceace65ae92e8fc6aaac3496cfcd4bb905da39e",
+    "scopo": "Verificare che una versione sia tecnicamente pronta per la distribuzione e disponga di controlli, artefatti, istruzioni operative e recupero adeguati."
+  },
+  {
+    "code": "ARI-0101",
+    "motivo": "Non selezionata: scenario specifico o progetto bersaglio distinto non definito; priorità alle sette candidate isolate.",
+    "procedura_sha256": "dd772990695e9e80fcdfa99532fb3db0dae1bf1100312084dc1cd74d6ebacfb3",
+    "skill_sha256": "eaa762c8ca893a5b525cfc23ee6cb59dc4e9b87841bcacf9f1f6fae9f2eadb33",
+    "scopo": "Valutare qualità, correttezza, manutenibilità, packaging e compatibilità di un progetto Python esistente."
+  },
+  {
+    "code": "ARI-0201",
+    "motivo": "Non selezionata: target e toolchain/servizio dedicati non confermati; nessuna installazione ammessa.",
+    "procedura_sha256": "c69a0f1786c70c07cd22b649f6ac9d439681bf828d3302413e1f9f963da28ceb",
+    "skill_sha256": "1d162044974c32628e8b23a87a553c258693a83a6278811247486df8faf1993f",
+    "scopo": "Valutare un progetto C# sotto il profilo di struttura, correttezza, testabilità, prestazioni e manutenibilità."
+  },
+  {
+    "code": "ARI-0301",
+    "motivo": "Non selezionata: target e toolchain/servizio dedicati non confermati; nessuna installazione ammessa.",
+    "procedura_sha256": "efe7d724e4e8a758497aabaa61cc6d44e425f9989d5ab35367a43782b12b1016",
+    "skill_sha256": "bcd0a7922a8e700f4a53d7dbcfef6534a8487fb275c2e7b4915427a75d08d8f3",
+    "scopo": "Analizzare un progetto C++ per individuare problemi di correttezza, memoria, portabilità, concorrenza, prestazioni e qualità della build."
+  },
+  {
+    "code": "ARI-0401",
+    "motivo": "Non selezionata: target e toolchain/servizio dedicati non confermati; nessuna installazione ammessa.",
+    "procedura_sha256": "021858a136997c3f01cfcf6173714a2dbb5e8db0d1a0a3abe60e8a2852725a55",
+    "skill_sha256": "3498fd6648e273bca6ed114c9578add8ac8a2a42a2027fc96803784d6cb12a2e",
+    "scopo": "Valutare un progetto JavaScript o TypeScript in termini di correttezza, struttura, dipendenze, sicurezza, test e qualità della distribuzione."
+  },
+  {
+    "code": "ARI-0501",
+    "motivo": "Non selezionata: target e toolchain/servizio dedicati non confermati; nessuna installazione ammessa.",
+    "procedura_sha256": "8a1bcbc739c4f45310f4243d5396f875d3e2fa5c5251528372ee451bdf0dd2ac",
+    "skill_sha256": "18164795673a3bf06835ccb1d4ecaff0f00403e6d7c6284123c8fbd39338bcef",
+    "scopo": "Valutare schema, query, migrazioni, integrità, prestazioni, sicurezza e operatività di un database usato da un'applicazione."
+  },
+  {
+    "code": "ARI-0601",
+    "motivo": "Non selezionata: scenario specifico o progetto bersaglio distinto non definito; priorità alle sette candidate isolate.",
+    "procedura_sha256": "cb54c57ec7f63998a534bbf7b238f6d723dc17ff1bce44474e4bfe21cc094d19",
+    "skill_sha256": "75ff2b823508cbfaa1c00d915e7a8986abc934e199b2d9ac729cec7cd8bf728c",
+    "scopo": "Valutare lo stato del repository Git, la chiarezza della cronologia, la strategia dei rami e i rischi operativi."
+  },
+  {
+    "code": "ARI-0701",
+    "motivo": "Non selezionata: target e toolchain/servizio dedicati non confermati; nessuna installazione ammessa.",
+    "procedura_sha256": "75cd53b500490735393fb6d02854539da226bee49bf2cedf532679abf8e67352",
+    "skill_sha256": "78b32370b05a041ed61b18b863f76897e127da6314326087623726ed4dc89080",
+    "scopo": "Valutare correttezza, sicurezza, riproducibilità e manutenibilità di immagini e configurazioni Docker."
+  },
+  {
+    "code": "ARI-0801",
+    "motivo": "Non selezionata: scenario specifico o progetto bersaglio distinto non definito; priorità alle sette candidate isolate.",
+    "procedura_sha256": "c91998ac0cd61dc201016d1fceb6409fe38d00bb1459804085c967234fc472a6",
+    "skill_sha256": "d9e389b150bfd14c5c7a194c2d34b6306c2842e0ab7af08e95ab8d9bc0068d7e",
+    "scopo": "Diagnosticare problemi di avvio, prestazioni, compatibilità e configurazione su Windows senza applicare modifiche indiscriminate."
+  },
+  {
+    "code": "ARI-0901",
+    "motivo": "Non selezionata: target e toolchain/servizio dedicati non confermati; nessuna installazione ammessa.",
+    "procedura_sha256": "9da8b2b7d913192df30b9e3f7fe2f47071618938ce41856029d4f6ac27ed3ae3",
+    "skill_sha256": "2ceb2d66333bf29dce06cc25a203b53f33befcb90ed1efde0c3c39d3d3b9ac96",
+    "scopo": "Analizzare problemi di servizi, prestazioni, dipendenze e configurazione su Linux con un metodo documentato, minimo e reversibile."
+  },
+  {
+    "code": "ARI-1101",
+    "motivo": "Non selezionata: scenario specifico o progetto bersaglio distinto non definito; priorità alle sette candidate isolate.",
+    "procedura_sha256": "99a0cebb9790a9ad939f2e46c6946b51cb6b769a40c5a693a29751dca5658dca",
+    "skill_sha256": "da4da58e740dcafacadaa1d2b4ae5558a9d0129b6637805958259fbecb740f34",
+    "scopo": "Produrre documentazione tecnica coerente con la struttura reale di un progetto, rendendo comprensibili architettura, componenti, flussi, strumenti e limiti operativi."
+  },
+  {
+    "code": "ARI-1102",
+    "motivo": "Non selezionata: scenario specifico o progetto bersaglio distinto non definito; priorità alle sette candidate isolate.",
+    "procedura_sha256": "fa8cf065cc52033658dd4885af293b2c5cc43621bcca7244277a48769bf84c54",
+    "skill_sha256": "c25db10bb6be934b7c2309fa27166cb8e014d1ce6ce97866198520c26bab5f0a",
+    "scopo": "Creare guide pratiche per usare localmente un progetto, riducendo passaggi impliciti e rendendo l'uso accessibile anche a chi non conosce la struttura interna."
+  },
+  {
+    "code": "ARI-1103",
+    "motivo": "Selezionata: ramo isolato, strumenti già disponibili, nessuna evidenza equivalente registrata.",
+    "procedura_sha256": "68aa38bf7721dd769ae83f0f8f7447df267e1bb2c07f1096e4593527567c62c2",
+    "skill_sha256": "99ac6bb6e1f2ccc6775bdfa2057f45552a700c3491a792cb758f203f4861c281",
+    "scopo": "Mantenere coerente il lessico italiano tecnico del progetto, decidendo quali termini tradurre, quali mantenere come nomi tecnici e quali normalizzare."
+  },
+  {
+    "code": "ARI-1104",
+    "motivo": "Selezionata: ramo isolato, strumenti già disponibili, nessuna evidenza equivalente registrata.",
+    "procedura_sha256": "19e98fd3b97ec59abcad02ddbc611088733ff1b8c0810dd941002321a57a7e9f",
+    "skill_sha256": "9dc4c84a4672761c8bd106fff3daabb1b4b694bee1a13c811c067b44b5f9d639",
+    "scopo": "Correggere, riscrivere e migliorare testi proposti dall'utente mantenendo significato, tono richiesto, chiarezza tecnica e coerenza con il progetto in italiano."
+  },
+  {
+    "code": "ARI-1201",
+    "motivo": "Esclusa esplicitamente: prova già sufficiente nella campagna.",
+    "procedura_sha256": "c397f667795dab89f3d3f3a8fbbf6b7ebfc823ed5db20a53914285a0fa1f9e41",
+    "skill_sha256": "b841f0dfd92913d249b1ebc36fdaca3afab40ecc83fbbdc9e33e23d3e83274ef",
+    "scopo": "Progettare, revisionare e rendere sicuri script PowerShell per operazioni locali ripetibili su Windows."
+  },
+  {
+    "code": "ARI-1202",
+    "motivo": "Esclusa esplicitamente: prova già sufficiente nella campagna.",
+    "procedura_sha256": "dbf3c0f4eddcb6d12ab1bbad5c3be99f70851522425a0167c8a5b158ee5aa4e9",
+    "skill_sha256": "37465472db336be11faf94b98ea7beabd98cf0f21b763ee02e066aeec7914d9b",
+    "scopo": "Creare strumenti Python da riga di comando per analizzare, validare, generare o trasformare file locali in modo ripetibile."
+  },
+  {
+    "code": "ARI-1203",
+    "motivo": "Selezionata: ramo isolato, strumenti già disponibili, nessuna evidenza equivalente registrata.",
+    "procedura_sha256": "0e19e22f70d8bbb5fb0a867b3982086cce4d5a53203a39b8d3acf39b46d699f9",
+    "skill_sha256": "388f473e30db82ed01a09063444f045232a32e15f37b760009499d9b0ac98bce",
+    "scopo": "Trasformare una sequenza di operazioni locali in un flusso ripetibile, documentato e verificabile senza dipendere da servizi esterni."
+  },
+  {
+    "code": "ARI-1301",
+    "motivo": "Selezionata: ramo isolato, strumenti già disponibili, nessuna evidenza equivalente registrata.",
+    "procedura_sha256": "6988b0652aa699b83b358dc4ba8c3b75e03f83b4085afc09f3478c905d3e6b1a",
+    "skill_sha256": "d730255878fbaaccfa91e51ea0c2ce68fba491bc3fac34ce3b166b7b18be2126",
+    "scopo": "Analizzare e pulire un progetto locale distinguendo file necessari, cache, backup, duplicati e artefatti temporanei, con priorita alla reversibilita."
+  },
+  {
+    "code": "ARI-1302",
+    "motivo": "Esclusa esplicitamente: prova già sufficiente nella campagna.",
+    "procedura_sha256": "318e5cbf93d7edacc543d0b1a59b785d4ad69b17ffba576ff310c90f72eb2f64",
+    "skill_sha256": "6c933f18085eca3da2119f456120ebd7484d21f3f023b9abe942c54d0ef92569",
+    "scopo": "Definire e applicare una strategia locale per creare, nominare, verificare e ripristinare backup di file e cartelle di progetto."
+  },
+  {
+    "code": "ARI-1303",
+    "motivo": "Esclusa esplicitamente: prova già sufficiente nella campagna.",
+    "procedura_sha256": "1d2bc11f47dcc78ed227ee3d4a017dd64d42b0a190bb606421c9d43f921fa89f",
+    "skill_sha256": "6c3f6e3bb14fd371becfd21f3529f53ed59d46ee98f311fc990d4001bba20905",
+    "scopo": "Produrre un inventario leggibile di un progetto locale, descrivendo cartelle, procedure, strumenti, file speciali e stato operativo."
+  },
+  {
+    "code": "ARI-1304",
+    "motivo": "Non selezionata: scenario specifico o progetto bersaglio distinto non definito; priorità alle sette candidate isolate.",
+    "procedura_sha256": "b83c132d495a6821c8261c88229f4b914ecdb33176f2d9e79fabed84d1f35838",
+    "skill_sha256": "3e520913422a545b2eefdec1182380dc87cb591630bb341f280f2b67a16b14ae",
+    "scopo": "Recuperare file o stati precedenti da backup e copie locali senza sovrascrivere materiale corrente in modo non controllato."
+  },
+  {
+    "code": "ARI-1401",
+    "motivo": "Non selezionata: progetto app/sito o verifica UI dedicata non identificati per un test completo a basso rischio.",
+    "procedura_sha256": "7881d64cf407142cb9f726eccccc186f2e8919fa7158d7676abb7424df610257",
+    "skill_sha256": "ec9aba10ca3f8946ad7bd31b6b7c9f35fe9638a762c71dad881aed61f64bad3e",
+    "scopo": "Preparare applicazioni Windows per distribuzione locale, verificando artefatti, cartelle, dipendenze, avvio, icone e metadati essenziali."
+  },
+  {
+    "code": "ARI-1402",
+    "motivo": "Non selezionata: progetto app/sito o verifica UI dedicata non identificati per un test completo a basso rischio.",
+    "procedura_sha256": "53218f1a562cd8f21fdc85fc6d24c92b9d719c077d92e32587403bdebbb23fcb",
+    "skill_sha256": "557377406a264d031847cb0836dc278db62353ce66111a702c04901e0fd262e5",
+    "scopo": "Progettare o revisionare un installatore Windows locale, controllando destinazioni, scorciatoie, disinstallazione, permessi e aggiornamento."
+  },
+  {
+    "code": "ARI-1403",
+    "motivo": "Non selezionata: progetto app/sito o verifica UI dedicata non identificati per un test completo a basso rischio.",
+    "procedura_sha256": "5c6dceaba16ed765a4cbe8c26450a186993f999f14f26edb3dbd3571ce7f9930",
+    "skill_sha256": "62a4922d98664e84ece8bd81fee21d4e35df40a9b16ee680971eb4c8b2d3d505",
+    "scopo": "Preparare e verificare icone, nome applicazione, versione, descrizione, autore e metadati visibili di una app locale."
+  },
+  {
+    "code": "ARI-1501",
+    "motivo": "Non selezionata: richiede scenario/dataset/runtime ulteriori, audio o agenti reali; nessun nuovo prerequisito assunto disponibile.",
+    "procedura_sha256": "da7eb2d428445517de2a0e8a8f5f61b4dddd01efae4fb5df2a7b848b491c129e",
+    "skill_sha256": "3b6856cc3d09ea7f32ed9e51ff8d48a3c69faeeb7c7830d20925abba7a2efb8e",
+    "scopo": "Confrontare modelli di intelligenza artificiale eseguiti localmente con misure ripetibili di qualità, prestazioni, consumo di risorse e compatibilità, producendo una scelta motivata per uno specifico caso d'uso."
+  },
+  {
+    "code": "ARI-1502",
+    "motivo": "Non selezionata: richiede scenario/dataset/runtime ulteriori, audio o agenti reali; nessun nuovo prerequisito assunto disponibile.",
+    "procedura_sha256": "2b8a11857fd323f525432a6203cdb661ef6c953b4dda645f2c19324a9eeb9b82",
+    "skill_sha256": "a86061f907c5ff843800592795af1d14aeafa47cfcea863a098b0658ba0b9a93",
+    "scopo": "Ottimizzare inferenza IA locale migliorando latenza, memoria, contesto, parallelismo, quantizzazione e configurazione runtime senza perdere tracciabilita."
+  },
+  {
+    "code": "ARI-1601",
+    "motivo": "Non selezionata: richiede scenario/dataset/runtime ulteriori, audio o agenti reali; nessun nuovo prerequisito assunto disponibile.",
+    "procedura_sha256": "c05a2eda844ab6d6ea4d0ab6c18c4ea6571e730405a552f3dadc30e4b32c693c",
+    "skill_sha256": "242132e8c5b959426c60ffad2481d14a8e965f7fd2c2b09fc32b54fb5d69f0e1",
+    "scopo": "Revisionare comportamento, limiti, prompt, robustezza e idoneita di modelli linguistici per uno specifico uso applicativo."
+  },
+  {
+    "code": "ARI-1701",
+    "motivo": "Non selezionata: richiede scenario/dataset/runtime ulteriori, audio o agenti reali; nessun nuovo prerequisito assunto disponibile.",
+    "procedura_sha256": "9b0012064db531fead22afaacda5d2aa1dbfd5e935e44d201ad6d4eb7ca92802",
+    "skill_sha256": "8a65334f96c636c0d5e4ecbe628537c2025b4d6db702840c947fbe0493655fe9",
+    "scopo": "Valutare agenti IA rispetto a obiettivo, strumenti, memoria, limiti, autorizzazioni, tracciabilita e qualita del risultato."
+  },
+  {
+    "code": "ARI-1702",
+    "motivo": "Selezionata: ramo isolato, strumenti già disponibili, nessuna evidenza equivalente registrata.",
+    "procedura_sha256": "b184ccf21e61bcaa81ad7fc8fa76b4886b1c2215c2f28baaa32a79fa10db5f91",
+    "skill_sha256": "c669f018b7dccfdd6260b467928f15f31018de7a72c8927ef68fd9342b7ab538",
+    "scopo": "Progettare memoria per agenti IA distinguendo contesto temporaneo, preferenze, conoscenza stabile, log operativo e dati da non memorizzare."
+  },
+  {
+    "code": "ARI-1703",
+    "motivo": "Non selezionata: richiede scenario/dataset/runtime ulteriori, audio o agenti reali; nessun nuovo prerequisito assunto disponibile.",
+    "procedura_sha256": "c608945e8c9663af4a9c714f06e5351e2270b95f0369eb4ddcb1dad7113a7d19",
+    "skill_sha256": "a3b7f00112bd87ab32932f22661a91e50d39219c07106426eb313d4833e3d5d3",
+    "scopo": "Valutare strumenti disponibili a un agente IA, definendo quando usarli, rischi, autorizzazioni, limiti e verifiche richieste."
+  },
+  {
+    "code": "ARI-1704",
+    "motivo": "Non selezionata: richiede scenario/dataset/runtime ulteriori, audio o agenti reali; nessun nuovo prerequisito assunto disponibile.",
+    "procedura_sha256": "6dbdaa773cfda8f71f11ff33a439d8a9d44bde9ab7b444054298165b9402b60b",
+    "skill_sha256": "a1c5dbe58a8bf90ef3ce2cc2a0c769a558682941887c66285f80109754938473",
+    "scopo": "Coordinare piu agenti o macro-agenti locali definendo ruoli, confini, scambio evidenze, controllo conflitti e sintesi finale."
+  },
+  {
+    "code": "ARI-1705",
+    "motivo": "Non selezionata: richiede scenario/dataset/runtime ulteriori, audio o agenti reali; nessun nuovo prerequisito assunto disponibile.",
+    "procedura_sha256": "5b086b15486f4df44936bfc8e20f52c4b475a0a5d7a164f3af08c1b0dedb5d94",
+    "skill_sha256": "cdc82a1c1f20ecdf298f16f06489131110bbb6b3b0fa0d7d1e37fd67ac61de77",
+    "scopo": "Creare, correggere e migliorare prompt per agenti IA, trasformando richieste grezze in istruzioni operative chiare, riutilizzabili, verificabili e coerenti con il progetto."
+  },
+  {
+    "code": "ARI-1803",
+    "motivo": "Non selezionata: richiede scenario/dataset/runtime ulteriori, audio o agenti reali; nessun nuovo prerequisito assunto disponibile.",
+    "procedura_sha256": "4aa97dca057c31f95b348e63f728611851f5cb07a9eb26b8b5a296c5a158e169",
+    "skill_sha256": "1484b33422d8061a51e1d802eb662cbd682d289d0f3cb3356ae9cc4352bf2179",
+    "scopo": "Produrre audio locale tracciabile da sintesi, risorse esistenti e trasformazioni CLI."
+  },
+  {
+    "code": "ARI-1804",
+    "motivo": "Selezionata: ramo isolato, strumenti già disponibili, nessuna evidenza equivalente registrata.",
+    "procedura_sha256": "ea27f7a3822e101d66dc404bd8fd290789bd61c8f8281184f24555fb7a32af65",
+    "skill_sha256": "ad427e5aa996f57a8e2a20d7431892d84f9778b50e4bc835e02ee135668181e9",
+    "scopo": "Costruire video deterministici da immagini, testo, audio e frame tramite CLI locali."
+  },
+  {
+    "code": "ARI-1805",
+    "motivo": "Selezionata: ramo isolato, strumenti già disponibili, nessuna evidenza equivalente registrata.",
+    "procedura_sha256": "df4a220c817b5bb136ecb2cc12d1f9cdf7b3d0b3c17916476b586d6f66192f3c",
+    "skill_sha256": "862cc522ff6767e37817375aaf30eb97808d8f318454898e4d5c4416ba8a83fe",
+    "scopo": "Montare media locali con timeline esplicita e controllo qualità ripetibile."
+  },
+  {
+    "code": "ARI-1806",
+    "motivo": "Non selezionata: richiede scenario/dataset/runtime ulteriori, audio o agenti reali; nessun nuovo prerequisito assunto disponibile.",
+    "procedura_sha256": "1b9e75bc50d328fbb6edc8d95f1f96b18c7397cb0635cef20ce6bec022d16601",
+    "skill_sha256": "a48d8f1bd990e6d1f355c53665f7e4fc6795f5585cbaecbfdbe2a23189387f76",
+    "scopo": "Trascrivere parlato locale con lingua e timestamp controllati, senza traduzione implicita."
+  },
+  {
+    "code": "ARI-1807",
+    "motivo": "Esclusa esplicitamente: prova già sufficiente nella campagna.",
+    "procedura_sha256": "e879923df0d3ef9085ff7b62f814050cabfd26e37fc607f2d2143c9a69971afd",
+    "skill_sha256": "15f9c09855b15f51c9b81295ebc2fc9da698e5fa9a908cc67fe8c52b77842a7d",
+    "scopo": "Convertire testo in voce locale controllando pronuncia, ritmo, segmentazione e qualità."
+  },
+  {
+    "code": "ARI-1808",
+    "motivo": "Non selezionata: richiede scenario/dataset/runtime ulteriori, audio o agenti reali; nessun nuovo prerequisito assunto disponibile.",
+    "procedura_sha256": "b8a44dc8449cdb69bc5249a91f9b31585e9e3dba6412d2c15a15cdd069be39b0",
+    "skill_sha256": "096e88deff6184db74275c256eafda0c7374aa3379db39cfccf05e28971302d6",
+    "scopo": "Orchestrare inferenza video IA locale con configurazioni, risorse e risultati tracciabili."
+  },
+  {
+    "code": "ARI-1809",
+    "motivo": "Non selezionata: richiede scenario/dataset/runtime ulteriori, audio o agenti reali; nessun nuovo prerequisito assunto disponibile.",
+    "procedura_sha256": "77a660263b82ba6342d4ab74a06fb555f5a92356a20197def9ad0310b720e76d",
+    "skill_sha256": "736fd8254b85398bfe11ebd8e7ab6c97e5a961d870cfe2f54991020cc93c08e7",
+    "scopo": "Coordinare un flusso locale riprendibile con dipendenze esplicite e verifica prima della consegna."
+  },
+  {
+    "code": "ARI-1810",
+    "motivo": "Evidenza già registrata e dipendenza da servizio online; non ripetuta.",
+    "procedura_sha256": "21d589c885af9835995e6ec23dceb52ac999ea24a6401a1fee052d90917ced27",
+    "skill_sha256": "f095dce01116cc37d0d15ba59e217e20ef9c3dbd3fcd2d401bc370475f3dae40",
+    "scopo": "Generare MP3 di parlato italiano da testo preservato, con voce selezionabile, output nuovi e verifica tecnica prima della consegna."
+  },
+  {
+    "code": "ARI-2101",
+    "motivo": "Non selezionata: progetto app/sito o verifica UI dedicata non identificati per un test completo a basso rischio.",
+    "procedura_sha256": "0688ac0c030f4744c8f670ab67931f89db6ee746c83e8b071559edd9f817144d",
+    "skill_sha256": "87929002585ba285bb9316f8f4d3af22b3207654aacf19b48d26c62d3a1a5c98",
+    "scopo": "Valutare siti web statici o prevalentemente statici in termini di struttura, contenuto, accessibilità, adattivo design, SEO tecnico, prestazioni, qualità visuale e prontezza alla pubblicazione."
+  },
+  {
+    "code": "ARI-2102",
+    "motivo": "Non selezionata: progetto app/sito o verifica UI dedicata non identificati per un test completo a basso rischio.",
+    "procedura_sha256": "4789516777347c0146fa74df7396932c03819d2f115986523c541e46d8091b6d",
+    "skill_sha256": "466647abe877fd7392f14a3458268a768726c349dd0533d0cd56ab28503cded2",
+    "scopo": "Revisionare applicazioni web interattive valutando architettura dell'interfaccia client, flussi utente, gestione dello stato, chiamate API, gestione errori, sicurezza di base, prestazioni e qualità dell'esperienza."
+  },
+  {
+    "code": "ARI-2103",
+    "motivo": "Non selezionata: progetto app/sito o verifica UI dedicata non identificati per un test completo a basso rischio.",
+    "procedura_sha256": "7076d3151aa97e4dd41168d0bc8d83c144b69355c755f5e3e3c8c2f89efc40ca",
+    "skill_sha256": "c4d57126e60a6a03b9bd2812800cc8c909e2596c4c46c7abbf0dd305477f0d4d",
+    "scopo": "Valutare e progettare interfacce coerenti, leggibili, accessibili e adatte al contesto d'uso, producendo indicazioni operative su layout, gerarchia, componenti, colori, tipografia e interazioni."
+  },
+  {
+    "code": "ARI-2104",
+    "motivo": "Non selezionata: progetto app/sito o verifica UI dedicata non identificati per un test completo a basso rischio.",
+    "procedura_sha256": "5aea89861ad4c7c09471b8810d07cd290c026bd89eeef2246b43eed5a108a9c5",
+    "skill_sha256": "f87aa6a11adb04ded87cb4a2569024253d6711cc3b048889f168c9272e8953c2",
+    "scopo": "Analizzare e migliorare prestazioni percepite e misurabili di interfacce web e app, collegando tempi di caricamento, reattività, stabilità visuale e peso delle risorse all'esperienza utente reale."
+  },
+  {
+    "code": "ARI-2105",
+    "motivo": "Non selezionata: progetto app/sito o verifica UI dedicata non identificati per un test completo a basso rischio.",
+    "procedura_sha256": "a38cc724c0a346cf31987369479f3a03da17ed6f7a30d55d34461f6a8d0ff8b0",
+    "skill_sha256": "58eb8c1a487449093a5b2139567753751b6c238f7c32a2b3a2566ef093b1d7b7",
+    "scopo": "Selezionare risorse visive, tipografiche e componenti adatti a un progetto web, app o desktop, valutando qualità, coerenza, licenza, peso tecnico, adattabilità e rischio di manutenzione."
+  },
+  {
+    "code": "ARI-2106",
+    "motivo": "Non selezionata: progetto app/sito o verifica UI dedicata non identificati per un test completo a basso rischio.",
+    "procedura_sha256": "ff7a329aeaffc42eb63864d4f0d408629c1bd52ebaac2fa44c216c84e3b897ca",
+    "skill_sha256": "2fbc8d872b47011b2c3d5f7ff83cfbf5d60f6b9c9258283ce9aedd069c2bede3",
+    "scopo": "Analizzare un sito esistente per replicarne legalmente struttura funzionale, flussi, densità informativa e pattern esperienza utente, producendo un'implementazione originale senza copiare codice, marchi, testi o risorse protette."
+  },
+  {
+    "code": "ARI-2107",
+    "motivo": "Non selezionata: progetto app/sito o verifica UI dedicata non identificati per un test completo a basso rischio.",
+    "procedura_sha256": "5d450108b4397530334c2486f1c758e4599d608d452630e2814e5f71e99bad87",
+    "skill_sha256": "1745df60a90c27cf1db3d8c6bc202c6811ff986d032e6ec19fe6322cfc0dc7f3",
+    "scopo": "Progettare o revisionare applicazioni Windows con interfaccia ispirata a iOS/macOS, mantenendo ergonomia scrivania, coerenza tecnica, prestazioni e differenziazione da brand o componenti proprietari."
+  },
+  {
+    "code": "ARI-2108",
+    "motivo": "Non selezionata: progetto app/sito o verifica UI dedicata non identificati per un test completo a basso rischio.",
+    "procedura_sha256": "402125ae1ae97631185af4ee73a2e94e9a4719bdbd4fb768fd516d8ee56aeffa",
+    "skill_sha256": "81a79b2355f09c8d88b35f23c5fcfb64ca5e18aaad85d343573d6e3bd347e06d",
+    "scopo": "Migliorare flussi web e app bilanciando usabilità, accessibilità e conversione, senza sacrificare chiarezza, fiducia e correttezza dell'esperienza utente."
+  },
+  {
+    "code": "ARI-2201",
+    "motivo": "Non selezionata: scenario specifico o progetto bersaglio distinto non definito; priorità alle sette candidate isolate.",
+    "procedura_sha256": "44443f480af5cca8f174a8290a81641a0ab71dd8ac5ffea10f9c15035d6829d0",
+    "skill_sha256": "252d1b0bd50700d02ece6c5c05ccb74f6f64af8410e01605326a70ccaabda6b0",
+    "scopo": "Revisionare rischi di sicurezza in siti, applicazioni web e app locali, concentrandosi su input, segreti, autenticazione, permessi e dipendenze."
+  },
+  {
+    "code": "ARI-2202",
+    "motivo": "Non selezionata: scenario specifico o progetto bersaglio distinto non definito; priorità alle sette candidate isolate.",
+    "procedura_sha256": "fec5ec3edfb66854eac0a9815883cfdc18bbbf9a1159bcadc52f8c07d73d9719",
+    "skill_sha256": "b0e23f143d50106a65da11d698287a4a7b8de87ef8f908ad779bfb79f02de10b",
+    "scopo": "Individuare, proteggere e gestire segreti locali come token, password, chiavi API, file .env e configurazioni private."
+  },
+  {
+    "code": "ARI-2203",
+    "motivo": "Non selezionata: scenario specifico o progetto bersaglio distinto non definito; priorità alle sette candidate isolate.",
+    "procedura_sha256": "dec90b444733eb42cb31e8fb5b6bf9e5ccc7a787169d5a349124957d940d6443",
+    "skill_sha256": "2b5fdacfedcf4efdb663b66f503d46b733de1080b3f78e87db5136f43c1ccdd5",
+    "scopo": "Valutare raccolta, uso, conservazione e minimizzazione di dati personali in progetti locali, siti, app e procedure."
+  },
+  {
+    "code": "ARI-2204",
+    "motivo": "Non selezionata: scenario specifico o progetto bersaglio distinto non definito; priorità alle sette candidate isolate.",
+    "procedura_sha256": "08a1efdf8527f81736dca67508b99d5bd7a7bde5bf8b5e06931339cb24f4e973",
+    "skill_sha256": "01baf078f12097330029facf32841239cddfdd5ac294cc6d9042fa1cb6928994",
+    "scopo": "Verificare licenze e vincoli di uso di risorse visive, font, icone, template, librerie e dipendenze software."
+  },
+  {
+    "code": "ARI-2501",
+    "motivo": "Non selezionata: progetto app/sito o verifica UI dedicata non identificati per un test completo a basso rischio.",
+    "procedura_sha256": "7754ce6c37798f9c22d5b214d0c0da3be3fc68c16e3dfb35a750684a00007475",
+    "skill_sha256": "77771191fa1911401de96fa4db3b0193487b76b08ea75915e5dcd439c3685be0",
+    "scopo": "Automatizzare in modo controllato un browser per ispezionare pagine, compilare flussi, catturare schermate e verificare comportamento visibile."
+  },
+  {
+    "code": "ARI-2502",
+    "motivo": "Non selezionata: progetto app/sito o verifica UI dedicata non identificati per un test completo a basso rischio.",
+    "procedura_sha256": "0eb74666bd97feebb01adff4b5cc1a7860211d4437952ef838b9b76586e424f4",
+    "skill_sha256": "947fbae63ece9bf5ebc6c41364dac9435ac5f38b295ffd3ba37e5f5fa7b4b161",
+    "scopo": "Progettare o revisionare test end-to-end per flussi utente completi, collegando azioni, asserzioni, dati e rischi di regressione."
+  },
+  {
+    "code": "ARI-2503",
+    "motivo": "Non selezionata: progetto app/sito o verifica UI dedicata non identificati per un test completo a basso rischio.",
+    "procedura_sha256": "e30a35fad7849629da26957332341ad0237952e6c8b1defea6698e532292b86d",
+    "skill_sha256": "0bd1c2c1df5c9d91ca246f5e98c9db68ff1fdd4daefb4a06c5dc2832804323c0",
+    "scopo": "Verificare resa visuale di pagine e applicazioni su viewport mobile, tablet e desktop, individuando overflow, testo tagliato e layout incoerenti."
+  }
+]

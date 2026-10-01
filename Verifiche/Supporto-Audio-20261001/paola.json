@@ -1,0 +1,15 @@
+{
+  "motore": "piper",
+  "voce": "paola",
+  "online": false,
+  "velocita_percento": -5,
+  "modello": "C:\\Users\\[UTENTE]\\AppData\\Local\\calibre-cache\\piper-voices\\it_IT-paola-medium.onnx",
+  "input": "C:\\Users\\[UTENTE]\\.codex\\visualizations\\2026\\10\\01\\01a0f528-9843-73e2-b022-06f78b454584\\prova-edge-1810.txt",
+  "output": "C:\\Users\\[UTENTE]\\.codex\\visualizations\\2026\\10\\01\\01a0f528-9843-73e2-b022-06f78b454584\\audio-paola-fb0c0047b1bb4bb7887fc8a698b9d6c9\\audio.mp3",
+  "master": "C:\\Users\\[UTENTE]\\.codex\\visualizations\\2026\\10\\01\\01a0f528-9843-73e2-b022-06f78b454584\\audio-paola-fb0c0047b1bb4bb7887fc8a698b9d6c9\\master.wav",
+  "durata_secondi": 9.183492,
+  "input_sha256": "F38FB76C638F222DFA556223DE03F714F6CC6998D3955904BF3E1F6FB4AFD918",
+  "output_sha256": "B4A27EA7BF6D643EDAB9054EA14A63EE372E3DC9212E064F71FAA20940B2BE51",
+  "decodifica": "superata",
+  "revisione_percettiva": "da svolgere"
+}

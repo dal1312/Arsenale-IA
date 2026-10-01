@@ -1,0 +1,17 @@
+{
+  "code": "ARI-1101",
+  "risultato": "PASS",
+  "test": "Guida tecnica del componente evidenze con riferimenti AST",
+  "osservazioni": {
+    "simboli_verificati": 5,
+    "file_sha256": "44bff4ff3bc883ffa189aa2e683bc44676daa2bd3d4741045021510c58735789"
+  },
+  "limiti": "Verifica riferimenti e revisione del flusso da parte dell’agente; nessuna attestazione di comprensione di utenti umani.",
+  "classificazione": "Valida",
+  "tipo": "Interna",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "procedura_sha256": "99a0cebb9790a9ad939f2e46c6946b51cb6b769a40c5a693a29751dca5658dca",
+  "skill_sha256": "da4da58e740dcafacadaa1d2b4ae5558a9d0129b6637805958259fbecb740f34",
+  "runner_sha256": "c19629036fc848dd4f2ad02766b0a51012879decc0f345e4ed0788a476328a3d"
+}

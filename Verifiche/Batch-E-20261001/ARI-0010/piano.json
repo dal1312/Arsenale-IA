@@ -1,0 +1,6 @@
+{
+  "bersaglio": "C:\\Users\\[UTENTE]\\Documents\\GitHub\\universal-video-translator-browser-v0.2\\UVT_LOCAL_FINAL_20260821-094455\\release-codex-20260919-argosfix\\UniversalVideoTranslator-0.2.1-windows-x86_64",
+  "criteri": "versione e commit da PROVENANCE, contenuto previsto nei documenti esistenti, presenza risorse e policy rilascio",
+  "limite": "sola lettura, niente build/avvio/FFmpeg; decisione conservativa di readiness",
+  "recupero": "conservare archivio portabile e copia originale; reinstallazione non dimostra rollback dati"
+}

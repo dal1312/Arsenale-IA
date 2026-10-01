@@ -1,0 +1,50 @@
+{
+  "code": "ARI-2204",
+  "test": "Confronto avvisi UVT con licenze locali e versioni dichiarate",
+  "risultato": "PASS",
+  "osservazioni": {
+    "gruppi": [
+      "SoundVolumeView 2.53",
+      "FFmpeg 8.1.2 Full Build",
+      "Python Runtime Components",
+      "External Components"
+    ],
+    "confronti": [
+      {
+        "componente": "SoundVolumeView",
+        "versione_avviso": "2.53",
+        "avviso_presente": true,
+        "file_locale": "UVT_LOCAL_FINAL_20260821-094455\\release-codex-20260919-argosfix\\UniversalVideoTranslator-0.2.1-windows-x86_64\\licenses\\SoundVolumeView-readme.txt",
+        "presente": true,
+        "indicatore_testuale": true,
+        "sha256": "8b587f0b2ad6f694197bfac34ccf558d27851c64661e203af3eeec1b00a3c5ce"
+      },
+      {
+        "componente": "FFmpeg",
+        "versione_avviso": "8.1.2",
+        "avviso_presente": true,
+        "file_locale": "UVT_LOCAL_FINAL_20260821-094455\\release-codex-20260919-argosfix\\UniversalVideoTranslator-0.2.1-windows-x86_64\\licenses\\FFmpeg-LICENSE.txt",
+        "presente": true,
+        "indicatore_testuale": true,
+        "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+      },
+      {
+        "componente": "Python Runtime Components",
+        "versione_avviso": "versioni da constraints",
+        "avviso_presente": true,
+        "file_locale": "requirements\\windows-py310-x64.constraints.txt",
+        "presente": true,
+        "indicatore_testuale": true,
+        "sha256": "2096e0b77ed0515ec27eb95b9f3a805967d8f5eda76d4578d65d46de60ba10ce"
+      }
+    ]
+  },
+  "classificazione": "Valida",
+  "limiti": "Analisi documentale locale; non certificazione legale o completezza dei diritti. Materiali reali UVT ma rapporto conservativamente Interna: nessuna indipendenza attribuita per promuovere. Versioni constraints non provano installazione runtime; modelli esterni non scaricati.",
+  "rilievi": "P2: elenco runtime aggregato non collega ogni dipendenza alla propria licenza nel root; verificare inventario release prima di distribuzione. Qualsiasi file assente o indicatore mancante è lacuna documentata in confronto.json, non corretto automaticamente.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "procedura_sha256": "08a1efdf8527f81736dca67508b99d5bd7a7bde5bf8b5e06931339cb24f4e973",
+  "skill_sha256": "01baf078f12097330029facf32841239cddfdd5ac294cc6d9042fa1cb6928994",
+  "runner_sha256": "eadbaecb45c94a1b6fd77b911348f54e77c031ae21fc7d033dfc073c17566cc3"
+}

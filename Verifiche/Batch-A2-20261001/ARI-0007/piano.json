@@ -1,0 +1,9 @@
+{
+  "workload": "SHA-256 di 1 MiB ripetuto 32 volte",
+  "ripetizioni": 5,
+  "metrica": "perf_counter_ns, mediana e dispersione",
+  "soglia_scenario_secondi": 1,
+  "correttezza": "32 digest uguali al digest input per ripetizione",
+  "profiling": "cProfile della stessa funzione, una acquisizione separata",
+  "intervento": "nessuno; diagnosi soltanto"
+}

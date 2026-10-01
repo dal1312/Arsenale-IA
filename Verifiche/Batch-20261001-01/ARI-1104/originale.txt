@@ -1,0 +1,1 @@
+Il comando `py` non trova Python sul computer,   PROVVEDI A CORREZIONME

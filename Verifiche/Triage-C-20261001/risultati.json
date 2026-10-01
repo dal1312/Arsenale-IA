@@ -1,0 +1,42 @@
+{
+  "code": "ARI-0401",
+  "test": "Smoke HTTP locale già previsto dal progetto più revisione JS/PWA",
+  "risultato": "PASS",
+  "exit_code": 0,
+  "target_http_ok": 62,
+  "sorgenti_invariati": true,
+  "nuovi_file_progetto": [],
+  "review": {
+    "stack": "HTML/CSS/JavaScript PWA, nessun transpiler o build richiesto",
+    "moduli": "script browser e CommonJS per smoke; nessun TypeScript/any/tsconfig",
+    "lockfile_coerente_versione": true,
+    "dipendenze": "Playwright devDependency presente, non avviato; smoke usa node:http, fs/promises, path e fetch standard",
+    "client": "order.js usa PonteCart/PONTE_CONFIG/PonteUtils; escapeHtml importato, ma uso in tutte le interpolazioni non provato",
+    "server": "solo HTTP temporaneo su 127.0.0.1, porta dinamica, confinamento path.resolve e startsWith separatore; nessun backend ordini avviato",
+    "errori": "smoke usa try/catch e close nel finally; endpoint file falliti restituiscono 404",
+    "sicurezza": "nessuna scansione segreti completa; non dichiarata sicurezza generale",
+    "build": "nessuna build necessaria per sito statico; asset esistenti serviti",
+    "lint_typecheck": "non configurati nel package, controllo non eseguito",
+    "browser_compatibilita": "non verificata; nessun test browser sostitutivo"
+  },
+  "rilievi": [
+    {
+      "priorita": "P2",
+      "file": "scripts/smoke_check.js",
+      "rilievo": "HTTP 200 e byte positivi non dimostrano correttezza JS/carrello né accessibilità; non approvare flusso ordine da solo smoke"
+    },
+    {
+      "priorita": "P3",
+      "file": "AGENTS.md / package.json",
+      "rilievo": "AGENTS afferma assenza suite oltre smoke ma package espone test:e2e; documentazione da riallineare, nessuna modifica"
+    },
+    {
+      "priorita": "P3",
+      "file": "package.json",
+      "rilievo": "engines node>=18, smoke usa fetch; reale compatibilità verificata soltanto Node 24.16.0"
+    }
+  ],
+  "classificazione": "Valida",
+  "tipo": "Interna",
+  "fonte": "progetto Ponte6 esistente, prova conservativamente interna alla campagna"
+}

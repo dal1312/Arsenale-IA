@@ -1,0 +1,28 @@
+{
+  "validazione": "PASS",
+  "prima": {
+    "disponibili": 64,
+    "con_valida": 15,
+    "senza_valida": 49
+  },
+  "dopo": {
+    "disponibili": 64,
+    "con_valida": 17,
+    "senza_valida": 47,
+    "verificate": 6,
+    "da_verificare": 58
+  },
+  "candidate": 2,
+  "PASS": 2,
+  "FAIL": 0,
+  "BLOCKED": 0,
+  "nuove_prime_valida": 2,
+  "nuove_eseguita": 0,
+  "promosse": 0,
+  "backup": 1,
+  "componenti_protetti_modificati": false,
+  "installazioni_download": false,
+  "git_github": false,
+  "false_indipendenti": false,
+  "errori": []
+}

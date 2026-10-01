@@ -1,0 +1,65 @@
+{
+  "comando": [
+    "C:\\Users\\[UTENTE]\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "C:\\Users\\[UTENTE]\\Documents\\GitHub\\Arsenale-IA\\Verifiche\\Supporto-ARI-1202-20261001\\esporta_pianificate.py",
+    "--catalogo",
+    "C:\\Users\\[UTENTE]\\Documents\\GitHub\\Arsenale-IA\\CATALOGO.md",
+    "--output",
+    "C:\\Users\\[UTENTE]\\Documents\\GitHub\\Arsenale-IA\\Verifiche\\Supporto-ARI-1202-20261001\\pianificate.csv"
+  ],
+  "exit_code": 0,
+  "stdout": "Esportate 4 procedure pianificate in C:\\Users\\[UTENTE]\\Documents\\GitHub\\Arsenale-IA\\Verifiche\\Supporto-ARI-1202-20261001\\pianificate.csv\n",
+  "stderr": "",
+  "criteri": "Exit code 0; CSV UTF-8 con tutte e sole le voci Pianificata, titoli esatti e codici univoci; sorgente invariata; destinazione nuova.",
+  "righe": [
+    {
+      "codice": "ARI-1801",
+      "titolo": "Revisione pipeline audio",
+      "stato": "Pianificata"
+    },
+    {
+      "codice": "ARI-1802",
+      "titolo": "Revisione pipeline video",
+      "stato": "Pianificata"
+    },
+    {
+      "codice": "ARI-1901",
+      "titolo": "Revisione visione artificiale",
+      "stato": "Pianificata"
+    },
+    {
+      "codice": "ARI-2001",
+      "titolo": "Revisione software di stampa 3D",
+      "stato": "Pianificata"
+    }
+  ],
+  "attese": [
+    {
+      "codice": "ARI-1801",
+      "titolo": "Revisione pipeline audio",
+      "stato": "Pianificata"
+    },
+    {
+      "codice": "ARI-1802",
+      "titolo": "Revisione pipeline video",
+      "stato": "Pianificata"
+    },
+    {
+      "codice": "ARI-1901",
+      "titolo": "Revisione visione artificiale",
+      "stato": "Pianificata"
+    },
+    {
+      "codice": "ARI-2001",
+      "titolo": "Revisione software di stampa 3D",
+      "stato": "Pianificata"
+    }
+  ],
+  "catalogo_sha256": "bcd6f92121bba8864f3dcd583718c0dded948fb698f6a8e4384e1286779fb4e3",
+  "cli_sha256": "2f9515da80b7232deca045dbc111cd2f80174b9cc32a2cbf28fdb7c3c4eb6a91",
+  "output_sha256": "546079c287e7d4300f0183535e5849a7154226fb0c7f701c28887b4e562e845a",
+  "esito": "PASS",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0"
+}

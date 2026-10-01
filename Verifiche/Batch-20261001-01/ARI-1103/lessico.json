@@ -1,0 +1,16 @@
+{
+  "regole": {
+    "prompt": "istruzione per un agente",
+    "online": "tramite servizio di rete",
+    "offline": "senza dipendenza da servizi di rete nel ramo locale",
+    "test browser": "prove nel browser"
+  },
+  "preservare": [
+    "GitHub",
+    "Edge TTS",
+    "PROCEDURA.md",
+    "SKILL.md",
+    "ARI-1810"
+  ],
+  "sorgente_sha256": "3edb468581d3a7189249512be63d9fcfec7584a17b43dcedc101ad60f8dad69a"
+}

@@ -1,0 +1,12 @@
+{
+  "conservati": [
+    "necessario.txt",
+    "copia.bak"
+  ],
+  "quarantena": [
+    "temporaneo.tmp"
+  ],
+  "cancellazioni": 0,
+  "rollback": "Spostare quarantena/temporaneo.tmp nella destinazione originale solo se assente.",
+  "origine": "Fixture interna creata dal test; non cartella produttiva"
+}

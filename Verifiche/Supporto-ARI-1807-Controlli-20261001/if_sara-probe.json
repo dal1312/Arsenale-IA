@@ -1,0 +1,64 @@
+{
+    "streams": [
+        {
+            "index": 0,
+            "codec_name": "mp3",
+            "codec_long_name": "MP3 (MPEG audio layer 3)",
+            "codec_type": "audio",
+            "codec_tag_string": "[0][0][0][0]",
+            "codec_tag": "0x0000",
+            "mime_codec_string": "mp4a.40.34",
+            "sample_fmt": "fltp",
+            "sample_rate": "24000",
+            "channels": 1,
+            "channel_layout": "mono",
+            "bits_per_sample": 0,
+            "initial_padding": 0,
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/14112000",
+            "start_pts": 649740,
+            "start_time": "0.046042",
+            "duration_ts": 141496320,
+            "duration": "10.026667",
+            "bit_rate": "74933",
+            "disposition": {
+                "default": 0,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0,
+                "multilayer": 0
+            }
+        }
+    ],
+    "format": {
+        "filename": "C:\\Users\\[UTENTE]\\.codex\\visualizations\\2026\\10\\01\\01a0f528-9843-73e2-b022-06f78b454584\\audio-sara-0553740934f04112be061d164ae1584d\\audio.mp3",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mp3",
+        "format_long_name": "MP2/3 (MPEG audio layer 2/3)",
+        "start_time": "0.046042",
+        "duration": "10.026667",
+        "size": "94461",
+        "bit_rate": "75367",
+        "probe_score": 51,
+        "tags": {
+            "encoder": "Lavf62.12.102"
+        }
+    }
+}

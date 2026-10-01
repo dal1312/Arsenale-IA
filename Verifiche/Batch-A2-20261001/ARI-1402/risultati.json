@@ -1,0 +1,21 @@
+{
+  "code": "ARI-1402",
+  "test": "Installatore Personalizzato con skill parziale preesistente, senza Forza",
+  "risultato": "PASS",
+  "osservazioni": {
+    "exit_code": 0,
+    "destinazioni": 64,
+    "copiate": 63,
+    "saltate": 1,
+    "marker_sha256_invariato": "3a314adf426db53957de64a0a3aef6ed61849d61950a3b0b6e816b1d63dfea62",
+    "procedura_mancante_preservata": true
+  },
+  "classificazione": "Valida",
+  "limiti": "Esecuzione esclusivamente nella fixture. Il ramo senza forza salta tutta la cartella esistente: non completa la skill parziale. Nessuna installazione in profili reali, scorciatoie/registry/disinstallazione non pertinenti allo script.",
+  "rilievi": "P2: cartella parziale resta incompleta per preservazione deliberata; warning registrato. Documentare che senza forza non avviene riparazione. Nessuna correzione applicata.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "procedura_sha256": "53218f1a562cd8f21fdc85fc6d24c92b9d719c077d92e32587403bdebbb23fcb",
+  "skill_sha256": "557377406a264d031847cb0836dc278db62353ce66111a702c04901e0fd262e5",
+  "runner_sha256": "eadbaecb45c94a1b6fd77b911348f54e77c031ae21fc7d033dfc073c17566cc3"
+}

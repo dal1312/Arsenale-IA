@@ -1,0 +1,1 @@
+Questa è una prova della voce Diego. Il testo contiene accenti, apostrofi e una citazione: "La tecnologia semplifica il lavoro". Ora generiamo un audio verificato.

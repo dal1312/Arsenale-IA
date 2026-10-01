@@ -1,0 +1,7 @@
+{
+  "bersaglio": "C:\\Users\\[UTENTE]\\Documents\\GitHub\\omega-fl-pilot\\tools\\windows-launcher",
+  "ramo": "gestione errore e ricerca root, risorse HttpClient/Process",
+  "build": "copia delle tre sorgenti e obj preesistenti; dotnet build --no-restore -r win-x64",
+  "vietato": "NuGet restore, avvio launcher, servizi e browser",
+  "criterio": "registrare exit/log build, struttura e rilievi con simboli; nessuna correzione"
+}

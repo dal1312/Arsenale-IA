@@ -1,0 +1,17 @@
+{
+  "code": "ARI-1102",
+  "risultato": "PASS",
+  "test": "Manuale seguito: copia portabile di consultazione, senza installazione",
+  "osservazioni": {
+    "exit_code": 0,
+    "file_verificati": 2
+  },
+  "limiti": "Percorso nuovo di consultazione, non installatore già testato. Esecuzione automatica, nessuna valutazione umana di usabilità.",
+  "classificazione": "Valida",
+  "tipo": "Interna",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "procedura_sha256": "fa8cf065cc52033658dd4885af293b2c5cc43621bcca7244277a48769bf84c54",
+  "skill_sha256": "c25db10bb6be934b7c2309fa27166cb8e014d1ce6ce97866198520c26bab5f0a",
+  "runner_sha256": "c19629036fc848dd4f2ad02766b0a51012879decc0f345e4ed0788a476328a3d"
+}

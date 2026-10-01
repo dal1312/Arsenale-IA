@@ -1,0 +1,1 @@
+PRAGMA foreign_keys=ON; CREATE TABLE cliente(id INTEGER PRIMARY KEY,nome TEXT NOT NULL UNIQUE); CREATE TABLE ordine(id INTEGER PRIMARY KEY,cliente_id INTEGER NOT NULL REFERENCES cliente(id),importo INTEGER NOT NULL CHECK(importo>0)); CREATE INDEX ordine_cliente ON ordine(cliente_id); PRAGMA user_version=1;

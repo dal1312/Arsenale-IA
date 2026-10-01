@@ -1,0 +1,17 @@
+{
+  "file": "Strumenti/verifica_evidenze.py",
+  "sha256": "44bff4ff3bc883ffa189aa2e683bc44676daa2bd3d4741045021510c58735789",
+  "simboli": [
+    "metadata",
+    "section_body",
+    "declared_versions_from_text",
+    "validate_reports",
+    "placeholder_hits"
+  ],
+  "imports": [
+    "__future__",
+    "pathlib",
+    "re",
+    "sys"
+  ]
+}

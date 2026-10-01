@@ -1,0 +1,18 @@
+{
+  "code": "ARI-2203",
+  "risultato": "PASS",
+  "test": "Minimizzazione su copia del manifest precedente",
+  "osservazioni": {
+    "campi_file_rimossi": 23,
+    "sorgente_sha256_invariato": "e256e715c8d1b89a4ba181891f1e103be75304fa86b66439b067e37b0a8f50f1",
+    "campi_tecnici_conservati": true
+  },
+  "limiti": "Rimuove i percorsi del manifest selezionato; non anonimizzazione universale. Copia integrale locale conservata, originali intatti. Nessun test su audio o modifica di evidenze precedenti.",
+  "classificazione": "Valida",
+  "tipo": "Interna",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "procedura_sha256": "dec90b444733eb42cb31e8fb5b6bf9e5ccc7a787169d5a349124957d940d6443",
+  "skill_sha256": "2b5fdacfedcf4efdb663b66f503d46b733de1080b3f78e87db5136f43c1ccdd5",
+  "runner_sha256": "c19629036fc848dd4f2ad02766b0a51012879decc0f345e4ed0788a476328a3d"
+}

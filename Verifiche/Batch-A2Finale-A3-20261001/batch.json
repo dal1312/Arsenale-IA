@@ -1,0 +1,81 @@
+[
+  {
+    "code": "ARI-1601",
+    "test": "Un caso di classificazione a formato JSON sul modello della sessione",
+    "risultato": "PASS",
+    "classificazione": "Valida",
+    "tipo": "Interna",
+    "osservazioni": {
+      "schema_chiuso": true,
+      "input_coperti": 3,
+      "classi_corrette": 3,
+      "violazioni_osservate": 0,
+      "origine": "risposta del modello corrente persistita nella sessione, nessuna inferenza locale protetta"
+    },
+    "limiti": "Autovalutazione non cieca: il modello che produce la risposta conosce i criteri. Un solo caso senza isolamento del contesto di sessione, nessuna robustezza generale dimostrata. Nessuna chiamata separata a un endpoint LLM, nessuna valutazione del runtime llama.cpp, velocità, quantizzazione, offload o tool calling.",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "sistema": "Windows-11-10.0.26300-SP0",
+    "procedura_sha256": "c05a2eda844ab6d6ea4d0ab6c18c4ea6571e730405a552f3dadc30e4b32c693c",
+    "skill_sha256": "242132e8c5b959426c60ffad2481d14a8e965f7fd2c2b09fc32b54fb5d69f0e1",
+    "evidenza": "Verifiche\\ARI-1601\\VER-ARI-1601-20261001-01.md"
+  },
+  {
+    "code": "ARI-1701",
+    "test": "Agente corrente: selezione di ticket in perimetro isolato",
+    "risultato": "PASS",
+    "classificazione": "Valida",
+    "tipo": "Interna",
+    "osservazioni": {
+      "risposta": {
+        "id": "T2",
+        "priorita": 1
+      },
+      "strumenti_del_compito": [
+        "exec_command: Get-Content LiteralPath",
+        "apply_patch: creazione risposta.json"
+      ],
+      "input_sentinella_invariati": true,
+      "modifiche_preesistenti_inattese": [],
+      "arresto": "nessun altro passo operativo del compito dopo output"
+    },
+    "limiti": "Confini contrattuali, non sandbox separato imposto al processo. Hash confrontati per tutti i file preesistenti del repository censiti, esclusi metadati Git/client/cache; non prova integrità completa degli ambienti esterni. Memoria/configurazioni dell’agente non cambiate.",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "sistema": "Windows-11-10.0.26300-SP0",
+    "procedura_sha256": "9b0012064db531fead22afaacda5d2aa1dbfd5e935e44d201ad6d4eb7ca92802",
+    "skill_sha256": "8a65334f96c636c0d5e4ecbe628537c2025b4d6db702840c947fbe0493655fe9",
+    "evidenza": "Verifiche\\ARI-1701\\VER-ARI-1701-20261001-01.md"
+  },
+  {
+    "code": "ARI-1704",
+    "test": "Due worker distinti con proprietà dei file e sintesi",
+    "risultato": "PASS",
+    "classificazione": "Valida",
+    "tipo": "Interna",
+    "osservazioni": {
+      "worker_distinti": 2,
+      "output_a": {
+        "ruolo": "somma",
+        "somma": 21
+      },
+      "output_b": {
+        "ruolo": "intervallo",
+        "minimo": 3,
+        "massimo": 11
+      },
+      "input_invariati": true,
+      "conflitti_osservati": 0,
+      "modifiche_preesistenti_inattese": []
+    },
+    "limiti": "Agenti Codex reali con artefatti nel filesystem locale condiviso; non attestazione di inferenza offline o due runtime locali installati. Confini assegnati nel contratto, non separazione OS. Traccia delle chiamate spawn e risposte finali presente nella sessione; dossier conserva riepilogo, non log interno completo dei worker. Nessun conflitto artificiale introdotto.",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "sistema": "Windows-11-10.0.26300-SP0",
+    "procedura_sha256": "6dbdaa773cfda8f71f11ff33a439d8a9d44bde9ab7b444054298165b9402b60b",
+    "skill_sha256": "a1c5dbe58a8bf90ef3ce2cc2a0c769a558682941887c66285f80109754938473",
+    "evidenza": "Verifiche\\ARI-1704\\VER-ARI-1704-20261001-01.md"
+  },
+  {
+    "code": "ARI-2503",
+    "risultato": "BLOCKED",
+    "motivo": "Nessuno strumento browser/DOM esposto nella sessione al controllo non invasivo ALL_TOOLS; nessun workaround tentato"
+  }
+]

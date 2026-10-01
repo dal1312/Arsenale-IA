@@ -1,0 +1,46 @@
+{
+  "sorgente": "C:\\Users\\[UTENTE]\\Documents\\GitHub\\Arsenale-IA\\Verifiche\\Supporto-ARI-1202-20261001\\esporta_pianificate.py",
+  "sorgente_sha256": "2f9515da80b7232deca045dbc111cd2f80174b9cc32a2cbf28fdb7c3c4eb6a91",
+  "entrypoint": "main() protetto da __name__",
+  "dipendenze": [
+    "argparse",
+    "csv",
+    "re",
+    "pathlib"
+  ],
+  "packaging_presenti": [],
+  "moduli": 1,
+  "import_circolari": "Non presenti nel perimetro: solo libreria standard",
+  "risorse": "File input letto con pathlib; output con context manager e modo x",
+  "concorrenza": "Non presente",
+  "side_effect_import": "Definizioni soltanto, entry point protetto",
+  "portabilita": "Pathlib e UTF-8 esplicito osservati; test reale solo Windows",
+  "sicurezza": "Nessun subprocess/pickle/eval nella CLI, input locale; nessun segreto osservato nel singolo file; nessun audit globale",
+  "comando": [
+    "C:\\Users\\[UTENTE]\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "C:\\Users\\[UTENTE]\\Documents\\GitHub\\Arsenale-IA\\Verifiche\\Supporto-ARI-1202-20261001\\esporta_pianificate.py",
+    "--catalogo",
+    "C:\\Users\\[UTENTE]\\Documents\\GitHub\\Arsenale-IA\\Verifiche\\Batch-20261001-02\\ARI-0101\\input-non-utf8.bin",
+    "--output",
+    "C:\\Users\\[UTENTE]\\Documents\\GitHub\\Arsenale-IA\\Verifiche\\Batch-20261001-02\\ARI-0101\\output-vietato.csv"
+  ],
+  "exit_code": 1,
+  "output_assente": true,
+  "input_sha256": "b632bfa9c60bc17f7fd78dba311fd3f5dfa66cb8c017a4278e2bae28d668844d",
+  "rilievi": [
+    {
+      "priorita": "P2",
+      "problema": "Versione minima Python e istruzioni di distribuzione della CLI non dichiarate in un documento dedicato",
+      "evidenza": "Directory target senza pyproject/requirements/lock/README dedicati",
+      "azione": "Documentare interprete supportato e comando di uso, senza aggiornare dipendenze"
+    },
+    {
+      "priorita": "P3",
+      "problema": "Copertura precedente limitata al percorso positivo; questa revisione copre soltanto il ramo errore UTF-8",
+      "evidenza": "Input di 3 byte non UTF-8 rifiutato con exit 1 e nessun output",
+      "azione": "Nessuna correzione del codice: il ramo esercitato gestisce l’errore esplicitamente"
+    }
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+}

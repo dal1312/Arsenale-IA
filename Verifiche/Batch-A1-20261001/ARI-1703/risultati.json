@@ -1,0 +1,20 @@
+{
+  "code": "ARI-1703",
+  "risultato": "PASS",
+  "test": "Lettura LiteralPath con parentesi e errore file assente",
+  "osservazioni": {
+    "exit_code": 0,
+    "errore_assente": true,
+    "sha256": "6F73774211277547374E943DF1B719581BBAD0194ED5D583E7CFB3E98317E41E",
+    "testo": "contenuto di prova à\n",
+    "file_count": 3
+  },
+  "limiti": "Nessuna API o operazione privilegiata: contratto limitato al terminale PowerShell e lettura di fixture.",
+  "classificazione": "Valida",
+  "tipo": "Interna",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "procedura_sha256": "c608945e8c9663af4a9c714f06e5351e2270b95f0369eb4ddcb1dad7113a7d19",
+  "skill_sha256": "a3b7f00112bd87ab32932f22661a91e50d39219c07106426eb313d4833e3d5d3",
+  "runner_sha256": "c19629036fc848dd4f2ad02766b0a51012879decc0f345e4ed0788a476328a3d"
+}

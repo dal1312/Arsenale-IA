@@ -1,0 +1,15 @@
+{
+  "motore": "kokoro",
+  "voce": "im_nicola",
+  "online": false,
+  "velocita_percento": -5,
+  "modello": "D:\\DOWNLOAD\\PROGRAMMI\\TESTO\\AI Ebook to Audio Converter 1.1.29\\App\\AI Ebook to Audio Converter\\_internal\\kokoro-tts\\kokoro-v1.0.onnx",
+  "input": "C:\\Users\\[UTENTE]\\.codex\\visualizations\\2026\\10\\01\\01a0f528-9843-73e2-b022-06f78b454584\\prova-edge-1810.txt",
+  "output": "C:\\Users\\[UTENTE]\\.codex\\visualizations\\2026\\10\\01\\01a0f528-9843-73e2-b022-06f78b454584\\audio-nicola-2abc2bb3887d4c77a377d57c69c628ee\\audio.mp3",
+  "master": "C:\\Users\\[UTENTE]\\.codex\\visualizations\\2026\\10\\01\\01a0f528-9843-73e2-b022-06f78b454584\\audio-nicola-2abc2bb3887d4c77a377d57c69c628ee\\master.wav",
+  "durata_secondi": 11.541333,
+  "input_sha256": "F38FB76C638F222DFA556223DE03F714F6CC6998D3955904BF3E1F6FB4AFD918",
+  "output_sha256": "13B7971EB45D354BB5189EBE4AA80D5D7DE803AA3ED91253FD6D435B6FCF2BF4",
+  "decodifica": "superata",
+  "revisione_percettiva": "da svolgere"
+}

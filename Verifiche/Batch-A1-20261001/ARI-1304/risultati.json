@@ -1,0 +1,18 @@
+{
+  "code": "ARI-1304",
+  "risultato": "PASS",
+  "test": "Recupero revisione storica con conflitto e corrente preservata",
+  "osservazioni": {
+    "conflitto_rifiutato": true,
+    "corrente_sha256": "b52a11db0cf7051e90bb20d02859b02414c3919fbcb704260024e0979a828ed2",
+    "recuperata_sha256": "084b1c103bd409c27037669d0289d592cd791fe46be313553a76dfc96bad1535"
+  },
+  "limiti": "Conflitto su copia isolata di catalogo reale; non ripete ripristino in directory vuota. Nessun rollback del repository.",
+  "classificazione": "Valida",
+  "tipo": "Interna",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "procedura_sha256": "b83c132d495a6821c8261c88229f4b914ecdb33176f2d9e79fabed84d1f35838",
+  "skill_sha256": "3e520913422a545b2eefdec1182380dc87cb591630bb341f280f2b67a16b14ae",
+  "runner_sha256": "c19629036fc848dd4f2ad02766b0a51012879decc0f345e4ed0788a476328a3d"
+}

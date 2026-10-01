@@ -1,0 +1,27 @@
+{
+  "code": "ARI-1401",
+  "bersaglio": "Archivio reale UVT 0.2.1 Windows x86_64",
+  "test": "Copia del pacchetto portabile, checksum, CRC e contenuto atteso",
+  "risultato": "PASS",
+  "classificazione": "Valida",
+  "tipo": "Interna",
+  "osservazioni": {
+    "archivio_sha256": "79e2a494ef40d380d4211ef6ec009913c61deb822acedd38ffe7be8436367283",
+    "byte": 699141718,
+    "zip_crc": "tutti verificati",
+    "entrypoint": "UniversalVideoTranslator.exe",
+    "versione": "0.2.1",
+    "commit_dichiarato": "31572f0681b66e559280f0a8d5a7805444c3e12f",
+    "file_zip": 20101,
+    "righe_manifest": 20100,
+    "manifest_copertura_presenza": true,
+    "runtime_presente": true,
+    "originale_invariato": true
+  },
+  "limiti": "Pacchetto completo conservato senza estrazione o avvio. CRC e checksum archivio non provano assenza malware o funzionamento runtime; hash per-file del manifest non tutti ricalcolati individualmente, copertura presenza verificata. Dipendenze esterne riportate da PROVENANCE non installate. Nessuna valutazione estetica o nuova verifica ICO già coperta.",
+  "rilievi": "P2: dipendenze esterne necessarie ad alcune funzioni: non equiparare archivio integro ad ambiente pronto. Documenti e entrypoint presenti; avvio non esercitato per vincoli della campagna.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "procedura_sha256": "7881d64cf407142cb9f726eccccc186f2e8919fa7158d7676abb7424df610257",
+  "skill_sha256": "ec9aba10ca3f8946ad7bd31b6b7c9f35fe9638a762c71dad881aed61f64bad3e"
+}

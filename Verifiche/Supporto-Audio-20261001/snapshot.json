@@ -1,0 +1,13 @@
+{
+  "Genera-Audio-Edge.ps1": "6b03107667c164e50b8ffa4a695d89ea40e5b2016eddb90e8c188568118b36d9",
+  "Genera-Audio.ps1": "f3d9c3199b437bc1a40667ff9a60063aa594c915f81fd673c0bfd458a2ac903f",
+  "if_sara.json": "eecd4bd0b278a8231d22f2b35e4c2adcb44d82f0f8db467770e5a613f4a47706",
+  "im_nicola.json": "90d7be20986aadb0ec862bf962d40587b2bd0acdda160bef6d2cfdea46cd117b",
+  "input.txt": "f38fb76c638f222dfa556223de03f714f6cc6998d3955904bf3e1f6fb4afd918",
+  "it-IT-DiegoNeural.json": "c990bf4994aa961df97c926898c18fa4a136a16fd6031a4139761b38eacdfb07",
+  "it-IT-ElsaNeural.json": "872c93867da6c839f44e55e8fb2942d0c4fd7a091519f3917c220ce261590aa4",
+  "it-IT-GiuseppeMultilingualNeural.json": "bb9fee14e24d998449db90699897b12c4afa24d830b6853e5f5b191f715ec915",
+  "it-IT-IsabellaNeural.json": "6ac61fb4228b44473a9b8429f1c62604b2c873d8862f29ead070b267e3ed43a8",
+  "paola.json": "bf5390a37effbfb5b90854da3cfbc2468b1aeab8413e721631a491cd7c35ad24",
+  "sintesi_audio_locale.py": "a03a501d9c8dd4d31d594526a800996fdb96c650041ec01690cca295427ff036"
+}
